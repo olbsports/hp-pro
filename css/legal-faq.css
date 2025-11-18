@@ -3,13 +3,15 @@
 /* Style cohérent avec le reste du site */
 /* ========================================== */
 
+/* IMPORTANT: Ne pas toucher au header - géré par styles.css */
+
 /* Hero Section pour pages légales/FAQ */
 .page-hero {
     background: linear-gradient(135deg, #002DFF 0%, #6366f1 100%);
     color: white;
     padding: 120px 20px 60px;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 .page-hero h1 {
