@@ -295,72 +295,60 @@ nav {
 }
 
 /* ==========================================================================
-   TRANSLATE WIDGET
+   TRANSLATE IN FOOTER
    ========================================================================== */
 
-.translate-widget-float {
-    position: fixed;
-    top: 100px;
-    right: 20px;
-    z-index: 998;
+.footer-translate {
+    text-align: center;
+    padding: 30px 0 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
 }
 
-.translate-btn {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: white;
-    border: 2px solid #002DFF;
-    color: #002DFF;
-    font-size: 24px;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 45, 255, 0.3);
-    transition: all 0.3s;
-    display: flex;
+.translate-container {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.translate-btn:hover {
-    background: #002DFF;
-    transform: scale(1.1);
-}
-
-.translate-dropdown {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    padding: 15px;
-    min-width: 200px;
-    display: none;
-}
-
-.translate-dropdown.active {
-    display: block;
+.translate-label {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
 }
 
 /* Google Translate Customization */
 .goog-te-combo {
-    padding: 8px 12px;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
     font-size: 14px;
-    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
     cursor: pointer;
     transition: all 0.3s;
+    min-width: 150px;
 }
 
 .goog-te-combo:hover {
-    border-color: #002DFF;
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .goog-te-combo:focus {
     outline: none;
+    background: rgba(255, 255, 255, 0.2);
     border-color: #002DFF;
-    box-shadow: 0 0 0 3px rgba(0, 45, 255, 0.1);
+    box-shadow: 0 0 0 3px rgba(0, 45, 255, 0.2);
+}
+
+.goog-te-combo option {
+    background: #2c3e50;
+    color: white;
 }
 
 /* Hide Google Translate Banner */
@@ -595,6 +583,26 @@ label {
 
     .grid-2, .grid-3, .grid-4 {
         grid-template-columns: 1fr;
+    }
+
+    /* Footer Translate Responsive */
+    .footer-translate {
+        padding: 20px 0 15px;
+    }
+
+    .translate-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .translate-label {
+        font-size: 0.9rem;
+    }
+
+    .goog-te-combo {
+        width: 100%;
+        min-width: unset;
     }
 }
 
