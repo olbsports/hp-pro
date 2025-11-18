@@ -1,0 +1,57 @@
+# robots.txt - HorsePrint Pro
+# Configuration SEO optimisée
+
+User-agent: *
+Allow: /
+
+# Bloquer la page de devis privé (accessible uniquement par lien direct)
+Disallow: /jumping-polo-st-tropez.html
+
+# Bloquer les fichiers et dossiers techniques
+Disallow: /includes/
+Disallow: /js/
+Disallow: /css/
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Autoriser explicitement les pages principales
+Allow: /index.html
+Allow: /polos.html
+Allow: /tshirts.html
+Allow: /sweats.html
+Allow: /bodywarmer-vestes.html
+Allow: /bonnets-casquettes.html
+
+# Bloquer les fichiers de configuration
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Bloquer les paramètres de session et tracking
+Disallow: /*?*utm_
+Disallow: /*?*session
+Disallow: /*?*sid=
+
+# Sitemap
+Sitemap: https://pro.horseprint.fr/sitemap.xml
+
+# Crawl-delay pour être courtois (optionnel)
+Crawl-delay: 1
+
+# Règles spécifiques pour les bots majeurs
+User-agent: Googlebot
+Allow: /
+Disallow: /jumping-polo-st-tropez.html
+
+User-agent: Bingbot
+Allow: /
+Disallow: /jumping-polo-st-tropez.html
+
+# Bloquer les bad bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: DotBot
+Crawl-delay: 10
