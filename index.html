@@ -24,51 +24,61 @@
 <link rel="stylesheet" href="css/conversion.css">
 <body>
     <!-- Header -->
-    <header>
-        <nav class="container">
-<div class="logo notranslate">
-    HorsePrint
-    <span class="logo-pro">PRO</span>
-</div>
-<button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
-            <ul class="nav-links" id="mobileMenu">
-                <li class="dropdown">
-                    <a href="#products" class="dropdown-toggle">Nos produits</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#products">Équipements cheval</a></li>
-                        <li><a href="#textile">Textile staff, officiels et cavaliers</a></li>
-                        <li><a href="#signage">Signalétique</a></li>
-                        <li><a href="#access">Gestion d'accès</a></li>
-                        <li><a href="#merchandising">Boutique officielle</a></li>
-                    </ul>
-                </li>
-                <li><a href="#innovation">Technologie</a></li>
-                <li><a href="#levels">Nos offres</a></li>
-                <li><a href="#contact">Devis</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Header Universel HorsePrint Pro -->
+<header>
+    <nav class="container">
+        <div class="mobile-nav-header">
+            <a href="index.html" class="back-arrow" title="Retour à l'accueil" aria-label="Retour à l'accueil">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+            </a>
 
+            <div class="logo notranslate" onclick="goToHome()" style="cursor: pointer;">
+                HorsePrint
+                <span class="logo-pro">PRO</span>
+            </div>
+        </div>
+
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu de navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="mobileMenu">
+            <li class="dropdown">
+                <a href="index.html#products" class="dropdown-toggle">Nos produits</a>
+                <ul class="dropdown-menu">
+                    <li><a href="index.html#products">Équipements cheval</a></li>
+                    <li><a href="index.html#textile">Textile staff, officiels et cavaliers</a></li>
+                    <li><a href="index.html#signage">Signalétique</a></li>
+                    <li><a href="index.html#access">Gestion d'accès</a></li>
+                    <li><a href="index.html#merchandising">Boutique officielle</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#innovation">Technologie</a></li>
+            <li><a href="index.html#levels">Nos offres</a></li>
+            <li><a href="index.html#contact">Devis</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Widget de traduction -->
 <div class="translate-widget">
-    <button class="translate-toggle" onclick="toggleTranslate()">
+    <button class="translate-toggle" onclick="toggleTranslate()" aria-label="Ouvrir le menu de traduction">
         🌐 Traduire
     </button>
     <div class="translate-content" id="translateContent">
-        <!-- Widget Google officiel -->
         <div id="google_translate_element"></div>
 
-        <!-- OU drapeaux personnalisés (optionnel) -->
         <div class="language-flags" style="display: none;">
-            <button class="flag-btn active" onclick="translateTo('fr')" title="Français">🇫🇷</button>
-            <button class="flag-btn" onclick="translateTo('en')" title="English">🇬🇧</button>
-            <button class="flag-btn" onclick="translateTo('es')" title="Español">🇪🇸</button>
-            <button class="flag-btn" onclick="translateTo('de')" title="Deutsch">🇩🇪</button>
-            <button class="flag-btn" onclick="translateTo('it')" title="Italiano">🇮🇹</button>
-            <button class="flag-btn" onclick="translateTo('nl')" title="Nederlands">🇳🇱</button>
+            <button class="flag-btn active" onclick="translateTo('fr')" title="Français" aria-label="Traduire en français">🇫🇷</button>
+            <button class="flag-btn" onclick="translateTo('en')" title="English" aria-label="Translate to English">🇬🇧</button>
+            <button class="flag-btn" onclick="translateTo('es')" title="Español" aria-label="Traducir al español">🇪🇸</button>
+            <button class="flag-btn" onclick="translateTo('de')" title="Deutsch" aria-label="Auf Deutsch übersetzen">🇩🇪</button>
+            <button class="flag-btn" onclick="translateTo('it')" title="Italiano" aria-label="Traduci in italiano">🇮🇹</button>
+            <button class="flag-btn" onclick="translateTo('nl')" title="Nederlands" aria-label="Vertalen naar Nederlands">🇳🇱</button>
         </div>
     </div>
 </div>
@@ -87,7 +97,7 @@
     <span class="whatsapp-pulse"></span>
 </a>
 
-    <!-- Hero Section avec Introduction intégrée -->
+<!-- Hero Section avec Introduction intégrée -->
     <section class="hero">
         <div class="container hero-content">
             <h1><span class="notranslate">HorsePrint</span> <span class="hero-pro notranslate">PRO</span></h1>

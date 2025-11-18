@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Questions Fréquentes | HorsePrint Pro - Solutions Textiles Équestres</title>
+    <meta name="description" content="FAQ HorsePrint Pro : Réponses aux questions sur la personnalisation textile équestre, devis, délais, techniques d'impression, livraison et qualité pour professionnels.">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="FAQ textile équestre, questions personnalisation, devis textile cheval, délais production, broderie équestre, impression textile">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FAQ - Questions Fréquentes | HorsePrint Pro">
+    <meta property="og:description" content="Toutes les réponses à vos questions sur la personnalisation textile équestre professionnelle">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pro.horseprint.fr/faq.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🐴</text></svg>">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/conversion.css">
+    <link rel="stylesheet" href="css/footer-whatsapp.css">
+
+    <!-- Google Translate -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Schema.org FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Comment obtenir un devis personnalisé ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Contactez-nous par email (hello@horseprint.fr), téléphone (07 66 24 40 09) ou WhatsApp. Fournissez vos besoins (type de produit, quantités, personnalisation souhaitée) et recevez votre devis gratuit sous 24h."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels sont les délais de production ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Commandes standards : 10-15 jours ouvrés. Commandes complexes : 15-21 jours. Délais express disponibles sur demande. Les délais commencent après validation du BAT et réception de l'acompte."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle est la quantité minimale de commande ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pas de minimum imposé chez HorsePrint Pro ! Nous traitons aussi bien les petites commandes (dès 1 pièce) que les grandes séries. Tarifs dégressifs selon les quantités."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        .faq-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 80px 20px 60px;
+        }
+
+        .faq-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .faq-header h1 {
+            font-size: 2.8rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .faq-header p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .faq-search {
+            max-width: 600px;
+            margin: 40px auto;
+            position: relative;
+        }
+
+        .faq-search input {
+            width: 100%;
+            padding: 15px 50px 15px 20px;
+            font-size: 1.1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+
+        .faq-search input:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+
+        .faq-search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #7f8c8d;
+        }
+
+        .faq-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .faq-category-btn {
+            padding: 10px 25px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .faq-category-btn:hover,
+        .faq-category-btn.active {
+            background: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+
+        .faq-section {
+            margin-bottom: 50px;
+        }
+
+        .faq-section-title {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .faq-section-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .faq-question {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            user-select: none;
+        }
+
+        .faq-question h3 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin: 0;
+            flex: 1;
+        }
+
+        .faq-toggle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #3498db;
+            transition: all 0.3s;
+            flex-shrink: 0;
+        }
+
+        .faq-item.active .faq-toggle {
+            background: #3498db;
+            color: white;
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        .faq-answer-content {
+            padding: 0 30px 25px 30px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .faq-answer-content p {
+            margin-bottom: 15px;
+        }
+
+        .faq-answer-content ul,
+        .faq-answer-content ol {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        .faq-answer-content li {
+            margin-bottom: 8px;
+        }
+
+        .faq-answer-content strong {
+            color: #2c3e50;
+        }
+
+        .faq-highlight {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .faq-cta {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 50px 30px;
+            border-radius: 16px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .faq-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .faq-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .faq-cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .faq-cta-btn {
+            padding: 15px 40px;
+            background: white;
+            color: #3498db;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .faq-cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .faq-cta-btn.secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .faq-cta-btn.secondary:hover {
+            background: white;
+            color: #3498db;
+        }
+
+        @media (max-width: 768px) {
+            .faq-header h1 {
+                font-size: 2rem;
+            }
+
+            .faq-section-title {
+                font-size: 1.5rem;
+            }
+
+            .faq-question {
+                padding: 20px 20px;
+            }
+
+            .faq-question h3 {
+                font-size: 1.05rem;
+            }
+
+            .faq-answer-content {
+                padding: 0 20px 20px 20px;
+            }
+
+            .faq-cta h2 {
+                font-size: 1.5rem;
+            }
+
+            .faq-cta-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Universel -->
+    <header>
+        <nav class="container">
+            <div class="mobile-nav-header">
+                <a href="index.html" class="back-arrow" title="Retour à l'accueil" aria-label="Retour à l'accueil">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                </a>
+
+                <div class="logo notranslate" onclick="goToHome()" style="cursor: pointer;">
+                    HorsePrint
+                    <span class="logo-pro">PRO</span>
+                </div>
+            </div>
+
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu de navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="mobileMenu">
+                <li class="dropdown">
+                    <a href="index.html#products" class="dropdown-toggle">Nos produits</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#products">Équipements cheval</a></li>
+                        <li><a href="index.html#textile">Textile staff, officiels et cavaliers</a></li>
+                        <li><a href="index.html#signage">Signalétique</a></li>
+                        <li><a href="index.html#access">Gestion d'accès</a></li>
+                        <li><a href="index.html#merchandising">Boutique officielle</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#innovation">Technologie</a></li>
+                <li><a href="index.html#levels">Nos offres</a></li>
+                <li><a href="index.html#contact">Devis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Widget de traduction -->
+    <div class="translate-widget">
+        <button class="translate-toggle" onclick="toggleTranslate()" aria-label="Ouvrir le menu de traduction">
+            🌐 Traduire
+        </button>
+        <div class="translate-content" id="translateContent">
+            <div id="google_translate_element"></div>
+
+            <div class="language-flags" style="display: none;">
+                <button class="flag-btn active" onclick="translateTo('fr')" title="Français" aria-label="Traduire en français">🇫🇷</button>
+                <button class="flag-btn" onclick="translateTo('en')" title="English" aria-label="Translate to English">🇬🇧</button>
+                <button class="flag-btn" onclick="translateTo('es')" title="Español" aria-label="Traducir al español">🇪🇸</button>
+                <button class="flag-btn" onclick="translateTo('de')" title="Deutsch" aria-label="Auf Deutsch übersetzen">🇩🇪</button>
+                <button class="flag-btn" onclick="translateTo('it')" title="Italiano" aria-label="Traduci in italiano">🇮🇹</button>
+                <button class="flag-btn" onclick="translateTo('nl')" title="Nederlands" aria-label="Vertalen naar Nederlands">🇳🇱</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bouton WhatsApp Flottant -->
+    <a href="https://wa.me/33766244009?text=Bonjour%2C%20je%20souhaite%20un%20devis%20HorsePrint%20Pro"
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contactez-nous sur WhatsApp"
+       title="Contactez-nous sur WhatsApp">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 0C7.164 0 0 7.164 0 16c0 2.835.745 5.498 2.044 7.805L.07 31.312l7.735-2.028A15.905 15.905 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0z" fill="#25D366"/>
+            <path d="M25.5 22.7c-.3.85-1.75 1.55-2.85 1.7-.75.1-1.75.15-5.05-1.1-4.2-1.6-6.9-5.9-7.1-6.15-.2-.25-1.7-2.25-1.7-4.3s1.1-3.05 1.5-3.45c.35-.35.85-.5 1.15-.5.25 0 .5 0 .7.05.25.05.55-.05.85.65.3.75 1.05 2.55 1.15 2.75.1.2.15.4.05.65-.1.25-.2.35-.35.55-.2.2-.35.35-.55.55-.15.2-.35.4-.15.75.2.35.9 1.5 1.95 2.45 1.35 1.2 2.45 1.6 2.85 1.75.35.15.55.1.75-.1.2-.2.85-.95 1.05-1.3.2-.35.45-.3.75-.15.3.15 1.95.95 2.3 1.1.35.15.6.25.7.35.1.15.1.75-.2 1.55z" fill="#fff"/>
+        </svg>
+        <span class="whatsapp-pulse"></span>
+    </a>
+
+    <!-- Contenu Principal -->
+    <main>
+        <div class="faq-container">
+            <div class="faq-header">
+                <h1>Questions Fréquentes (FAQ)</h1>
+                <p>Trouvez rapidement les réponses à vos questions sur la personnalisation textile équestre professionnelle</p>
+            </div>
+
+            <!-- Barre de recherche -->
+            <div class="faq-search">
+                <input type="text" id="faqSearch" placeholder="Rechercher une question..." aria-label="Rechercher dans la FAQ">
+                <span class="faq-search-icon">🔍</span>
+            </div>
+
+            <!-- Catégories -->
+            <div class="faq-categories">
+                <button class="faq-category-btn active" data-category="all">Toutes</button>
+                <button class="faq-category-btn" data-category="commande">Commande & Devis</button>
+                <button class="faq-category-btn" data-category="technique">Techniques</button>
+                <button class="faq-category-btn" data-category="livraison">Livraison</button>
+                <button class="faq-category-btn" data-category="qualite">Qualité</button>
+                <button class="faq-category-btn" data-category="paiement">Paiement</button>
+            </div>
+
+            <!-- Section 1: Commande & Devis -->
+            <div class="faq-section" data-category="commande">
+                <h2 class="faq-section-title">
+                    <span class="faq-section-icon">📋</span>
+                    Commande & Devis
+                </h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Comment obtenir un devis personnalisé ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Obtenir un devis chez HorsePrint Pro est simple et rapide :</p>
+                            <ol>
+                                <li><strong>Contactez-nous</strong> par email (hello@horseprint.fr), téléphone (07 66 24 40 09) ou WhatsApp</li>
+                                <li><strong>Décrivez votre projet</strong> : type de produit, quantités, personnalisation souhaitée</li>
+                                <li><strong>Envoyez vos visuels</strong> (logos, textes) en haute définition si possible</li>
+                                <li><strong>Recevez votre devis gratuit sous 24h</strong> avec tous les détails</li>
+                            </ol>
+                            <div class="faq-highlight">
+                                <strong>⏱️ Devis express sous 24h</strong> - Gratuit et sans engagement !
+                            </div>
+                            <p>Notre équipe vous accompagne pour définir la meilleure solution adaptée à vos besoins et votre budget.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Quelle est la quantité minimale de commande ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>Bonne nouvelle : pas de minimum imposé chez HorsePrint Pro !</strong></p>
+                            <p>Nous traitons aussi bien :</p>
+                            <ul>
+                                <li><strong>Petites commandes</strong> : dès 1 pièce pour vos besoins ponctuels</li>
+                                <li><strong>Commandes moyennes</strong> : de 10 à 50 pièces pour clubs et écuries</li>
+                                <li><strong>Grandes séries</strong> : 100+ pièces pour événements et boutiques officielles</li>
+                            </ul>
+                            <div class="faq-highlight">
+                                <strong>💰 Tarifs dégressifs</strong> - Plus vous commandez, plus le prix unitaire baisse !
+                            </div>
+                            <p>Nos paliers de remise : à partir de 10, 25, 50, 100 et 250 pièces.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Combien de temps est valable un devis ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Nos devis sont valables <strong>30 jours</strong> à compter de leur date d'émission, sauf mention contraire indiquée sur le devis.</p>
+                            <p>Au-delà de ce délai :</p>
+                            <ul>
+                                <li>Les prix peuvent être révisés en fonction des variations de nos coûts matières</li>
+                                <li>La disponibilité des produits et coloris peut évoluer</li>
+                                <li>Vous pouvez demander une mise à jour gratuite du devis</li>
+                            </ul>
+                            <p><strong>Conseil :</strong> Pour bénéficier du tarif proposé, validez votre devis dans les 30 jours !</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Puis-je modifier ma commande après validation ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Les modifications sont possibles selon l'avancement de votre commande :</p>
+                            <ul>
+                                <li><strong>Avant validation du BAT</strong> : modifications gratuites et illimitées</li>
+                                <li><strong>Après validation du BAT mais avant production</strong> : modifications possibles avec validation d'un nouveau BAT (peut entraîner un léger délai supplémentaire)</li>
+                                <li><strong>Production lancée</strong> : modifications impossibles pour la partie en production, mais possibles pour la suite</li>
+                            </ul>
+                            <div class="faq-highlight">
+                                <strong>⚠️ Important :</strong> Relisez attentivement votre BAT avant validation - il s'agit de votre approbation finale !
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Qu'est-ce qu'un BAT (Bon À Tirer) ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Le <strong>BAT (Bon À Tirer)</strong> est un document visuel qui vous présente le rendu final de votre personnalisation avant production.</p>
+                            <p><strong>Il contient :</strong></p>
+                            <ul>
+                                <li>L'aperçu de votre logo/texte sur le produit</li>
+                                <li>Les dimensions exactes</li>
+                                <li>Les couleurs utilisées</li>
+                                <li>Le positionnement de la personnalisation</li>
+                                <li>La technique utilisée (broderie, impression, etc.)</li>
+                            </ul>
+                            <p><strong>Pourquoi c'est important ?</strong></p>
+                            <p>En validant le BAT, vous confirmez que tout est conforme à vos attentes. La production ne commence qu'après votre validation écrite.</p>
+                            <div class="faq-highlight">
+                                <strong>✅ Vérifiez bien :</strong> orthographe, couleurs, dimensions, positionnement !
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Délais & Livraison -->
+            <div class="faq-section" data-category="livraison">
+                <h2 class="faq-section-title">
+                    <span class="faq-section-icon">🚚</span>
+                    Délais & Livraison
+                </h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Quels sont les délais de production ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Les délais varient selon la complexité de votre projet :</p>
+                            <ul>
+                                <li><strong>Commandes standards</strong> (polo, t-shirt simple) : <strong>10 à 15 jours ouvrés</strong></li>
+                                <li><strong>Commandes personnalisées complexes</strong> (broderies multi-couleurs, produits techniques) : <strong>15 à 21 jours ouvrés</strong></li>
+                                <li><strong>Commandes urgentes</strong> : délais express disponibles sur demande avec supplément tarifaire</li>
+                            </ul>
+                            <div class="faq-highlight">
+                                <strong>📅 Le délai commence après :</strong><br>
+                                ✓ Validation du BAT par vos soins<br>
+                                ✓ Réception de l'acompte (si applicable)<br>
+                                ✓ Fourniture de tous les éléments (logos HD, mesures...)
+                            </div>
+                            <p>Nous vous tenons informés à chaque étape de production.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Livrez-vous partout en France et à l'international ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>Oui, nous livrons dans toute l'Europe et au-delà !</strong></p>
+                            <p><strong>Zones et délais de livraison :</strong></p>
+                            <ul>
+                                <li><strong>🇫🇷 France métropolitaine</strong> : 3-5 jours ouvrés après expédition</li>
+                                <li><strong>🇪🇺 Union Européenne</strong> : 5-10 jours ouvrés</li>
+                                <li><strong>🌍 International</strong> : délais sur demande selon destination</li>
+                            </ul>
+                            <div class="faq-highlight">
+                                <strong>🎁 Franco de port</strong> pour les commandes > 1 000€ HT en France métropolitaine !
+                            </div>
+                            <p>Toutes nos expéditions sont assurées et suivies. Vous recevez un numéro de tracking dès l'expédition.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Comment suivre ma commande ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Nous vous tenons informés à chaque étape :</p>
+                            <ol>
+                                <li><strong>Validation de commande</strong> : confirmation par email avec récapitulatif</li>
+                                <li><strong>BAT envoyé</strong> : vous recevez le visuel pour validation</li>
+                                <li><strong>Production lancée</strong> : notification de début de fabrication</li>
+                                <li><strong>Expédition</strong> : email avec numéro de suivi transporteur</li>
+                                <li><strong>Livraison</strong> : notification de livraison imminente</li>
+                            </ol>
+                            <p>Vous pouvez également nous contacter à tout moment pour un point sur votre commande : <a href="mailto:hello@horseprint.fr">hello@horseprint.fr</a> ou <a href="https://wa.me/33766244009">WhatsApp</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Que faire si mon colis arrive endommagé ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>Procédure à suivre impérativement :</strong></p>
+                            <ol>
+                                <li><strong>À la réception</strong> : vérifiez l'état du colis en présence du livreur</li>
+                                <li><strong>Si endommagé</strong> : notez des réserves précises sur le bon de livraison ("colis enfoncé", "carton déchiré", etc.)</li>
+                                <li><strong>Refusez le colis</strong> si les dommages sont trop importants</li>
+                                <li><strong>Prenez des photos</strong> du colis et des produits endommagés</li>
+                                <li><strong>Contactez-nous sous 48h</strong> avec photos et bon de livraison annoté</li>
+                            </ol>
+                            <div class="faq-highlight">
+                                <strong>⚠️ Important :</strong> Les réserves doivent être confirmées par écrit sous 48h par email pour être prises en compte.
+                            </div>
+                            <p>Nous traitons immédiatement votre dossier et proposons un remplacement ou remboursement selon le cas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Techniques de personnalisation -->
+            <div class="faq-section" data-category="technique">
+                <h2 class="faq-section-title">
+                    <span class="faq-section-icon">🎨</span>
+                    Techniques de Personnalisation
+                </h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Quelle technique de personnalisation choisir ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Nous proposons plusieurs techniques, chacune ayant ses avantages :</p>
+
+                            <p><strong>🧵 Broderie</strong></p>
+                            <ul>
+                                <li><strong>Idéal pour :</strong> logos, textes, aspect premium et durable</li>
+                                <li><strong>Avantages :</strong> très résistant, aspect haut de gamme, ne se décolle pas</li>
+                                <li><strong>Limites :</strong> détails fins difficiles, nombre de couleurs limité</li>
+                                <li><strong>Produits :</strong> polos, sweats, vestes, casquettes, tapis</li>
+                            </ul>
+
+                            <p><strong>🖨️ Impression numérique (DTG)</strong></p>
+                            <ul>
+                                <li><strong>Idéal pour :</strong> visuels complexes, photos, dégradés</li>
+                                <li><strong>Avantages :</strong> rendu fidèle, couleurs illimitées, détails fins</li>
+                                <li><strong>Limites :</strong> moins résistant que la broderie sur certains textiles</li>
+                                <li><strong>Produits :</strong> t-shirts, débardeurs, textiles clairs principalement</li>
+                            </ul>
+
+                            <p><strong>🔥 Flex / Flock</strong></p>
+                            <ul>
+                                <li><strong>Idéal pour :</strong> noms, numéros, logos simples unis</li>
+                                <li><strong>Avantages :</strong> rapide, économique, couleurs vives</li>
+                                <li><strong>Limites :</strong> pas de dégradés, découpe de formes simples</li>
+                                <li><strong>Produits :</strong> tous textiles, dorsaux, numéros</li>
+                            </ul>
+
+                            <p><strong>📄 Sérigraphie</strong></p>
+                            <ul>
+                                <li><strong>Idéal pour :</strong> grandes séries (>50 pcs), rendu professionnel</li>
+                                <li><strong>Avantages :</strong> très résistant, prix dégressif sur grandes quantités</li>
+                                <li><strong>Limites :</strong> coûteux pour petites séries, calages par couleur</li>
+                                <li><strong>Produits :</strong> t-shirts, sweats, grandes séries événementielles</li>
+                            </ul>
+
+                            <div class="faq-highlight">
+                                <strong>💡 Pas sûr de votre choix ?</strong> Nos experts vous conseillent la technique optimale selon votre projet !
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Quels formats de fichiers fournir pour la personnalisation ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>Formats acceptés et recommandés :</strong></p>
+
+                            <p><strong>✅ Formats vectoriels (IDÉAL)</strong></p>
+                            <ul>
+                                <li><strong>.AI</strong> (Adobe Illustrator)</li>
+                                <li><strong>.EPS</strong> (Encapsulated PostScript)</li>
+                                <li><strong>.SVG</strong> (Scalable Vector Graphics)</li>
+                                <li><strong>.PDF</strong> vectoriel (haute qualité)</li>
+                            </ul>
+                            <p><em>👍 Avantage : redimensionnables sans perte de qualité</em></p>
+
+                            <p><strong>⚠️ Formats bitmap (acceptable en haute résolution)</strong></p>
+                            <ul>
+                                <li><strong>.PNG</strong> (fond transparent recommandé) - min 300 DPI</li>
+                                <li><strong>.JPG / .JPEG</strong> - min 300 DPI</li>
+                                <li><strong>.TIFF</strong> - haute résolution</li>
+                            </ul>
+                            <p><em>Résolution minimale : 300 DPI à la taille finale d'impression</em></p>
+
+                            <div class="faq-highlight">
+                                <strong>❌ Formats à éviter :</strong> images web basse résolution, captures d'écran, logos extraits de sites internet
+                            </div>
+
+                            <p><strong>Vous n'avez pas le bon format ?</strong> Pas de panique ! Envoyez-nous ce que vous avez, nous vous dirons si c'est exploitable ou si nous pouvons le retravailler (service de vectorisation disponible).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Puis-je personnaliser mes propres produits (apport textile) ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>Oui, nous proposons le service de personnalisation sur apport !</strong></p>
+
+                            <p><strong>Comment ça marche ?</strong></p>
+                            <ol>
+                                <li>Vous nous envoyez vos textiles (neufs ou à personnaliser)</li>
+                                <li>Nous validons la faisabilité technique</li>
+                                <li>Nous réalisons la personnalisation (broderie, impression, etc.)</li>
+                                <li>Nous vous renvoyons vos produits personnalisés</li>
+                            </ol>
+
+                            <p><strong>Conditions :</strong></p>
+                            <ul>
+                                <li>Textiles propres et en bon état</li>
+                                <li>Matière compatible avec la technique souhaitée</li>
+                                <li>Nous déclinons toute responsabilité en cas de défaut préexistant</li>
+                                <li>Les frais de port aller-retour sont à votre charge</li>
+                            </ul>
+
+                            <div class="faq-highlight">
+                                <strong>💡 Conseil :</strong> Contactez-nous avant envoi pour valider la faisabilité et obtenir un devis !
+                            </div>
+
+                            <p><strong>Note :</strong> Nous recommandons nos propres textiles pour garantir une qualité optimale et homogène.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Combien de couleurs puis-je utiliser pour mon logo ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Le nombre de couleurs dépend de la technique utilisée :</p>
+
+                            <p><strong>🧵 Broderie</strong></p>
+                            <ul>
+                                <li><strong>Standard :</strong> jusqu'à 8-10 couleurs</li>
+                                <li><strong>Recommandé :</strong> 3-5 couleurs pour un rendu optimal</li>
+                                <li>Chaque couleur supplémentaire augmente le temps et le coût</li>
+                            </ul>
+
+                            <p><strong>🖨️ Impression numérique (DTG)</strong></p>
+                            <ul>
+                                <li><strong>Illimité !</strong> Quadrichromie CMJN + blanc</li>
+                                <li>Idéal pour photos et dégradés</li>
+                                <li>Pas de surcoût pour les couleurs</li>
+                            </ul>
+
+                            <p><strong>🔥 Flex / Flock</strong></p>
+                            <ul>
+                                <li>1 couleur par élément</li>
+                                <li>Possibilité de superposer plusieurs couleurs (surcoût)</li>
+                            </ul>
+
+                            <p><strong>📄 Sérigraphie</strong></p>
+                            <ul>
+                                <li><strong>Standard :</strong> 1 à 4 couleurs</li>
+                                <li>Chaque couleur = 1 passage = coût supplémentaire</li>
+                                <li>À partir de 5 couleurs, l'impression numérique devient plus économique</li>
+                            </ul>
+
+                            <div class="faq-highlight">
+                                <strong>💡 Astuce :</strong> Simplifiez votre logo en 2-3 couleurs pour optimiser les coûts tout en gardant un rendu professionnel !
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: Qualité & Matières -->
+            <div class="faq-section" data-category="qualite">
+                <h2 class="faq-section-title">
+                    <span class="faq-section-icon">⭐</span>
+                    Qualité & Matières
+                </h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Quelle est la qualité des textiles utilisés ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>Nous sélectionnons rigoureusement nos fournisseurs pour garantir une qualité professionnelle :</strong></p>
+
+                            <p><strong>🏆 Marques partenaires reconnues :</strong></p>
+                            <ul>
+                                <li>Fruit of the Loom</li>
+                                <li>Gildan</li>
+                                <li>B&C Collection</li>
+                                <li>Kariban</li>
+                                <li>Russell</li>
+                                <li>Et d'autres marques premium sur demande</li>
+                            </ul>
+
+                            <p><strong>✅ Nos engagements qualité :</strong></p>
+                            <ul>
+                                <li><strong>100% Made in Europe</strong> pour la majorité de nos gammes</li>
+                                <li>Textiles certifiés Oeko-Tex (sans substances nocives)</li>
+                                <li>Grammages professionnels (180-220 g/m² pour polos, 280-350 g/m² pour sweats)</li>
+                                <li>Prélavage anti-rétrécissement</li>
+                                <li>Coutures renforcées double piqûre</li>
+                            </ul>
+
+                            <div class="faq-highlight">
+                                <strong>🌱 Option écologique :</strong> Gamme coton bio certifié GOTS disponible sur demande
+                            </div>
+
+                            <p>Nous pouvons vous envoyer des échantillons avant commande pour valider la qualité et les coloris.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Les personnalisations résistent-elles aux lavages ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>Oui ! Nos personnalisations sont conçues pour durer.</strong></p>
+
+                            <p><strong>🧵 Broderie :</strong></p>
+                            <ul>
+                                <li>Technique la plus résistante</li>
+                                <li>Tient des centaines de lavages</li>
+                                <li>Ne se décolle pas, ne se fissure pas</li>
+                                <li>Conserve ses couleurs dans le temps</li>
+                            </ul>
+
+                            <p><strong>🖨️ Impression numérique :</strong></p>
+                            <ul>
+                                <li>Résiste à 40-60 lavages minimum en suivant les consignes</li>
+                                <li>Utilisation d'encres textiles professionnelles</li>
+                                <li>Peut légèrement s'estomper après usage intensif</li>
+                            </ul>
+
+                            <p><strong>🔥 Flex / Flock :</strong></p>
+                            <ul>
+                                <li>Très bonne résistance (50-100 lavages)</li>
+                                <li>Thermofix haute température</li>
+                                <li>Peut se décoller si mal entretenu</li>
+                            </ul>
+
+                            <p><strong>📋 Consignes d'entretien pour maximiser la durée de vie :</strong></p>
+                            <ol>
+                                <li>Laver à l'envers à 30-40°C maximum</li>
+                                <li>Éviter le sèche-linge intensif (préférer séchage à l'air)</li>
+                                <li>Repasser à l'envers ou avec un tissu de protection</li>
+                                <li>Éviter l'eau de javel et les détergents agressifs</li>
+                                <li>Ne pas repasser directement sur les impressions</li>
+                            </ol>
+
+                            <div class="faq-highlight">
+                                <strong>📜 Garantie :</strong> Nous garantissons la qualité de nos personnalisations pendant 1 an en usage normal
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Proposez-vous des échantillons avant commande ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>Oui, nous proposons plusieurs options d'échantillonnage :</strong></p>
+
+                            <p><strong>1️⃣ Échantillons de matières (gratuits)</strong></p>
+                            <ul>
+                                <li>Nous pouvons vous envoyer des nuanciers de couleurs</li>
+                                <li>Échantillons de tissus (petits morceaux) pour toucher la matière</li>
+                                <li>Idéal pour valider couleurs et qualité textile</li>
+                            </ul>
+
+                            <p><strong>2️⃣ Pièce prototype personnalisée (payante)</strong></p>
+                            <ul>
+                                <li>Production d'1 exemplaire avec votre personnalisation exacte</li>
+                                <li>Permet de valider le rendu final avant grande série</li>
+                                <li>Coût déduit si commande validée ensuite</li>
+                                <li>Délai : 5-7 jours ouvrés</li>
+                            </ul>
+
+                            <p><strong>3️⃣ Produits vierges (textiles seuls)</strong></p>
+                            <ul>
+                                <li>Envoi de produits non personnalisés pour test</li>
+                                <li>Vous payez uniquement le textile + frais de port</li>
+                                <li>Parfait pour valider tailles et coupes</li>
+                            </ul>
+
+                            <div class="faq-highlight">
+                                <strong>💼 Grands comptes :</strong> Pour les commandes > 5 000€, nous offrons généralement 1 prototype gratuit
+                            </div>
+
+                            <p>Contactez-nous pour discuter de la meilleure option pour votre projet !</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Comment choisir la bonne taille ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>Nous fournissons des guides des tailles détaillés pour chaque produit.</strong></p>
+
+                            <p><strong>📏 Conseils pour bien choisir :</strong></p>
+                            <ol>
+                                <li><strong>Consultez notre guide des tailles</strong> disponible sur chaque fiche produit</li>
+                                <li><strong>Mesurez un vêtement similaire</strong> que vous portez déjà</li>
+                                <li><strong>Prenez vos mesures</strong> (tour de poitrine, épaules, longueur) et comparez au tableau</li>
+                                <li><strong>En cas de doute</strong>, prenez la taille au-dessus pour plus de confort</li>
+                            </ol>
+
+                            <p><strong>💡 Spécificités par type :</strong></p>
+                            <ul>
+                                <li><strong>Polos techniques :</strong> coupe ajustée, prendre sa taille habituelle</li>
+                                <li><strong>Sweats et hoodies :</strong> coupe confortable, taille normale</li>
+                                <li><strong>Vestes :</strong> prévoir une taille au-dessus si port sur pull</li>
+                                <li><strong>T-shirts :</strong> vérifier si coupe homme/femme/unisexe</li>
+                            </ul>
+
+                            <p><strong>🎯 Tailles spéciales disponibles :</strong></p>
+                            <ul>
+                                <li>Du XS au 5XL selon les modèles</li>
+                                <li>Tailles enfants disponibles</li>
+                                <li>Coupes féminines cintrées</li>
+                                <li>Sur-mesure possible pour grandes tailles</li>
+                            </ul>
+
+                            <div class="faq-highlight">
+                                <strong>📞 Besoin d'aide ?</strong> Notre équipe vous conseille pour éviter les erreurs de tailles : <a href="https://wa.me/33766244009">WhatsApp 07 66 24 40 09</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 5: Paiement & Facturation -->
+            <div class="faq-section" data-category="paiement">
+                <h2 class="faq-section-title">
+                    <span class="faq-section-icon">💳</span>
+                    Paiement & Facturation
+                </h2>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Quels sont les moyens de paiement acceptés ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>Nous acceptons plusieurs modes de paiement professionnels :</strong></p>
+
+                            <p><strong>💳 Carte bancaire professionnelle</strong></p>
+                            <ul>
+                                <li>Paiement sécurisé 3D Secure</li>
+                                <li>CB, Visa, Mastercard, American Express</li>
+                                <li>Paiement immédiat en ligne</li>
+                            </ul>
+
+                            <p><strong>🏦 Virement bancaire</strong></p>
+                            <ul>
+                                <li>IBAN fourni sur le devis</li>
+                                <li>Précisez le numéro de commande en référence</li>
+                                <li>Délai de traitement : 1-2 jours ouvrés</li>
+                            </ul>
+
+                            <p><strong>📄 Chèque professionnel</strong></p>
+                            <ul>
+                                <li>À l'ordre de HorsePrint</li>
+                                <li>Envoi à l'adresse indiquée sur le devis</li>
+                                <li>Production lancée après encaissement</li>
+                            </ul>
+
+                            <p><strong>⏰ Paiement différé (clients réguliers)</strong></p>
+                            <ul>
+                                <li>30 jours fin de mois après étude de dossier</li>
+                                <li>Réservé aux clients professionnels avec extrait Kbis</li>
+                                <li>Soumis à validation de notre service comptable</li>
+                            </ul>
+
+                            <div class="faq-highlight">
+                                <strong>🔒 Paiements 100% sécurisés</strong> - Vos données bancaires sont cryptées et protégées
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Faut-il payer un acompte ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>Cela dépend du montant de votre commande :</strong></p>
+
+                            <p><strong>Conditions de paiement standard :</strong></p>
+                            <ul>
+                                <li><strong>Commandes < 500€ HT</strong> : paiement intégral à la commande</li>
+                                <li><strong>Commandes ≥ 500€ HT</strong> : acompte de 50% à la commande, solde avant expédition</li>
+                                <li><strong>Commandes > 5 000€ HT</strong> : conditions de paiement négociables (échelonnement possible)</li>
+                            </ul>
+
+                            <p><strong>Pourquoi un acompte ?</strong></p>
+                            <ul>
+                                <li>Valide votre engagement de commande</li>
+                                <li>Permet de lancer la production en toute sécurité</li>
+                                <li>Couvre les coûts de personnalisation spécifiques</li>
+                            </ul>
+
+                            <div class="faq-highlight">
+                                <strong>💡 Bon à savoir :</strong> L'acompte n'est demandé qu'après validation du BAT par vos soins
+                            </div>
+
+                            <p>Le solde est à régler avant expédition de la commande. Nous acceptons le paiement en plusieurs fois pour les grandes commandes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Les prix sont-ils TTC ou HT ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>Tous nos tarifs professionnels sont affichés <u>Hors Taxes (HT)</u>.</strong></p>
+
+                            <p><strong>Pourquoi HT ?</strong></p>
+                            <ul>
+                                <li>Nous travaillons exclusivement avec des professionnels (B2B)</li>
+                                <li>Les entreprises assujetties à la TVA peuvent la récupérer</li>
+                                <li>Permet une transparence tarifaire internationale</li>
+                            </ul>
+
+                            <p><strong>Taux de TVA applicables :</strong></p>
+                            <ul>
+                                <li><strong>France métropolitaine :</strong> 20% (taux standard textile)</li>
+                                <li><strong>DOM-TOM :</strong> taux spécifiques selon la région</li>
+                                <li><strong>Union Européenne :</strong> TVA 0% si numéro TVA intracommunautaire valide fourni</li>
+                                <li><strong>Export hors UE :</strong> TVA 0% (hors taxes)</li>
+                            </ul>
+
+                            <div class="faq-highlight">
+                                <strong>📄 Facture conforme :</strong> Nous délivrons systématiquement une facture avec mention de la TVA pour vos obligations comptables
+                            </div>
+
+                            <p>Pour obtenir une facturation HT (auto-liquidation TVA UE), fournissez-nous votre numéro de TVA intracommunautaire valide.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Puis-je obtenir une facture acquittée ?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p><strong>Oui, absolument !</strong></p>
+
+                            <p><strong>📧 Envoi automatique :</strong></p>
+                            <ul>
+                                <li>Facture pro forma envoyée avec le devis</li>
+                                <li>Facture acquittée envoyée par email dès réception du paiement intégral</li>
+                                <li>Format PDF pour archivage et comptabilité</li>
+                            </ul>
+
+                            <p><strong>Contenu de la facture :</strong></p>
+                            <ul>
+                                <li>Détail des produits et quantités</li>
+                                <li>Prix unitaires et totaux HT/TTC</li>
+                                <li>TVA applicable</li>
+                                <li>Coordonnées complètes (SIRET, TVA, etc.)</li>
+                                <li>Conditions de paiement et date d'échéance</li>
+                                <li>Mention "Facture acquittée" si soldée</li>
+                            </ul>
+
+                            <div class="faq-highlight">
+                                <strong>🧾 Conformité comptable :</strong> Nos factures respectent toutes les obligations légales françaises et européennes
+                            </div>
+
+                            <p>Pour toute demande spécifique (duplicata, facture rectificative, etc.), contactez-nous : <a href="mailto:hello@horseprint.fr">hello@horseprint.fr</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Final -->
+            <div class="faq-cta">
+                <h2>Vous n'avez pas trouvé la réponse ?</h2>
+                <p>Notre équipe est là pour répondre à toutes vos questions et vous accompagner dans votre projet</p>
+                <div class="faq-cta-buttons">
+                    <a href="https://wa.me/33766244009?text=Bonjour%2C%20j'ai%20une%20question" class="faq-cta-btn" target="_blank" rel="noopener">
+                        💬 Nous contacter sur WhatsApp
+                    </a>
+                    <a href="index.html#contact" class="faq-cta-btn secondary">
+                        📧 Demander un devis gratuit
+                    </a>
+                    <a href="tel:+33766244009" class="faq-cta-btn secondary">
+                        📞 Appelez-nous : 07 66 24 40 09
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Universel -->
+    <footer itemscope itemtype="http://schema.org/Organization">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-about">
+                        <h3 class="notranslate" itemprop="name">HorsePrint <span style="font-weight: 700;">PRO</span></h3>
+                        <p itemprop="description">Solutions textiles sur-mesure pour l'univers équestre professionnel. De l'équipement technique à la communication visuelle, nous accompagnons tous vos projets avec expertise et innovation.</p>
+
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/horseprint" target="_blank" rel="noopener noreferrer" aria-label="Facebook HorsePrint" title="Suivez-nous sur Facebook">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </a>
+                            <a href="https://www.instagram.com/horseprint" target="_blank" rel="noopener noreferrer" aria-label="Instagram HorsePrint" title="Suivez-nous sur Instagram">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/company/horseprint" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn HorsePrint" title="Suivez-nous sur LinkedIn">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>Produits</h4>
+                            <ul>
+                                <li><a href="index.html#products">Équipements cheval</a></li>
+                                <li><a href="index.html#textile">Textile professionnel</a></li>
+                                <li><a href="index.html#signage">Signalétique</a></li>
+                                <li><a href="index.html#merchandising">Merchandising</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Collections</h4>
+                            <ul>
+                                <li><a href="polos.html">Polos personnalisés</a></li>
+                                <li><a href="tshirts.html">T-shirts</a></li>
+                                <li><a href="sweats.html">Sweats & Gilets</a></li>
+                                <li><a href="bodywarmer-vestes.html">Vestes & Bodywarmers</a></li>
+                                <li><a href="bonnets-casquettes.html">Bonnets & Casquettes</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Entreprise</h4>
+                            <ul>
+                                <li><a href="index.html#innovation">Notre technologie</a></li>
+                                <li><a href="index.html#levels">Nos solutions</a></li>
+                                <li><a href="index.html#contact">Demande de devis</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Contact</h4>
+                            <ul itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+                                <li><a href="mailto:hello@horseprint.fr" itemprop="email">hello@horseprint.fr</a></li>
+                                <li><a href="https://www.horseprint.fr" target="_blank" rel="noopener" itemprop="url">www.horseprint.fr</a></li>
+                                <li><span itemprop="contactType">Service Commercial</span></li>
+                                <li><span itemprop="areaServed">France & International</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Badges de confiance -->
+                <div class="footer-trust-badges">
+                    <div class="trust-badge">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        <span>Paiement<br>sécurisé</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                            <line x1="1" y1="10" x2="23" y2="10"/>
+                        </svg>
+                        <span>Devis gratuit<br>sous 24h</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Production<br>Europe</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                        <span>Certification<br>qualité</span>
+                    </div>
+                </div>
+
+                <!-- Copyright et mentions légales -->
+                <div class="footer-bottom">
+                    <p>&copy; 2025 <span class="notranslate">HorsePrint</span> — Solutions équestres sur-mesure | Tous droits réservés</p>
+                    <div class="footer-legal">
+                        <a href="mentions-legales.html">Mentions légales</a>
+                        <span>•</span>
+                        <a href="confidentialite.html">Confidentialité</a>
+                        <span>•</span>
+                        <a href="cgv.html">CGV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Toggle FAQ items
+        function toggleFaq(element) {
+            const item = element.parentElement;
+            const answer = item.querySelector('.faq-answer');
+            const wasActive = item.classList.contains('active');
+
+            // Close all items
+            document.querySelectorAll('.faq-item').forEach(i => {
+                i.classList.remove('active');
+                i.querySelector('.faq-answer').style.maxHeight = null;
+            });
+
+            // Open clicked item if it wasn't active
+            if (!wasActive) {
+                item.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        }
+
+        // Search functionality
+        document.getElementById('faqSearch').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const items = document.querySelectorAll('.faq-item');
+
+            items.forEach(item => {
+                const question = item.querySelector('.faq-question h3').textContent.toLowerCase();
+                const answer = item.querySelector('.faq-answer-content').textContent.toLowerCase();
+
+                if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // Category filter
+        document.querySelectorAll('.faq-category-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active button
+                document.querySelectorAll('.faq-category-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const category = this.dataset.category;
+                const sections = document.querySelectorAll('.faq-section');
+
+                if (category === 'all') {
+                    sections.forEach(s => s.style.display = 'block');
+                } else {
+                    sections.forEach(s => {
+                        if (s.dataset.category === category) {
+                            s.style.display = 'block';
+                        } else {
+                            s.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -12,114 +12,80 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <nav class="container">
-            <div class="logo notranslate">
+    <!-- Header Universel HorsePrint Pro -->
+<header>
+    <nav class="container">
+        <div class="mobile-nav-header">
+            <a href="index.html" class="back-arrow" title="Retour à l'accueil" aria-label="Retour à l'accueil">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+            </a>
+
+            <div class="logo notranslate" onclick="goToHome()" style="cursor: pointer;">
                 HorsePrint
                 <span class="logo-pro">PRO</span>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        </div>
 
-    <div class="translate-widget">
-        <button class="translate-toggle" onclick="toggleTranslate()">
-            🌐 Traduire
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu de navigation">
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
-        <div class="translate-content" id="translateContent">
-            <!-- Widget Google officiel -->
-            <div id="google_translate_element"></div>
-            
-            <!-- OU drapeaux personnalisés (optionnel) -->
-            <div class="language-flags" style="display: none;">
-                <button class="flag-btn active" onclick="translateTo('fr')" title="Français">🇫🇷</button>
-                <button class="flag-btn" onclick="translateTo('en')" title="English">🇬🇧</button>
-                <button class="flag-btn" onclick="translateTo('es')" title="Español">🇪🇸</button>
-                <button class="flag-btn" onclick="translateTo('de')" title="Deutsch">🇩🇪</button>
-                <button class="flag-btn" onclick="translateTo('it')" title="Italiano">🇮🇹</button>
-                <button class="flag-btn" onclick="translateTo('nl')" title="Nederlands">🇳🇱</button>
-            </div>
+
+        <ul class="nav-links" id="mobileMenu">
+            <li class="dropdown">
+                <a href="index.html#products" class="dropdown-toggle">Nos produits</a>
+                <ul class="dropdown-menu">
+                    <li><a href="index.html#products">Équipements cheval</a></li>
+                    <li><a href="index.html#textile">Textile staff, officiels et cavaliers</a></li>
+                    <li><a href="index.html#signage">Signalétique</a></li>
+                    <li><a href="index.html#access">Gestion d'accès</a></li>
+                    <li><a href="index.html#merchandising">Boutique officielle</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#innovation">Technologie</a></li>
+            <li><a href="index.html#levels">Nos offres</a></li>
+            <li><a href="index.html#contact">Devis</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Widget de traduction -->
+<div class="translate-widget">
+    <button class="translate-toggle" onclick="toggleTranslate()" aria-label="Ouvrir le menu de traduction">
+        🌐 Traduire
+    </button>
+    <div class="translate-content" id="translateContent">
+        <div id="google_translate_element"></div>
+
+        <div class="language-flags" style="display: none;">
+            <button class="flag-btn active" onclick="translateTo('fr')" title="Français" aria-label="Traduire en français">🇫🇷</button>
+            <button class="flag-btn" onclick="translateTo('en')" title="English" aria-label="Translate to English">🇬🇧</button>
+            <button class="flag-btn" onclick="translateTo('es')" title="Español" aria-label="Traducir al español">🇪🇸</button>
+            <button class="flag-btn" onclick="translateTo('de')" title="Deutsch" aria-label="Auf Deutsch übersetzen">🇩🇪</button>
+            <button class="flag-btn" onclick="translateTo('it')" title="Italiano" aria-label="Traduci in italiano">🇮🇹</button>
+            <button class="flag-btn" onclick="translateTo('nl')" title="Nederlands" aria-label="Vertalen naar Nederlands">🇳🇱</button>
         </div>
     </div>
+</div>
 
-    <!-- Hero Section -->
-    <section class="hero2">
+<!-- Bouton WhatsApp Flottant -->
+<a href="https://wa.me/33766244009?text=Bonjour%2C%20je%20souhaite%20un%20devis%20HorsePrint%20Pro"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Contactez-nous sur WhatsApp"
+   title="Contactez-nous sur WhatsApp">
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 0C7.164 0 0 7.164 0 16c0 2.835.745 5.498 2.044 7.805L.07 31.312l7.735-2.028A15.905 15.905 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0z" fill="#25D366"/>
+        <path d="M25.5 22.7c-.3.85-1.75 1.55-2.85 1.7-.75.1-1.75.15-5.05-1.1-4.2-1.6-6.9-5.9-7.1-6.15-.2-.25-1.7-2.25-1.7-4.3s1.1-3.05 1.5-3.45c.35-.35.85-.5 1.15-.5.25 0 .5 0 .7.05.25.05.55-.05.85.65.3.75 1.05 2.55 1.15 2.75.1.2.15.4.05.65-.1.25-.2.35-.35.55-.2.2-.35.35-.55.55-.15.2-.35.4-.15.75.2.35.9 1.5 1.95 2.45 1.35 1.2 2.45 1.6 2.85 1.75.35.15.55.1.75-.1.2-.2.85-.95 1.05-1.3.2-.35.45-.3.75-.15.3.15 1.95.95 2.3 1.1.35.15.6.25.7.35.1.15.1.75-.2 1.55z" fill="#fff"/>
+    </svg>
+    <span class="whatsapp-pulse"></span>
+</a>
 
-    </section>
-
-    <!-- Sweats Section -->
-    <section id="sweats" class="section">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2 class="section-title">Notre collection de sweats promotionnels</h2>
-                <p class="section-subtitle">Confort, chaleur et style pour votre image de marque</p>
-            </div>
-
-            <div class="polos-grid">
-                <!-- AVALON - Sweat Col Rond Unisexe -->
-                <div class="polo-card fade-in" data-product="avalon">
-                    <div class="polo-image">
-                        <div class="image-container">
-                            <img src="https://pro.horseprint.fr/images/sweats/MK620V_100_1_1000.jpg" alt="ASPEN" class="current-image">
-                            <div class="image-nav prev" onclick="navigateColor('avalon', -1)">‹</div>
-                            <div class="image-nav next" onclick="navigateColor('avalon', 1)">›</div>
-                            <div class="color-indicator">Blanc</div>
-                        </div>
-                    </div>
-                    <div class="polo-content">
-                        <h3 class="polo-title">ASPEN</h3>
-                        <div class="polo-reference">Réf: HP-SW001 | Sweat col rond unisexe</div>
-                        <p class="polo-description">Sweat-shirt unisexe classique à col rond en molleton doux et confortable, parfait pour l'usage quotidien et la personnalisation.</p>
-                        
-                        <div class="polo-specs">
-                            <strong>Spécifications :</strong><br>
-                            • Matière : 60% Coton / 40% Polyester (270 g/m²)<br>
-                            • Molleton gratte intérieur doux et chaud<br>
-                            • Col, poignets et taille bord-côte indéformables<br>
-                            • Tailles : XS à 5XL
-                        </div>
-
-                        <div class="polo-colors">
-                            <h4>Couleurs disponibles (21)</h4>
-                            <div class="color-swatches">
-                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100"></div>
-                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200"></div>
-                                <div class="color-swatch color-201" data-color="Gris Foncé" data-color-code="201"></div>
-                                <div class="color-swatch color-202" data-color="Gris Chiné" data-color-code="202"></div>
-                                <div class="color-swatch color-301" data-color="Orange" data-color-code="301"></div>
-                                <div class="color-swatch color-309" data-color="Ivoire" data-color-code="309"></div>
-                                <div class="color-swatch color-311" data-color="Jaune Été" data-color-code="311"></div>
-                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400"></div>
-                                <div class="color-swatch color-410" data-color="Rose Pâle" data-color-code="410"></div>
-                                <div class="color-swatch color-415" data-color="Crimson" data-color-code="415"></div>
-                                <div class="color-swatch color-500" data-color="Marine" data-color-code="500"></div>
-                                <div class="color-swatch color-502" data-color="Bleu Royal" data-color-code="502"></div>
-                                <div class="color-swatch color-509" data-color="Bleu Fog" data-color-code="509"></div>
-                                <div class="color-swatch color-510" data-color="Bleu Denim" data-color-code="510"></div>
-                                <div class="color-swatch color-531" data-color="Prune Foncé" data-color-code="531"></div>
-                                <div class="color-swatch color-600" data-color="Vert Kelly" data-color-code="600"></div>
-                                <div class="color-swatch color-602" data-color="Vert Bouteille" data-color-code="602"></div>
-                                <div class="color-swatch color-613" data-color="Sauge" data-color-code="613"></div>
-                                <div class="color-swatch color-614" data-color="Teal" data-color-code="614"></div>
-                                <div class="color-swatch color-110" data-color="Latte" data-color-code="110"></div>
-                                <div class="color-swatch color-403" data-color="Vin" data-color-code="403"></div>
-                            </div>
-                        </div>
-
-                        <div class="polo-features">
-                            <span class="feature-tag">Molleton Gratté</span>
-                            <span class="feature-tag">270g/m²</span>
-                            <span class="feature-tag">Étiquette Amovible</span>
-                            <span class="feature-tag">Bord-côte Élasthanne</span>
-                        </div>
-
-                        <div class="polo-price">
-                            <span class="price-range">À partir de 9,50€</span>
-                            <a href="mailto:hello@horseprint.fr?subject=Devis sweat ASPEN&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- Sweat ASPEN col rond (Réf: HP-SW001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie / sérigraphie / transfert%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
-                        </div>
+</div>
                     </div>
                 </div>
 
