@@ -52,29 +52,11 @@
                     <li><a href="cgv.html">CGV</a></li>
                 </ul>
             </li>
+            <li id="google_translate_element" style="display: inline-block;"></li>
             <li><a href="index.html#contact" class="cta-nav">Devis Gratuit</a></li>
         </ul>
     </nav>
 </header>
-
-<!-- Widget de traduction -->
-<div class="translate-widget">
-    <button class="translate-toggle" onclick="toggleTranslate()" aria-label="Ouvrir le menu de traduction">
-        🌐 Traduire
-    </button>
-    <div class="translate-content" id="translateContent">
-        <div id="google_translate_element"></div>
-
-        <div class="language-flags" style="display: none;">
-            <button class="flag-btn active" onclick="translateTo('fr')" title="Français" aria-label="Traduire en français">🇫🇷</button>
-            <button class="flag-btn" onclick="translateTo('en')" title="English" aria-label="Translate to English">🇬🇧</button>
-            <button class="flag-btn" onclick="translateTo('es')" title="Español" aria-label="Traducir al español">🇪🇸</button>
-            <button class="flag-btn" onclick="translateTo('de')" title="Deutsch" aria-label="Auf Deutsch übersetzen">🇩🇪</button>
-            <button class="flag-btn" onclick="translateTo('it')" title="Italiano" aria-label="Traduci in italiano">🇮🇹</button>
-            <button class="flag-btn" onclick="translateTo('nl')" title="Nederlands" aria-label="Vertalen naar Nederlands">🇳🇱</button>
-        </div>
-    </div>
-</div>
 
 <!-- Bouton WhatsApp Flottant -->
 <a href="https://wa.me/33766244009?text=Bonjour%2C%20je%20souhaite%20un%20devis%20HorsePrint%20Pro"
@@ -121,13 +103,13 @@
 }
 
 .cta-nav {
-    background: linear-gradient(135deg, #3498db, #2980b9) !important;
+    background: #002DFF !important;
     color: white !important;
-    padding: 10px 20px !important;
-    border-radius: 25px !important;
-    font-weight: 600 !important;
-    transition: all 0.3s;
-    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.4) !important;
+    padding: 12px 24px !important;
+    border-radius: 30px !important;
+    font-weight: 700 !important;
+    transition: all 0.3s !important;
+    box-shadow: 0 3px 10px rgba(0, 45, 255, 0.5) !important;
 }
 
 .cta-nav::after {
@@ -135,8 +117,9 @@
 }
 
 .cta-nav:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(0, 45, 255, 0.6) !important;
+    background: #0028DD !important;
 }
 
 @media (max-width: 768px) {
@@ -148,72 +131,5 @@
         display: inline-block;
         margin: 10px 0;
     }
-}
-
-/* Widget de traduction */
-.translate-widget {
-    position: fixed;
-    top: 80px;
-    right: 20px;
-    z-index: 999;
-}
-
-.translate-toggle {
-    background: white;
-    border: 2px solid #3498db;
-    color: #3498db;
-    padding: 10px 15px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: all 0.3s;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.translate-toggle:hover {
-    background: #3498db;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
-}
-
-.translate-content {
-    position: absolute;
-    top: 50px;
-    right: 0;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    padding: 15px;
-    min-width: 200px;
-    display: none;
-}
-
-.translate-content.active {
-    display: block;
-}
-
-.language-flags {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-
-.flag-btn {
-    background: none;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 8px 12px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.flag-btn:hover, .flag-btn.active {
-    border-color: #3498db;
-    background: #f0f8ff;
-    transform: scale(1.1);
 }
 </style>
