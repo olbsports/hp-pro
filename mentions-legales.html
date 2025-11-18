@@ -18,143 +18,56 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/legal-faq.css">
     <link rel="stylesheet" href="css/conversion.css">
     <link rel="stylesheet" href="css/footer-whatsapp.css">
 
     <!-- Google Translate -->
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-    <style>
-        .legal-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 80px 20px 60px;
-        }
-
-        .legal-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .legal-header h1 {
-            font-size: 2.5rem;
-            color: #2c3e50;
-            margin-bottom: 15px;
-        }
-
-        .legal-header p {
-            font-size: 1.1rem;
-            color: #7f8c8d;
-        }
-
-        .legal-section {
-            background: white;
-            padding: 40px;
-            margin-bottom: 30px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .legal-section h2 {
-            font-size: 1.8rem;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 3px solid #3498db;
-        }
-
-        .legal-section h3 {
-            font-size: 1.3rem;
-            color: #34495e;
-            margin: 30px 0 15px;
-        }
-
-        .legal-section p {
-            line-height: 1.8;
-            color: #555;
-            margin-bottom: 15px;
-        }
-
-        .legal-section ul {
-            margin: 15px 0;
-            padding-left: 30px;
-        }
-
-        .legal-section li {
-            line-height: 1.8;
-            color: #555;
-            margin-bottom: 10px;
-        }
-
-        .legal-info-box {
-            background: #f8f9fa;
-            border-left: 4px solid #3498db;
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        .legal-info-box strong {
-            color: #2c3e50;
-        }
-
-        .last-update {
-            text-align: center;
-            color: #7f8c8d;
-            font-style: italic;
-            margin: 40px 0 20px;
-        }
-
-        @media (max-width: 768px) {
-            .legal-header h1 {
-                font-size: 2rem;
-            }
-
-            .legal-section {
-                padding: 25px 20px;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Header injecté dynamiquement -->
-    <div id="header-placeholder"></div>    
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <div class="page-hero">
+        <h1>Mentions Légales</h1>
+        <p>Informations légales relatives au site pro.horseprint.fr</p>
+    </div>
 
     <!-- Contenu Principal -->
     <main>
-        <div class="legal-container">
-            <div class="legal-header">
-                <h1>Mentions Légales</h1>
-                <p>Informations légales relatives au site pro.horseprint.fr</p>
-            </div>
+        <div class="page-container">
 
             <!-- Éditeur du site -->
-            <div class="legal-section">
+            <div class="content-section">
                 <h2>1. Éditeur du site</h2>
-                <div class="legal-info-box">
+                <div class="info-box">
                     <p><strong>Nom de la société :</strong> OLB SPORTS OOD</p>
                     <p><strong>Forme juridique :</strong> OOD (Société à Responsabilité Limitée - Bulgarie)</p>
                     <p><strong>Numéro d'enregistrement :</strong> BG208208044</p>
                     <p><strong>Nom commercial :</strong> HorsePrint</p>
                     <p><strong>Siège social :</strong> Bulgarie</p>
                     <p><strong>Email :</strong> <a href="mailto:hello@horseprint.fr">hello@horseprint.fr</a></p>
-                    <p><strong>Téléphone :</strong> 07 66 24 40 09</p>
+                    <p><strong>Contact :</strong> <a href="https://wa.me/33766244009" target="_blank" rel="noopener" class="whatsapp-btn">💬 WhatsApp</a></p>
                     <p><strong>Directrice de publication :</strong> Léa Lopez</p>
                 </div>
             </div>
 
             <!-- Hébergement -->
-            <div class="legal-section">
+            <div class="content-section">
                 <h2>2. Hébergement du site</h2>
-                <div class="legal-info-box">
-                    <p><strong>Hébergeur :</strong> [À compléter - Nom de l'hébergeur]</p>
-                    <p><strong>Adresse :</strong> [À compléter]</p>
-                    <p><strong>Téléphone :</strong> [À compléter]</p>
-                    <p><strong>Site web :</strong> [À compléter]</p>
+                <div class="info-box">
+                    <p><strong>Hébergeur :</strong> o2switch</p>
+                    <p><strong>Raison sociale :</strong> o2switch SARL</p>
+                    <p><strong>Adresse :</strong> Chemin des Pardiaux, 63000 Clermont-Ferrand, France</p>
+                    <p><strong>Site web :</strong> <a href="https://www.o2switch.fr" target="_blank" rel="noopener">www.o2switch.fr</a></p>
                 </div>
             </div>
 
             <!-- Propriété intellectuelle -->
-            <div class="legal-section">
+            <div class="content-section">
                 <h2>3. Propriété intellectuelle</h2>
                 <p>L'ensemble du contenu de ce site (structure, textes, logos, images, vidéos, graphismes, etc.) est la propriété exclusive de <strong>HorsePrint</strong>, sauf mention contraire.</p>
 
@@ -168,7 +81,7 @@
             </div>
 
             <!-- Données personnelles -->
-            <div class="legal-section">
+            <div class="content-section">
                 <h2>4. Données personnelles</h2>
                 <p>Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition aux données personnelles vous concernant.</p>
 
@@ -182,7 +95,7 @@
             </div>
 
             <!-- Cookies -->
-            <div class="legal-section">
+            <div class="content-section">
                 <h2>5. Cookies et traceurs</h2>
                 <p>Ce site peut utiliser des cookies pour améliorer votre expérience de navigation et réaliser des statistiques de visite.</p>
 
@@ -197,7 +110,7 @@
             </div>
 
             <!-- Responsabilité -->
-            <div class="legal-section">
+            <div class="content-section">
                 <h2>6. Limitation de responsabilité</h2>
                 <p>HorsePrint s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, HorsePrint ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition.</p>
 
@@ -212,7 +125,7 @@
             </div>
 
             <!-- Droit applicable -->
-            <div class="legal-section">
+            <div class="content-section">
                 <h2>7. Droit applicable et juridiction</h2>
                 <p>Les présentes mentions légales sont régies par le droit français.</p>
 
@@ -223,13 +136,12 @@
             </div>
 
             <!-- Contact -->
-            <div class="legal-section">
+            <div class="content-section">
                 <h2>8. Contact</h2>
                 <p>Pour toute question concernant ces mentions légales ou le site en général :</p>
-                <div class="legal-info-box">
+                <div class="info-box">
                     <p><strong>Email :</strong> <a href="mailto:hello@horseprint.fr">hello@horseprint.fr</a></p>
-                    <p><strong>Téléphone :</strong> 07 66 24 40 09</p>
-                    <p><strong>WhatsApp :</strong> <a href="https://wa.me/33766244009" target="_blank" rel="noopener">Nous contacter</a></p>
+                    <p><strong>WhatsApp :</strong> <a href="https://wa.me/33766244009" target="_blank" rel="noopener" class="whatsapp-btn">💬 Contacter sur WhatsApp</a></p>
                 </div>
             </div>
 
