@@ -55,8 +55,44 @@
             loadHTML(includesPath + 'footer.html', 'footer-placeholder')
         ]);
 
+        // Corriger les chemins des liens selon la profondeur
+        fixLinks();
+
         // Initialiser les fonctionnalités après chargement
         initializeComponents();
+    }
+
+    function fixLinks() {
+        const isInBlog = window.location.pathname.includes('/blog/');
+        const prefix = isInBlog ? '../' : '';
+
+        // Corriger tous les liens dans header et footer
+        const containers = ['header-placeholder', 'footer-placeholder'];
+
+        containers.forEach(containerId => {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+
+            // Corriger les liens <a href="">
+            const links = container.querySelectorAll('a[href]');
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+
+                // Ignorer les liens externes, ancres, mailto, tel, et déjà corrigés
+                if (href.startsWith('http') ||
+                    href.startsWith('#') ||
+                    href.startsWith('mailto:') ||
+                    href.startsWith('tel:') ||
+                    href.startsWith('..')) {
+                    return;
+                }
+
+                // Ajouter le prefix si nécessaire
+                if (isInBlog && !href.startsWith('/') && !href.startsWith('../')) {
+                    link.setAttribute('href', prefix + href);
+                }
+            });
+        });
     }
 
     function initializeComponents() {
