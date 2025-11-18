@@ -22,18 +22,37 @@
 
         <ul class="nav-links" id="mobileMenu">
             <li class="dropdown">
-                <a href="index.html#products" class="dropdown-toggle">Nos produits</a>
+                <a href="#" class="dropdown-toggle">Nos Produits</a>
                 <ul class="dropdown-menu">
-                    <li><a href="index.html#products">Équipements cheval</a></li>
-                    <li><a href="index.html#textile">Textile staff, officiels et cavaliers</a></li>
+                    <li class="dropdown-header">Collections Textiles</li>
+                    <li><a href="polos.html">🏇 Polos Personnalisés</a></li>
+                    <li><a href="tshirts.html">👕 T-Shirts</a></li>
+                    <li><a href="sweats.html">🧥 Sweats & Hoodies</a></li>
+                    <li><a href="bodywarmer-vestes.html">🦺 Vestes & Bodywarmers</a></li>
+                    <li><a href="bonnets-casquettes.html">🧢 Bonnets & Casquettes</a></li>
+                    <li class="dropdown-divider"></li>
+                    <li class="dropdown-header">Solutions Équestres</li>
+                    <li><a href="index.html#products">Équipements Cheval</a></li>
+                    <li><a href="index.html#textile">Textile Staff & Officiels</a></li>
                     <li><a href="index.html#signage">Signalétique</a></li>
-                    <li><a href="index.html#access">Gestion d'accès</a></li>
-                    <li><a href="index.html#merchandising">Boutique officielle</a></li>
+                    <li><a href="index.html#access">Gestion d'Accès</a></li>
+                    <li><a href="index.html#merchandising">Boutique Officielle</a></li>
                 </ul>
             </li>
             <li><a href="index.html#innovation">Technologie</a></li>
-            <li><a href="index.html#levels">Nos offres</a></li>
-            <li><a href="index.html#contact">Devis</a></li>
+            <li><a href="index.html#levels">Nos Offres</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Ressources</a>
+                <ul class="dropdown-menu">
+                    <li><a href="blog.html">📰 Blog & Actualités</a></li>
+                    <li><a href="faq.html">❓ FAQ</a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    <li><a href="confidentialite.html">Confidentialité</a></li>
+                    <li><a href="cgv.html">CGV</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#contact" class="cta-nav">Devis Gratuit</a></li>
         </ul>
     </nav>
 </header>
@@ -70,3 +89,59 @@
     </svg>
     <span class="whatsapp-pulse"></span>
 </a>
+
+<style>
+/* Styles additionnels pour le menu amélioré */
+.dropdown-header {
+    font-weight: 700;
+    color: #3498db;
+    padding: 10px 20px 5px 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background: #e0e0e0;
+    margin: 8px 0;
+    list-style: none;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 20px;
+    transition: all 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background: #f8f9fa;
+    padding-left: 25px;
+}
+
+.cta-nav {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.cta-nav:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+@media (max-width: 768px) {
+    .dropdown-header {
+        padding: 8px 15px 5px 15px;
+    }
+
+    .cta-nav {
+        display: inline-block;
+        margin: 10px 0;
+    }
+}
+</style>
