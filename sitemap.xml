@@ -56,6 +56,324 @@
         <priority>0.9</priority>
     </url>
 
+    <!-- Pages essentielles -->
+    <url>
+        <loc>https://pro.horseprint.fr/faq.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Pages légales -->
+    <url>
+        <loc>https://pro.horseprint.fr/mentions-legales.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/confidentialite.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/cgv.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <!-- Articles de blog - 40 articles optimisés SEO -->
+    <url>
+        <loc>https://pro.horseprint.fr/blog/guide-personnalisation-textile-equestre-2025.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/choisir-polo-technique-cavalier.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/broderie-vs-impression-textile-equestre.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/identite-visuelle-centre-equestre.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/tenues-officielles-concours-equestres.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/guide-tailles-vetements-equestres.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/entretien-textile-personnalise-broderie.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/merchandising-boutique-centre-equestre.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/textile-technique-toutes-saisons-cavaliers.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/personnalisation-bonnets-casquettes-equitation.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/sweats-hoodies-personnalises-ecuries.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/vestes-techniques-impermeables-cavalier.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/tshirts-personnalises-evenements-equestres.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/bodywarmers-sans-manches-equestre.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/equipement-staff-centre-equestre-uniformes.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/tapis-selle-personnalises-guide-complet.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/bonnets-ecurie-brodes-nom-cheval.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/signaletique-professionnelle-haras-centres.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/accessoires-personnalises-cavaliers-competition.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/couleurs-design-identite-equestre-2025.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/organiser-evenement-equestre-textile-merchandising.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/cadeaux-personnalises-passionnes-chevaux.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/textile-ecoresponsable-equestre-coton-bio.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/solutions-clubs-hippiques-poney-clubs.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/textile-hiver-cavalier-protection-chaleur.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/textile-ete-equitation-respirabilite-confort.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/uniformes-grooms-palefreniers-professionnels.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/branding-visuel-ecurie-proprietaires.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/textile-coaches-enseignants-equitation.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/polos-concours-elegance-technicite.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/sweats-zippes-personnalises-team-equestre.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/casquettes-equestres-brodees-logo-club.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/gilets-sans-manches-softshell-cavalier.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/parkas-vestes-longues-hiver-ecurie.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/debardeurs-techniques-ete-cavaliere.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/leggings-pantalons-techniques-equitation.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/chaussettes-techniques-equestres-personnalisees.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/sacs-bagagerie-personnalises-cavaliers.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/plaids-couvertures-polaires-ecuries-brodes.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://pro.horseprint.fr/blog/strategies-marketing-centre-equestre-textile.html</loc>
+        <lastmod>2025-01-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
     <!-- Pages secondaires -->
     <url>
         <loc>https://pro.horseprint.fr/mailing.html</loc>
