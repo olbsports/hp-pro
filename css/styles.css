@@ -255,6 +255,123 @@ nav {
     transform: rotate(-45deg) translate(7px, -6px);
 }
 
+/* Enhanced Dropdown Styles */
+.dropdown-header {
+    font-weight: 700;
+    color: #3498db;
+    padding: 10px 20px 5px 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background: #e0e0e0;
+    margin: 8px 0;
+    list-style: none;
+}
+
+/* CTA Navigation Button */
+.cta-nav {
+    background: #002DFF !important;
+    color: white !important;
+    padding: 12px 24px !important;
+    border-radius: 30px !important;
+    font-weight: 700 !important;
+    transition: all 0.3s !important;
+    box-shadow: 0 3px 10px rgba(0, 45, 255, 0.5) !important;
+}
+
+.cta-nav::after {
+    display: none !important;
+}
+
+.cta-nav:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(0, 45, 255, 0.6) !important;
+    background: #0028DD !important;
+}
+
+/* ==========================================================================
+   TRANSLATE WIDGET
+   ========================================================================== */
+
+.translate-widget-float {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 998;
+}
+
+.translate-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #002DFF;
+    color: #002DFF;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 45, 255, 0.3);
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.translate-btn:hover {
+    background: #002DFF;
+    transform: scale(1.1);
+}
+
+.translate-dropdown {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    min-width: 200px;
+    display: none;
+}
+
+.translate-dropdown.active {
+    display: block;
+}
+
+/* Google Translate Customization */
+.goog-te-combo {
+    padding: 8px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.goog-te-combo:hover {
+    border-color: #002DFF;
+}
+
+.goog-te-combo:focus {
+    outline: none;
+    border-color: #002DFF;
+    box-shadow: 0 0 0 3px rgba(0, 45, 255, 0.1);
+}
+
+/* Hide Google Translate Banner */
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+body {
+    top: 0 !important;
+}
+
 /* ==========================================================================
    BUTTONS
    ========================================================================== */
