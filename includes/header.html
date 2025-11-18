@@ -52,7 +52,7 @@
                     <li><a href="cgv.html">CGV</a></li>
                 </ul>
             </li>
-            <li id="google_translate_element" style="display: inline-block;"></li>
+            <li id="google_translate_element" class="translate-nav"></li>
             <li><a href="index.html#contact" class="cta-nav">Devis Gratuit</a></li>
         </ul>
     </nav>
@@ -74,6 +74,11 @@
 
 <style>
 /* Styles additionnels pour le menu amélioré */
+.logo-pro {
+    background: #002DFF !important;
+    color: white !important;
+}
+
 .dropdown-header {
     font-weight: 700;
     color: #3498db;
@@ -100,6 +105,18 @@
 .dropdown-menu li a:hover {
     background: #f8f9fa;
     padding-left: 25px;
+}
+
+.translate-nav {
+    transform: scale(0.7);
+    transform-origin: center;
+}
+
+.translate-nav .goog-te-combo {
+    font-size: 11px !important;
+    padding: 3px 5px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
 }
 
 .cta-nav {
