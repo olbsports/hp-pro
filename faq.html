@@ -19,6 +19,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/legal-faq.css">
     <link rel="stylesheet" href="css/conversion.css">
     <link rel="stylesheet" href="css/footer-whatsapp.css">
 
@@ -36,7 +37,7 @@
           "name": "Comment obtenir un devis personnalisé ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Contactez-nous par email (hello@horseprint.fr), téléphone (07 66 24 40 09) ou WhatsApp. Fournissez vos besoins (type de produit, quantités, personnalisation souhaitée) et recevez votre devis gratuit sous 24h."
+            "text": "Contactez-nous par email (hello@horseprint.fr) ou WhatsApp. Fournissez vos besoins (type de produit, quantités, personnalisation souhaitée) et recevez votre devis gratuit sous 24h."
           }
         },
         {
@@ -57,290 +58,6 @@
         }
       ]
     }
-    </script>
-
-    <style>
-        .faq-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 80px 20px 60px;
-        }
-
-        .faq-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .faq-header h1 {
-            font-size: 2.8rem;
-            color: #2c3e50;
-            margin-bottom: 15px;
-        }
-
-        .faq-header p {
-            font-size: 1.2rem;
-            color: #7f8c8d;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .faq-search {
-            max-width: 600px;
-            margin: 40px auto;
-            position: relative;
-        }
-
-        .faq-search input {
-            width: 100%;
-            padding: 15px 50px 15px 20px;
-            font-size: 1.1rem;
-            border: 2px solid #e0e0e0;
-            border-radius: 50px;
-            transition: all 0.3s;
-        }
-
-        .faq-search input:focus {
-            outline: none;
-            border-color: #3498db;
-            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
-        }
-
-        .faq-search-icon {
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #7f8c8d;
-        }
-
-        .faq-categories {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-            margin-bottom: 50px;
-        }
-
-        .faq-category-btn {
-            padding: 10px 25px;
-            background: white;
-            border: 2px solid #e0e0e0;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-size: 1rem;
-            color: #555;
-        }
-
-        .faq-category-btn:hover,
-        .faq-category-btn.active {
-            background: #3498db;
-            color: white;
-            border-color: #3498db;
-        }
-
-        .faq-section {
-            margin-bottom: 50px;
-        }
-
-        .faq-section-title {
-            font-size: 2rem;
-            color: #2c3e50;
-            margin-bottom: 30px;
-            padding-bottom: 15px;
-            border-bottom: 3px solid #3498db;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .faq-section-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, #3498db, #2980b9);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.3rem;
-        }
-
-        .faq-item {
-            background: white;
-            border-radius: 12px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            overflow: hidden;
-            transition: all 0.3s;
-        }
-
-        .faq-item:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-        }
-
-        .faq-question {
-            padding: 25px 30px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-            user-select: none;
-        }
-
-        .faq-question h3 {
-            font-size: 1.2rem;
-            color: #2c3e50;
-            margin: 0;
-            flex: 1;
-        }
-
-        .faq-toggle {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background: #f8f9fa;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            color: #3498db;
-            transition: all 0.3s;
-            flex-shrink: 0;
-        }
-
-        .faq-item.active .faq-toggle {
-            background: #3498db;
-            color: white;
-            transform: rotate(45deg);
-        }
-
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease;
-        }
-
-        .faq-answer-content {
-            padding: 0 30px 25px 30px;
-            color: #555;
-            line-height: 1.8;
-        }
-
-        .faq-answer-content p {
-            margin-bottom: 15px;
-        }
-
-        .faq-answer-content ul,
-        .faq-answer-content ol {
-            margin: 15px 0;
-            padding-left: 25px;
-        }
-
-        .faq-answer-content li {
-            margin-bottom: 8px;
-        }
-
-        .faq-answer-content strong {
-            color: #2c3e50;
-        }
-
-        .faq-highlight {
-            background: #e8f4f8;
-            border-left: 4px solid #3498db;
-            padding: 15px 20px;
-            margin: 15px 0;
-            border-radius: 4px;
-        }
-
-        .faq-cta {
-            background: linear-gradient(135deg, #3498db, #2980b9);
-            color: white;
-            padding: 50px 30px;
-            border-radius: 16px;
-            text-align: center;
-            margin-top: 60px;
-        }
-
-        .faq-cta h2 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-        }
-
-        .faq-cta p {
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-            opacity: 0.95;
-        }
-
-        .faq-cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .faq-cta-btn {
-            padding: 15px 40px;
-            background: white;
-            color: #3498db;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .faq-cta-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        }
-
-        .faq-cta-btn.secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-
-        .faq-cta-btn.secondary:hover {
-            background: white;
-            color: #3498db;
-        }
-
-        @media (max-width: 768px) {
-            .faq-header h1 {
-                font-size: 2rem;
-            }
-
-            .faq-section-title {
-                font-size: 1.5rem;
-            }
-
-            .faq-question {
-                padding: 20px 20px;
-            }
-
-            .faq-question h3 {
-                font-size: 1.05rem;
-            }
-
-            .faq-answer-content {
-                padding: 0 20px 20px 20px;
-            }
-
-            .faq-cta h2 {
-                font-size: 1.5rem;
-            }
-
-            .faq-cta-buttons {
-                flex-direction: column;
-                align-items: stretch;
-            }
-        }
     </style>
 </head>
 <body>
@@ -387,7 +104,7 @@
                         <div class="faq-answer-content">
                             <p>Obtenir un devis chez HorsePrint Pro est simple et rapide :</p>
                             <ol>
-                                <li><strong>Contactez-nous</strong> par email (hello@horseprint.fr), téléphone (07 66 24 40 09) ou WhatsApp</li>
+                                <li><strong>Contactez-nous</strong> par email (hello@horseprint.fr) ou <a href="https://wa.me/33766244009" target="_blank" rel="noopener">WhatsApp</a></li>
                                 <li><strong>Décrivez votre projet</strong> : type de produit, quantités, personnalisation souhaitée</li>
                                 <li><strong>Envoyez vos visuels</strong> (logos, textes) en haute définition si possible</li>
                                 <li><strong>Recevez votre devis gratuit sous 24h</strong> avec tous les détails</li>
@@ -917,7 +634,7 @@
                             </ul>
 
                             <div class="faq-highlight">
-                                <strong>📞 Besoin d'aide ?</strong> Notre équipe vous conseille pour éviter les erreurs de tailles : <a href="https://wa.me/33766244009">WhatsApp 07 66 24 40 09</a>
+                                <strong>💬 Besoin d'aide ?</strong> Notre équipe vous conseille pour éviter les erreurs de tailles : <a href="https://wa.me/33766244009" class="whatsapp-btn">WhatsApp</a>
                             </div>
                         </div>
                     </div>
@@ -1088,7 +805,7 @@
                         📧 Demander un devis gratuit
                     </a>
                     <a href="tel:+33766244009" class="faq-cta-btn secondary">
-                        📞 Appelez-nous : 07 66 24 40 09
+                        💬 <a href="https://wa.me/33766244009" class="whatsapp-btn">Contactez-nous sur WhatsApp</a>
                     </a>
                 </div>
             </div>
