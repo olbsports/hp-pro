@@ -52,11 +52,20 @@
                     <li><a href="cgv.html">CGV</a></li>
                 </ul>
             </li>
-            <li id="google_translate_element" class="translate-nav"></li>
             <li><a href="index.html#contact" class="cta-nav">Devis Gratuit</a></li>
         </ul>
     </nav>
 </header>
+
+<!-- Widget de traduction flottant -->
+<div class="translate-widget-float">
+    <button class="translate-btn" onclick="toggleTranslateWidget()" aria-label="Changer de langue">
+        🌐
+    </button>
+    <div class="translate-dropdown" id="translateDropdown">
+        <div id="google_translate_element"></div>
+    </div>
+</div>
 
 <!-- Bouton WhatsApp Flottant -->
 <a href="https://wa.me/33766244009?text=Bonjour%2C%20je%20souhaite%20un%20devis%20HorsePrint%20Pro"
@@ -119,6 +128,51 @@
     border-radius: 4px !important;
 }
 
+/* Widget de traduction flottant */
+.translate-widget-float {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 998;
+}
+
+.translate-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #002DFF;
+    color: #002DFF;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 45, 255, 0.3);
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.translate-btn:hover {
+    background: #002DFF;
+    transform: scale(1.1);
+}
+
+.translate-dropdown {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    min-width: 200px;
+    display: none;
+}
+
+.translate-dropdown.active {
+    display: block;
+}
+
 .cta-nav {
     background: #002DFF !important;
     color: white !important;
@@ -150,3 +204,5 @@
     }
 }
 </style>
+
+<script src="js/translate.js"></script>
