@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonnets & Casquettes - HorsePrint Pro</title>
+    <meta name="description" content="Découvrez notre sélection de bonnets et casquettes personnalisables pour équipes et événements équestres. Qualité professionnelle, personnalisation premium.">
+       <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32'%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23002DFF'/%3E%3Cstop offset='100%25' style='stop-color:%236366f1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='15' fill='url(%23gradient)' stroke='white' stroke-width='1'/%3E%3Cpath d='M8 10 L8 22 M8 16 L13 16 M13 10 L13 22' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cpath d='M17 10 L17 22 M17 10 L22 10 Q24 10 24 13 Q24 16 22 16 L17 16' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bonnets-casquettes-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo notranslate" style="text-decoration: none;">
+                HorsePrint
+                <span class="logo-pro">PRO</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="translate-widget">
+        <button class="translate-toggle" onclick="toggleTranslate()">
+            🌐 Traduire
+        </button>
+        <div class="translate-content" id="translateContent">
+            <!-- Widget Google officiel -->
+            <div id="google_translate_element"></div>
+            
+            <!-- OU drapeaux personnalisés (optionnel) -->
+            <div class="language-flags" style="display: none;">
+                <button class="flag-btn active" onclick="translateTo('fr')" title="Français">🇫🇷</button>
+                <button class="flag-btn" onclick="translateTo('en')" title="English">🇬🇧</button>
+                <button class="flag-btn" onclick="translateTo('es')" title="Español">🇪🇸</button>
+                <button class="flag-btn" onclick="translateTo('de')" title="Deutsch">🇩🇪</button>
+                <button class="flag-btn" onclick="translateTo('it')" title="Italiano">🇮🇹</button>
+                <button class="flag-btn" onclick="translateTo('nl')" title="Nederlands">🇳🇱</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero2">
+
+    </section>
+
+    <!-- Bonnets & Casquettes Section -->
+    <section id="bonnets-casquettes" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Notre sélection de bonnets & casquettes</h2>
+                <p class="section-subtitle">Accessoires premium en sergé de coton pour une finition professionnelle</p>
+            </div>
+
+            <div class="polos-grid">
+                <!-- RAP - Casquette 6 panneaux premium -->
+                <div class="polo-card fade-in" data-product="rap">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/casquettes/MCT600V_502_1_1000.jpg" alt="RAP" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('rap', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('rap', 1)">›</div>
+                            <div class="color-indicator">Bleu Royal</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">CHAMPION</h3>
+                        <div class="polo-reference">Réf: HP-RAP001 | Casquette 6 panneaux premium</div>
+                        <p class="polo-description">Casquette haut de gamme en sergé 100% acrylique, idéale pour les équipes dirigeantes et les événements prestigieux.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Acrylique sergé (450 g/m²)<br>
+                            • 6 panneaux avec ventilations brodées<br>
+                            • Fermeture plastique ajustable<br>
+                            • Visière large et plate
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (5)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-502 selected" data-color="Bleu Royal" data-color-code="502" onclick="changeColor('rap', '502', 'Bleu Royal')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('rap', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('rap', '200', 'Noir')"></div>
+                                <div class="color-swatch color-1212" data-color="Rouge/Noir" data-color-code="1212" onclick="changeColor('rap', '1212', 'Rouge/Noir')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">6 panneaux</span>
+                            <span class="feature-tag">Sergé premium</span>
+                            <span class="feature-tag">Visière plate</span>
+                            <span class="feature-tag">Ventilations brodées</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 2,79€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis casquette CHAMPION&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- Casquette CHAMPION 6 panneaux premium (Réf: HP-RAP001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TEAM - Casquette 5 panneaux visière contrastée -->
+                <div class="polo-card fade-in" data-product="team">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/casquettes/MCT200V_806_1_1000.jpg" alt="TEAM" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('team', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('team', 1)">›</div>
+                            <div class="color-indicator">Rouge/Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">CLASSIC</h3>
+                        <div class="polo-reference">Réf: HP-TEAM001 | Casquette 5 panneaux visière contrastée</div>
+                        <p class="polo-description">Casquette sportive en sergé coton avec visière colorée contrastée, parfaite pour les équipes et le merchandising.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Coton sergé (180 g/m²)<br>
+                            • 5 panneaux avec 4 ventilations brodées<br>
+                            • Fermeture velcro ajustable<br>
+                            • Visière courbée couleur contrastée
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (6)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-806 selected" data-color="Rouge/Blanc" data-color-code="806" onclick="changeColor('team', '806', 'Rouge/Blanc')"></div>
+                                <div class="color-swatch color-805" data-color="Bleu Royal/Blanc" data-color-code="805" onclick="changeColor('team', '805', 'Bleu Royal/Blanc')"></div>
+                                <div class="color-swatch color-802" data-color="Noir/Blanc" data-color-code="802" onclick="changeColor('team', '802', 'Noir/Blanc')"></div>
+                                <div class="color-swatch color-1609" data-color="Marine/Blanc" data-color-code="1609" onclick="changeColor('team', '1609', 'Marine/Blanc')"></div>
+                                <div class="color-swatch color-1402" data-color="Atoll/Blanc" data-color-code="1402" onclick="changeColor('team', '1402', 'Atoll/Blanc')"></div>
+                                <div class="color-swatch color-1136" data-color="Blanc/Marine" data-color-code="1136" onclick="changeColor('team', '1136', 'Blanc/Marine')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">5 panneaux</span>
+                            <span class="feature-tag">Visière contrastée</span>
+                            <span class="feature-tag">Fermeture velcro</span>
+                            <span class="feature-tag">4 ventilations</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 1,84€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis casquette CLASSIC&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- Casquette CLASSIC 5 panneaux visière contrastée (Réf: HP-TEAM001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOP - Casquette 5 panneaux classique -->
+                <div class="polo-card fade-in" data-product="top">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/casquettes/MCT300V_100_1_1000.jpg" alt="TOP" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('top', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('top', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">ESSENTIAL</h3>
+                        <div class="polo-reference">Réf: HP-TOP001 | Casquette 5 panneaux classique</div>
+                        <p class="polo-description">Casquette polyvalente en sergé coton, idéale pour tous les événements avec un excellent rapport qualité-prix.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Coton sergé (180 g/m²)<br>
+                            • 5 panneaux avec 4 ventilations brodées<br>
+                            • Fermeture velcro ajustable<br>
+                            • Visière courbée assortie
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (8)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('top', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('top', '200', 'Noir')"></div>
+                                <div class="color-swatch color-301" data-color="Orange" data-color-code="301" onclick="changeColor('top', '301', 'Orange')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('top', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-500" data-color="Marine" data-color-code="500" onclick="changeColor('top', '500', 'Marine')"></div>
+                                <div class="color-swatch color-501" data-color="Bleu Ciel" data-color-code="501" onclick="changeColor('top', '501', 'Bleu Ciel')"></div>
+                                <div class="color-swatch color-502" data-color="Bleu Royal" data-color-code="502" onclick="changeColor('top', '502', 'Bleu Royal')"></div>
+                                <div class="color-swatch color-505" data-color="Atoll" data-color-code="505" onclick="changeColor('top', '505', 'Atoll')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">5 panneaux</span>
+                            <span class="feature-tag">Sergé coton</span>
+                            <span class="feature-tag">Visière assortie</span>
+                            <span class="feature-tag">Budget-friendly</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 1,65€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis casquette ESSENTIAL&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- Casquette ESSENTIAL 5 panneaux classique (Réf: HP-TOP001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PERTH - Bonnet polaire -->
+                <div class="polo-card fade-in" data-product="perth">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/bonnets/204001_00_1_1000.jpg" alt="PERTH" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('perth', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('perth', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">WINTER</h3>
+                        <div class="polo-reference">Réf: HP-WINT001 | Bonnet polaire doublé</div>
+                        <p class="polo-description">Bonnet chaud et confortable en polaire anti-boulochage, parfait pour les événements hivernaux et la saison froide.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Polyester polaire (240 g/m²)<br>
+                            • Anti-boulochage<br>
+                            • Coupe confortable<br>
+                            • Taille unique élastique
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (6)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-00 selected" data-color="Blanc" data-color-code="00" onclick="changeColor('perth', '00', 'Blanc')"></div>
+                                <div class="color-swatch color-03" data-color="Gris Clair" data-color-code="03" onclick="changeColor('perth', '03', 'Gris Clair')"></div>
+                                <div class="color-swatch color-07" data-color="Gris Foncé" data-color-code="07" onclick="changeColor('perth', '07', 'Gris Foncé')"></div>
+                                <div class="color-swatch color-08" data-color="Noir" data-color-code="08" onclick="changeColor('perth', '08', 'Noir')"></div>
+                                <div class="color-swatch color-12" data-color="Marine" data-color-code="12" onclick="changeColor('perth', '12', 'Marine')"></div>
+                                <div class="color-swatch color-61" data-color="Rouge" data-color-code="61" onclick="changeColor('perth', '61', 'Rouge')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Polaire 240g</span>
+                            <span class="feature-tag">Anti-boulochage</span>
+                            <span class="feature-tag">Taille unique</span>
+                            <span class="feature-tag">Confort optimal</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 4,40€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis bonnet WINTER&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- Bonnet WINTER polaire doublé (Réf: HP-PERTH001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Techniques de marquage Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Techniques de marquage spécialisées</h2>
+                <p class="section-subtitle">Solutions adaptées aux accessoires textiles</p>
+            </div>
+            
+            <div class="features-grid fade-in">
+                <div class="feature-card">
+                    <div class="feature-icon">🧵</div>
+                    <h3>Broderie premium</h3>
+                    <p>Broderie haute définition résistante aux lavages, idéale pour logos et textes sur casquettes et bonnets.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Broderie 3D</h3>
+                    <p>Effet relief pour un rendu premium sur casquettes. Impact visuel garanti pour vos logos d'équipe.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📐</div>
+                    <h3>Patch brodé</h3>
+                    <p>Application de patchs brodés personnalisés pour un style authentique et professionnel.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Marquage laser</h3>
+                    <p>Gravure précise sur cuir synthétique pour un rendu moderne et durable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="applications-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Applications événementielles</h2>
+                <p class="section-subtitle">Nos accessoires s'adaptent à tous vos besoins</p>
+            </div>
+            
+            <div class="applications-grid fade-in">
+                <div class="application-card">
+                    <div class="application-icon">🏆</div>
+                    <h3>Équipes officielles</h3>
+                    <p>Casquettes et bonnets premium pour staffs, juges, officiels et équipes dirigeantes.</p>
+                    <ul>
+                        <li>Broderie logos officiels</li>
+                        <li>Finitions haut de gamme</li>
+                        <li>Coloris institutionnels</li>
+                    </ul>
+                </div>
+                
+                <div class="application-card">
+                    <div class="application-icon">🛍️</div>
+                    <h3>Boutique & merchandising</h3>
+                    <p>Accessoires populaires pour la vente au public avec marges attractives.</p>
+                    <ul>
+                        <li>Grande variété de couleurs</li>
+                        <li>Prix publics accessibles</li>
+                        <li>Forte rotation garantie</li>
+                    </ul>
+                </div>
+                
+                <div class="application-card">
+                    <div class="application-icon">🎁</div>
+                    <h3>Cadeaux & goodies</h3>
+                    <p>Objets pratiques et appréciés pour fidéliser vos partenaires et sponsors.</p>
+                    <ul>
+                        <li>Utilité quotidienne</li>
+                        <li>Visibilité de la marque</li>
+                        <li>Budget maîtrisé</li>
+                    </ul>
+                </div>
+                
+                <div class="application-card">
+                    <div class="application-icon">❄️</div>
+                    <h3>Événements toutes saisons</h3>
+                    <p>Protection solaire l'été, chaleur l'hiver - accessoires adaptés à chaque saison.</p>
+                    <ul>
+                        <li>Casquettes été</li>
+                        <li>Bonnets hiver</li>
+                        <li>Matières techniques</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>Prêt à personnaliser vos accessoires ?</h2>
+                <p>Nos experts vous accompagnent dans le choix des bonnets et casquettes adaptés à votre événement</p>
+                <div class="cta-buttons">
+                    <a href="mailto:hello@horseprint.fr?subject=Projet bonnets et casquettes&body=Bonjour,%0D%0A%0D%0AJe souhaite être accompagné pour un projet de bonnets et casquettes :%0D%0A%0D%0A- Type d'événement : %0D%0A- Quantités estimées : %0D%0A- Budget indicatif : %0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button primary">Demander un devis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+    <div class="container">
+        <p>&copy; 2025 <span class="notranslate">HorsePrint Pro</span> — Collection casquettes & bonnets • hello@horseprint.fr</p>
+    </div>
+</footer>
+
+    <!-- Scripts -->
+    <script src="bonnets-casquettes.js"></script>
+    <script src="animations.js"></script>
+    <script>
+        // Menu mobile toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            
+            menu.classList.toggle('active');
+            toggle.classList.toggle('active');
+            document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+        }
+
+        // Translation functions
+        function toggleTranslate() {
+            const content = document.getElementById('translateContent');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function translateTo(lang) {
+            console.log('Translate to:', lang);
+            // Implementation de la traduction
+        }
+
+        // Google Translate integration
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'fr',
+                includedLanguages: 'en,es,de,it,nl',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

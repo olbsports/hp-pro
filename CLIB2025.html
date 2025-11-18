@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devis Gilets Femme - Cheval Liberté x HorsePrint PRO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f7fa;
+            color: #2c3e50;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 1rem 0 0.5rem;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 1rem;
+            color: #0066FF;
+        }
+
+        .pro-badge {
+            display: inline-block;
+            background: #0066FF;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-left: 1rem;
+            vertical-align: middle;
+        }
+
+        .promo-banner {
+            background: #0066FF;
+            color: white;
+            padding: 1.2rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.05rem;
+            letter-spacing: 0.02em;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .product-card {
+            background: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0,102,255,0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 500px;
+            background: linear-gradient(135deg, #e8f0fe 0%, #f5f7fa 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 3px solid #e5e7eb;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* Slider Styles */
+        .slider-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+          background:white;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 102, 255, 0.9);
+            color: white;
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .slider-btn:hover {
+            background: #0066FF;
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: 0 6px 20px rgba(0,102,255,0.4);
+        }
+
+        .slider-btn.prev {
+            left: 15px;
+        }
+
+        .slider-btn.next {
+            right: 15px;
+        }
+
+        .slider-dots {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .dot.active {
+            background: #0066FF;
+            border-color: #0066FF;
+            width: 12px;
+            height: 12px;
+        }
+
+        .product-image::before {
+            content: '';
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(0,102,255,0.08) 0%, transparent 70%);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #0066FF;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            box-shadow: 0 4px 12px rgba(0,102,255,0.3);
+        }
+
+        .product-content {
+            padding: 2.2rem;
+        }
+
+        .brand-tag {
+            display: inline-block;
+            background: #e8f0fe;
+            color: #0066FF;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .product-title {
+            font-size: 1.85rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.01em;
+            color: #1f2937;
+        }
+
+        .product-code {
+            color: #9ca3af;
+            font-size: 0.9rem;
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+
+        .product-description {
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+
+        .colors-section {
+            margin-bottom: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid #f3f4f6;
+        }
+
+        .colors-label {
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            font-size: 0.85rem;
+            color: #0066FF;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .color-options {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .color-dot {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 3px solid #e5e7eb;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .color-dot:hover {
+            transform: scale(1.1);
+            border-color: #0066FF;
+            box-shadow: 0 4px 12px rgba(0,102,255,0.3);
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: #f9fafb;
+            border-radius: 12px;
+        }
+
+        .spec-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+
+        .spec-label {
+            font-weight: 700;
+            font-size: 0.75rem;
+            color: #0066FF;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .spec-value {
+            color: #1f2937;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Price Section with Two Tiers */
+        .price-section {
+            background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+            border: 2px solid #e5e7eb;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 1.5rem;
+        }
+
+        .public-price {
+            text-align: center;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px dashed #e5e7eb;
+            margin-bottom: 1.5rem;
+        }
+
+        .public-price-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #9ca3af;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .public-price-amount {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #9ca3af;
+            text-decoration: line-through;
+        }
+
+        .client-price {
+            background: #0066FF;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .client-price-label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            opacity: 0.95;
+        }
+
+        .client-price-amount {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .discount-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-top: 0.5rem;
+        }
+
+        .price-includes {
+            font-size: 0.85rem;
+            font-weight: 500;
+            opacity: 0.9;
+            margin-top: 0.8rem;
+        }
+
+        .embroidery-info {
+            background: #ffffff;
+            border: 3px solid #0066FF;
+            border-left: 8px solid #0066FF;
+            padding: 2.5rem;
+            margin-top: 4rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,102,255,0.1);
+        }
+
+        .embroidery-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            font-weight: 800;
+            color: #0066FF;
+        }
+
+        .embroidery-info ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .embroidery-info li {
+            padding: 0.6rem 0;
+            color: #6b7280;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .contact-info {
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
+            padding: 3.5rem;
+            border-radius: 20px;
+            margin-top: 4rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        .contact-info h3 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+            color: #0066FF;
+        }
+
+        .contact-info p {
+            font-size: 1.05rem;
+            color: #6b7280;
+            margin: 0.6rem 0;
+            font-weight: 500;
+        }
+
+        .contact-info strong {
+            color: #0066FF;
+            font-weight: 700;
+        }
+
+        footer {
+            background: #ffffff;
+            border-top: 2px solid #e5e7eb;
+            padding: 3rem 0;
+            margin-top: 6rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-content p {
+            color: #9ca3af;
+            font-size: 0.95rem;
+            font-weight: 400;
+            margin: 0.5rem 0;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #0066FF;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .specs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>HorsePrint<span class="pro-badge">PRO</span></h1>
+        </div>
+    </header>
+
+    <div class="promo-banner">
+        Devis Bodywarmer Femme | Client : Cheval Liberté
+    </div>
+
+    <div class="container">
+        <div class="products-grid">
+            <!-- Product 1: Benton Women -->
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="slider-container">
+                        <div class="slider-wrapper" id="slider1">
+                            <div class="slide">
+                                <img src="https://www.nimbus-b2b.com/cdn/shop/products/bent-l-navy_79a8f7b4-78e8-43e9-91ed-9b265530bb1f_800x.jpg?v=1703243239" alt="Benton Women Navy">
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.nimbus-b2b.com/cdn/shop/files/benton_women_black_ss25_modelimage_0d2321ad-be50-4c9c-a1b6-52c677b9be94_800x.jpg?v=1752160260" alt="Benton Women Black">
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.nimbus-b2b.com/cdn/shop/products/bent-l-navy_20_78cdf772-43c9-4930-b24c-69a6adbe3457_800x.jpg?v=1703243239">
+                            </div>
+                        </div>
+                        <button class="slider-btn prev" onclick="moveSlide('slider1', -1)">‹</button>
+                        <button class="slider-btn next" onclick="moveSlide('slider1', 1)">›</button>
+                        <div class="slider-dots" id="dots1"></div>
+                    </div>
+                    <div class="product-badge">Premium</div>
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">NIMBUS</span>
+                    <h2 class="product-title">Benton Women</h2>
+                    <p class="product-code">Réf: BENT-L</p>
+                    <p class="product-description">
+                        Gilet hybride polyvalent avec isolation légère Sorona® Aura. Parfait pour une liberté de mouvement totale tout en gardant le corps au chaud. Design sportif et élégant pour un look athleisure décontracté.
+                    </p>
+
+                    <div class="colors-section">
+                        <div class="colors-label">Couleurs disponibles</div>
+                        <div class="color-options">
+                            <div class="color-dot" style="background-color: #000;" title="Noir"></div>
+                            <div class="color-dot" style="background-color: #1a2947;" title="Navy"></div>
+                            <div class="color-dot" style="background-color: #6b7c3a;" title="Olive"></div>
+                        </div>
+                    </div>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Tailles</span>
+                            <span class="spec-value">XS - 3XL</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">Nylon & Softshell</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Grammage</span>
+                            <span class="spec-value">270 g/m²</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Rembourrage</span>
+                            <span class="spec-value">Sorona® Aura</span>
+                        </div>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="public-price">
+                            <div class="public-price-label">Prix public</div>
+                            <div class="public-price-amount">128,20 €</div>
+                        </div>
+                        <div class="client-price">
+                            <div class="client-price-label">Prix Cheval Liberté (prix unitaire pour 5 pcs)</div>
+                            <div class="client-price-amount">86,54 €</div>
+                            <div class="discount-badge">-32,5% de remise</div>
+                            <div class="price-includes">Broderies cœur 10cm et dos 20cm incluses</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2: Hudson Women -->
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="slider-container">
+                        <div class="slider-wrapper" id="slider2">
+                            <div class="slide">
+                                <img src="https://www.nimbus-b2b.com/cdn/shop/products/huds-l-darknavy_fb45e872-a449-4d7e-a1e9-6b561300f49d_800x.jpg?v=1703242169" alt="Hudson Women">
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.nimbus-b2b.com/cdn/shop/files/huds-l-darknavy_30_800x.jpg?v=1723118862" alt="Hudson Women Dark Navy">
+                            </div>
+                          <div class="slide">
+                                <img src="https://www.nimbus-b2b.com/cdn/shop/products/huds-l-darknavy_20_332dca72-8a64-4e73-8e55-a4a357033f88_800x.jpg?v=1703242169" alt="Hudson Women Dark Navy">
+                            </div>
+                        </div>
+                        <button class="slider-btn prev" onclick="moveSlide('slider2', -1)">‹</button>
+                        <button class="slider-btn next" onclick="moveSlide('slider2', 1)">›</button>
+                        <div class="slider-dots" id="dots2"></div>
+                    </div>
+                    <div class="product-badge">Éco</div>
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">NIMBUS</span>
+                    <h2 class="product-title">Hudson Women</h2>
+                    <p class="product-code">Réf: HUDS-L</p>
+                    <p class="product-description">
+                        Gilet matelassé confortable toutes saisons en matériaux recyclés. Design élégant avec matelassage horizontal. Rembourrage Sorona® Aura pour une isolation efficace.
+                    </p>
+
+                    <div class="colors-section">
+                        <div class="colors-label">Couleurs disponibles</div>
+                        <div class="color-options">
+                            <div class="color-dot" style="background-color: #000;" title="Noir"></div>
+                            <div class="color-dot" style="background-color: #0a1929;" title="Dark Navy"></div>
+                        </div>
+                    </div>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Tailles</span>
+                            <span class="spec-value">XS - 3XL</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">100% Recyclé</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Grammage</span>
+                            <span class="spec-value">65 g/m²</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Éco</span>
+                            <span class="spec-value">Matériaux recyclés</span>
+                        </div>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="public-price">
+                            <div class="public-price-label">Prix public</div>
+                            <div class="public-price-amount">124,06 €</div>
+                        </div>
+                        <div class="client-price">
+                            <div class="client-price-label">Prix Cheval Liberté (prix unitaire pour 5 pcs)</div>
+                            <div class="client-price-amount">83,74 €</div>
+                            <div class="discount-badge">-32,5% de remise</div>
+                            <div class="price-includes">Broderies cœur 10cm et dos 20cm incluses</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3: Race Bw Women -->
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="slider-container">
+                        <div class="slider-wrapper" id="slider3">
+                            <div class="slide">
+                                <img src="https://s7g3.scene7.com/is/image/soloinvest/vc02888319A?$big_image_web$&fmt=webp" alt="Race Bw Women">
+                            </div>
+                            <div class="slide">
+                                <img src="https://s7g3.scene7.com/is/image/soloinvest/vc02888319B?$big_image_web$&fmt=webp" alt="Race Bw Navy">
+                            </div>
+                            <div class="slide">
+                                <img src="https://s7g3.scene7.com/is/image/soloinvest/vc02888319C?$big_image_web$&fmt=webp" alt="Race Bw Red">
+                            </div>
+                        </div>
+                        <button class="slider-btn prev" onclick="moveSlide('slider3', -1)">‹</button>
+                        <button class="slider-btn next" onclick="moveSlide('slider3', 1)">›</button>
+                        <div class="slider-dots" id="dots3"></div>
+                    </div>
+                    <div class="product-badge">Best Value</div>
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">SOL'S</span>
+                    <h2 class="product-title">Race Bw Women</h2>
+                    <p class="product-code">Réf: 02888</p>
+                    <p class="product-description">
+                        Gilet corporatif ajusté conçu pour la fonctionnalité et le confort. Softshell double couche avec doublure polaire pour chaleur et protection contre le vent.
+                    </p>
+
+                    <div class="colors-section">
+                        <div class="colors-label">Couleurs disponibles</div>
+                        <div class="color-options">
+                            <div class="color-dot" style="background-color: #000;" title="Noir"></div>
+                            <div class="color-dot" style="background-color: #1a2947;" title="French Navy"></div>
+                            <div class="color-dot" style="background-color: #b71c1c;" title="Pepper Red"></div>
+                            <div class="color-dot" style="background-color: #1565c0;" title="Royal Blue"></div>
+                        </div>
+                    </div>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Tailles</span>
+                            <span class="spec-value">S - XXL</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">96% polyester, 4% élasthane</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Grammage</span>
+                            <span class="spec-value">280 g/m²</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Doublure</span>
+                            <span class="spec-value">Polaire 100%</span>
+                        </div>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="public-price">
+                            <div class="public-price-label">Prix public</div>
+                            <div class="public-price-amount">45,52 €</div>
+                        </div>
+                        <div class="client-price">
+                            <div class="client-price-label">Prix Cheval Liberté (prix unitaire pour 5 pcs)</div>
+                            <div class="client-price-amount">30,73 €</div>
+                            <div class="discount-badge">-32,5% de remise</div>
+                            <div class="price-includes">Broderies cœur 10cm et dos 20cm incluses</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4: JN1023 Ladies Softshell Vest -->
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="slider-container">
+                        <div class="slider-wrapper" id="slider4">
+                            <div class="slide">
+                                <img src="https://www.daiber.de/files/jn1023-ladies-softshell-vest-blue-ladies.34716_master_340x400.jpg" alt="JN1023 Softshell">
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.daiber.de/files/art-jn1023-ladies-softshell-vest-blue-ladies.7284_detail_33546_340x400.jpg" alt="JN1023 Navy">
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.daiber.de/files/jn1023-ladies-softshell-vest-blue-ladies.34716_detail_67083_340x400.jpg" alt="JN1023 Black">
+                            </div>
+                        </div>
+                        <button class="slider-btn prev" onclick="moveSlide('slider4', -1)">‹</button>
+                        <button class="slider-btn next" onclick="moveSlide('slider4', 1)">›</button>
+                        <div class="slider-dots" id="dots4"></div>
+                    </div>
+                    <div class="product-badge">Tech</div>
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">DAIBER</span>
+                    <h2 class="product-title">JN1023 Ladies Softshell</h2>
+                    <p class="product-code">Réf: JN1023</p>
+                    <p class="product-description">
+                        Gilet softshell 3 couches imperméable et respirant. Tissu stretch doux et sportif. Membrane PU avec colonne d'eau de 2000 mm. 2 poches latérales et 2 poches intérieures.
+                    </p>
+
+                    <div class="colors-section">
+                        <div class="colors-label">Couleurs disponibles</div>
+                        <div class="color-options">
+                            <div class="color-dot" style="background-color: #4a90e2;" title="Azur"></div>
+                            <div class="color-dot" style="background-color: #000;" title="Noir"></div>
+                            <div class="color-dot" style="background-color: #2e7d32;" title="Vert"></div>
+                            <div class="color-dot" style="background-color: #1a2947;" title="Navy"></div>
+                            <div class="color-dot" style="background-color: #f5f5f5; border-color: #0066FF;" title="Off-White"></div>
+                            <div class="color-dot" style="background-color: #ff6f00;" title="Orange"></div>
+                            <div class="color-dot" style="background-color: #c62828;" title="Rouge"></div>
+                        </div>
+                    </div>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Tailles</span>
+                            <span class="spec-value">S - XXL</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">90% polyester, 10% élasthane</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Grammage</span>
+                            <span class="spec-value">270 g/m²</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Imperméabilité</span>
+                            <span class="spec-value">2000 mm</span>
+                        </div>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="public-price">
+                            <div class="public-price-label">Prix public</div>
+                            <div class="public-price-amount">81,36 €</div>
+                        </div>
+                        <div class="client-price">
+                            <div class="client-price-label">Prix Cheval Liberté (prix unitaire pour 5 pcs)</div>
+                            <div class="client-price-amount">54,92 €</div>
+                            <div class="discount-badge">-32,5% de remise</div>
+                            <div class="price-includes">Broderies cœur 10cm et dos 20cm incluses</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5: Wilson Bw Women -->
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="slider-container">
+                        <div class="slider-wrapper" id="slider5">
+                            <div class="slide">
+                                <img src="https://s7g3.scene7.com/is/image/soloinvest/vc02890319A?$big_image_web$&fmt=webp" alt="Wilson Bw Women">
+                            </div>
+                            <div class="slide">
+                                <img src="https://s7g3.scene7.com/is/image/soloinvest/vc02890319B?$big_image_web$&fmt=webp" alt="Wilson Navy">
+                            </div>
+                          <div class="slide">
+                                <img src="https://s7g3.scene7.com/is/image/soloinvest/vc02890319C?$big_image_web$&fmt=webp" alt="Wilson Navy">
+                            </div>
+                        </div>
+                        <button class="slider-btn prev" onclick="moveSlide('slider5', -1)">‹</button>
+                        <button class="slider-btn next" onclick="moveSlide('slider5', 1)">›</button>
+                        <div class="slider-dots" id="dots5"></div>
+                    </div>
+                    <div class="product-badge">Léger</div>
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">SOL'S</span>
+                    <h2 class="product-title">Wilson Bw Women</h2>
+                    <p class="product-code">Réf: 02890</p>
+                    <p class="product-description">
+                        Gilet corporatif léger et fonctionnel avec coupe ajustée pour femmes. Tissu matelassé, poches pratiques et col bas. Idéal pour une utilisation quotidienne et les activités de plein air.
+                    </p>
+
+                    <div class="colors-section">
+                        <div class="colors-label">Couleurs disponibles</div>
+                        <div class="color-options">
+                            <div class="color-dot" style="background-color: #000;" title="Noir"></div>
+                            <div class="color-dot" style="background-color: #1a2947;" title="French Navy"></div>
+                            <div class="color-dot" style="background-color: #616161;" title="Metal Grey"></div>
+                            <div class="color-dot" style="background-color: #1565c0;" title="Royal Blue"></div>
+                        </div>
+                    </div>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Tailles</span>
+                            <span class="spec-value">S - XXL</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">100% polyamide</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Doublure</span>
+                            <span class="spec-value">100% polyamide</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Style</span>
+                            <span class="spec-value">Coupe ajustée</span>
+                        </div>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="public-price">
+                            <div class="public-price-label">Prix public</div>
+                            <div class="public-price-amount">77,06 €</div>
+                        </div>
+                        <div class="client-price">
+                            <div class="client-price-label">Prix Cheval Liberté (prix unitaire pour 5 pcs)</div>
+                            <div class="client-price-amount">52,02 €</div>
+                            <div class="discount-badge">-32,5% de remise</div>
+                            <div class="price-includes">Broderies cœur 10cm et dos 20cm incluses</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6: Stream BW Women -->
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="slider-container">
+                        <div class="slider-wrapper" id="slider6">
+                            <div class="slide">
+                                <img src="https://s7g3.scene7.com/is/image/soloinvest/vc04021319A?$big_image_web$&fmt=webp" alt="Stream BW Women">
+                            </div>
+                            <div class="slide">
+                                <img src="https://s7g3.scene7.com/is/image/soloinvest/vc04021319B?$big_image_web$&fmt=webp" alt="Stream Navy">
+                            </div>
+                            <div class="slide">
+                                <img src="https://s7g3.scene7.com/is/image/soloinvest/vc04021319C?$big_image_web$&fmt=webp" alt="Stream Grey">
+                            </div>
+                        </div>
+                        <button class="slider-btn prev" onclick="moveSlide('slider6', -1)">‹</button>
+                        <button class="slider-btn next" onclick="moveSlide('slider6', 1)">›</button>
+                        <div class="slider-dots" id="dots6"></div>
+                    </div>
+                    <div class="product-badge">Confort</div>
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">SOL'S</span>
+                    <h2 class="product-title">Stream BW Women</h2>
+                    <p class="product-code">Réf: 04021</p>
+                    <p class="product-description">
+                        Gilet corporatif léger et fonctionnel avec coupe féminine, conçu pour le confort et la mobilité. Col haut, fermetures éclair ton sur ton et attaches élastiques au bas.
+                    </p>
+
+                    <div class="colors-section">
+                        <div class="colors-label">Couleurs disponibles</div>
+                        <div class="color-options">
+                            <div class="color-dot" style="background-color: #4a5335;" title="Army"></div>
+                            <div class="color-dot" style="background-color: #000;" title="Noir"></div>
+                            <div class="color-dot" style="background-color: #424242;" title="Charcoal Grey"></div>
+                            <div class="color-dot" style="background-color: #1a2947;" title="French Navy"></div>
+                        </div>
+                    </div>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Tailles</span>
+                            <span class="spec-value">S - XXL</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">100% polyester</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Grammage</span>
+                            <span class="spec-value">280 g/m²</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Rembourrage</span>
+                            <span class="spec-value">Polyester duvet</span>
+                        </div>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="public-price">
+                            <div class="public-price-label">Prix public</div>
+                            <div class="public-price-amount">53,44 €</div>
+                        </div>
+                        <div class="client-price">
+                            <div class="client-price-label">Prix Cheval Liberté (prix unitaire pour 5 pcs)</div>
+                            <div class="client-price-amount">36,07 €</div>
+                            <div class="discount-badge">-32,5% de remise</div>
+                            <div class="price-includes">Broderies cœur 10cm et dos 20cm incluses</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="embroidery-info">
+            <h3>Personnalisation Cheval Liberté Incluse</h3>
+            <p style="margin-bottom: 1rem; color: #6b7280; font-weight: 500;">Tous les gilets de ce devis incluent :</p>
+            <ul>
+                <li>✓ Une broderie cœur de 10cm </li>
+                <li>✓ Une broderie logo dos de 20cm</li>
+            </ul>
+        </div>
+        </div>
+    <footer>
+        <div class="footer-content">
+            <p class="footer-logo">HorsePrint PRO</p>
+            <p style="margin-bottom: 1rem; color: #6b7280;">Solutions textiles sur-mesure pour l'univers équestre professionnel</p>
+            <p style="color: #9ca3af;">© 2025 HorsePrint PRO - Tous droits réservés</p>
+        </div>
+    </footer>       
+
+
+
+    <script>
+        // Initialisation des sliders
+        const sliders = {};
+        
+        function initSlider(sliderId, dotsId) {
+            const slider = document.getElementById(sliderId);
+            const dotsContainer = document.getElementById(dotsId);
+            const slides = slider.querySelectorAll('.slide');
+            
+            sliders[sliderId] = {
+                currentIndex: 0,
+                totalSlides: slides.length
+            };
+            
+            // Créer les dots
+            for (let i = 0; i < slides.length; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'dot' + (i === 0 ? ' active' : '');
+                dot.onclick = () => goToSlide(sliderId, i);
+                dotsContainer.appendChild(dot);
+            }
+        }
+        
+        function moveSlide(sliderId, direction) {
+            const sliderData = sliders[sliderId];
+            const slider = document.getElementById(sliderId);
+            const dotsContainer = document.getElementById(sliderId.replace('slider', 'dots'));
+            
+            sliderData.currentIndex += direction;
+            
+            if (sliderData.currentIndex < 0) {
+                sliderData.currentIndex = sliderData.totalSlides - 1;
+            } else if (sliderData.currentIndex >= sliderData.totalSlides) {
+                sliderData.currentIndex = 0;
+            }
+            
+            updateSlider(sliderId);
+        }
+        
+        function goToSlide(sliderId, index) {
+            sliders[sliderId].currentIndex = index;
+            updateSlider(sliderId);
+        }
+        
+        function updateSlider(sliderId) {
+            const sliderData = sliders[sliderId];
+            const slider = document.getElementById(sliderId);
+            const dotsContainer = document.getElementById(sliderId.replace('slider', 'dots'));
+            const dots = dotsContainer.querySelectorAll('.dot');
+            
+            slider.style.transform = `translateX(-${sliderData.currentIndex * 100}%)`;
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === sliderData.currentIndex);
+            });
+        }
+        
+        // Initialiser tous les sliders
+        document.addEventListener('DOMContentLoaded', function() {
+            initSlider('slider1', 'dots1');
+            initSlider('slider2', 'dots2');
+            initSlider('slider3', 'dots3');
+            initSlider('slider4', 'dots4');
+            initSlider('slider5', 'dots5');
+            initSlider('slider6', 'dots6');
+        });
+    </script>
+</body>
+</html>

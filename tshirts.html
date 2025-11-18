@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection T-shirts Premium — HorsePrint Pro</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32'%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23002DFF'/%3E%3Cstop offset='100%25' style='stop-color:%236366f1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='15' fill='url(%23gradient)' stroke='white' stroke-width='1'/%3E%3Cpath d='M8 10 L8 22 M8 16 L13 16 M13 10 L13 22' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cpath d='M17 10 L17 22 M17 10 L22 10 Q24 10 24 13 Q24 16 22 16 L17 16' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <!-- Header -->
+<header>
+    <nav class="container">
+        <div class="mobile-nav-header">
+            <!-- Logo cliquable -->
+            <a href="index.html" class="logo notranslate" style="text-decoration: none;">
+                HorsePrint
+                <span class="logo-pro">PRO</span>
+            </a>
+            <!-- Belle flèche retour à droite (visible uniquement sur mobile) -->
+            <a href="index.html" class="back-arrow" title="Retour à l'accueil">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                </svg>
+            </a>
+        </div>
+        <!-- Navigation desktop uniquement -->
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="translate-widget">
+    <button class="translate-toggle" onclick="toggleTranslate()">
+        🌐 Traduire
+    </button>
+    <div class="translate-content" id="translateContent">
+        <!-- Widget Google officiel -->
+        <div id="google_translate_element"></div>
+        
+        <!-- OU drapeaux personnalisés (optionnel) -->
+        <div class="language-flags" style="display: none;">
+            <button class="flag-btn active" onclick="translateTo('fr')" title="Français">🇫🇷</button>
+            <button class="flag-btn" onclick="translateTo('en')" title="English">🇬🇧</button>
+            <button class="flag-btn" onclick="translateTo('es')" title="Español">🇪🇸</button>
+            <button class="flag-btn" onclick="translateTo('de')" title="Deutsch">🇩🇪</button>
+            <button class="flag-btn" onclick="translateTo('it')" title="Italiano">🇮🇹</button>
+            <button class="flag-btn" onclick="translateTo('nl')" title="Nederlands">🇳🇱</button>
+        </div>
+    </div>
+</div>
+
+    <!-- Hero Section -->
+    <section class="hero2">
+
+    </section>
+
+    <!-- T-shirts Section -->
+    <section id="tshirts" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Notre collection de T-shirts premium</h2>
+                <p class="section-subtitle">Des T-shirts de qualité supérieure pour tous vos besoins événementiels</p>
+            </div>
+
+            <div class="polos-grid">
+                <!-- COAST NATURA - T-shirt Bio Unisexe -->
+                <div class="polo-card fade-in" data-product="coast">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/tshirts/TSN165UW_100_1_1000.jpg" alt="COAST" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('coast', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('coast', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">COAST ECO</h3>
+                        <div class="polo-reference">Réf: HP-TS001 | Bio unisexe NATURA</div>
+                        <p class="polo-description">T-shirt écologique en 100% coton organique RingSpun. Douceur premium et engagement environnemental.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Coton Organique RingSpun (165 g/m²)<br>
+                            • Certifié OCS (Organic Content Standard)<br>
+                            • Col rond côtelé 1x1, coutures latérales<br>
+                            • Tailles : S à 3XL
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (10)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('coast', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-109" data-color="Crème" data-color-code="109" onclick="changeColor('coast', '109', 'Crème')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('coast', '200', 'Noir')"></div>
+                                <div class="color-swatch color-221" data-color="Gris Brumeux" data-color-code="221" onclick="changeColor('coast', '221', 'Gris Brumeux')"></div>
+                                <div class="color-swatch color-416" data-color="Flamingo" data-color-code="416" onclick="changeColor('coast', '416', 'Flamingo')"></div>
+                                <div class="color-swatch color-512" data-color="Marine Profond" data-color-code="512" onclick="changeColor('coast', '512', 'Marine Profond')"></div>
+                                <div class="color-swatch color-519" data-color="Aqua" data-color-code="519" onclick="changeColor('coast', '519', 'Aqua')"></div>
+                                <div class="color-swatch color-522" data-color="Bleu Arctique" data-color-code="522" onclick="changeColor('coast', '522', 'Bleu Arctique')"></div>
+                                <div class="color-swatch color-619" data-color="Aloé" data-color-code="619" onclick="changeColor('coast', '619', 'Aloé')"></div>
+                                <div class="color-swatch color-618" data-color="Vert Chasseur" data-color-code="618" onclick="changeColor('coast', '618', 'Vert Chasseur')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Bio NATURA</span>
+                            <span class="feature-tag">Certifié OCS</span>
+                            <span class="feature-tag">Éco-responsable</span>
+                            <span class="feature-tag">Toucher premium</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 4,75€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Demande de devis T-shirt COAST ECO&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- T-shirt COAST ECO Bio (Réf: HP-TS001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : %0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COAST WOMAN - T-shirt Bio Femme -->
+                <div class="polo-card fade-in" data-product="coast-woman">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/tshirts/TSN165WW_100_1_1000.jpg" alt="COAST WOMAN" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('coast-woman', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('coast-woman', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">COAST ECO WOMAN</h3>
+                        <div class="polo-reference">Réf: HP-TSW001 | Bio femme NATURA</div>
+                        <p class="polo-description">T-shirt féminin en coton organique avec coupe adaptée à la morphologie féminine. Confort et style éco-responsable.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Coton Organique RingSpun (165 g/m²)<br>
+                            • Coupe féminine cintrée<br>
+                            • Certifié OCS, medium fit<br>
+                            • Tailles : S à 3XL
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (10)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('coast-woman', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-109" data-color="Crème" data-color-code="109" onclick="changeColor('coast-woman', '109', 'Crème')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('coast-woman', '200', 'Noir')"></div>
+                                <div class="color-swatch color-221" data-color="Gris Brumeux" data-color-code="221" onclick="changeColor('coast-woman', '221', 'Gris Brumeux')"></div>
+                                <div class="color-swatch color-416" data-color="Flamingo" data-color-code="416" onclick="changeColor('coast-woman', '416', 'Flamingo')"></div>
+                                <div class="color-swatch color-512" data-color="Marine Profond" data-color-code="512" onclick="changeColor('coast-woman', '512', 'Marine Profond')"></div>
+                                <div class="color-swatch color-519" data-color="Aqua" data-color-code="519" onclick="changeColor('coast-woman', '519', 'Aqua')"></div>
+                                <div class="color-swatch color-522" data-color="Bleu Arctique" data-color-code="522" onclick="changeColor('coast-woman', '522', 'Bleu Arctique')"></div>
+                                <div class="color-swatch color-619" data-color="Aloé" data-color-code="619" onclick="changeColor('coast-woman', '619', 'Aloé')"></div>
+                                <div class="color-swatch color-618" data-color="Vert Chasseur" data-color-code="618" onclick="changeColor('coast-woman', '618', 'Vert Chasseur')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Coupe féminine</span>
+                            <span class="feature-tag">Bio NATURA</span>
+                            <span class="feature-tag">Certifié OCS</span>
+                            <span class="feature-tag">Éco-responsable</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 4,75€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis T-shirt COAST ECO WOMAN&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- T-shirt COAST ECO WOMAN Bio (Réf: HP-TSW001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie / sérigraphie / transfert%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COAST KIDS - T-shirt Bio Enfant -->
+                <div class="polo-card fade-in" data-product="coast-kids">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/tshirts/TSN165KW_100_1_1000.jpg" alt="COAST KIDS" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('coast-kids', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('coast-kids', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">COAST ECO KIDS</h3>
+                        <div class="polo-reference">Réf: HP-TSK001 | Bio enfant NATURA</div>
+                        <p class="polo-description">T-shirt enfant en coton biologique, doux et respectueux de l'environnement. Parfait pour sensibiliser les jeunes à l'écologie.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Coton Organique RingSpun (165 g/m²)<br>
+                            • Spécialement conçu pour les enfants<br>
+                            • Certifié OCS, sans produits chimiques<br>
+                            • Tailles : 1/2 à 12/14 ans
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (10)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('coast-kids', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-109" data-color="Crème" data-color-code="109" onclick="changeColor('coast-kids', '109', 'Crème')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('coast-kids', '200', 'Noir')"></div>
+                                <div class="color-swatch color-221" data-color="Gris Brumeux" data-color-code="221" onclick="changeColor('coast-kids', '221', 'Gris Brumeux')"></div>
+                                <div class="color-swatch color-416" data-color="Flamingo" data-color-code="416" onclick="changeColor('coast-kids', '416', 'Flamingo')"></div>
+                                <div class="color-swatch color-512" data-color="Marine Profond" data-color-code="512" onclick="changeColor('coast-kids', '512', 'Marine Profond')"></div>
+                                <div class="color-swatch color-519" data-color="Aqua" data-color-code="519" onclick="changeColor('coast-kids', '519', 'Aqua')"></div>
+                                <div class="color-swatch color-522" data-color="Bleu Arctique" data-color-code="522" onclick="changeColor('coast-kids', '522', 'Bleu Arctique')"></div>
+                                <div class="color-swatch color-619" data-color="Aloé" data-color-code="619" onclick="changeColor('coast-kids', '619', 'Aloé')"></div>
+                                <div class="color-swatch color-618" data-color="Vert Chasseur" data-color-code="618" onclick="changeColor('coast-kids', '618', 'Vert Chasseur')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Spécial enfants</span>
+                            <span class="feature-tag">Bio NATURA</span>
+                            <span class="feature-tag">Sans chimie</span>
+                            <span class="feature-tag">Doux & safe</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 3,95€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis T-shirt COAST ECO KIDS&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- T-shirt COAST ECO KIDS Bio (Réf: HP-TSK001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie / sérigraphie / transfert%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PALM - T-shirt Premium Unisexe -->
+                <div class="polo-card fade-in" data-product="palm">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/tshirts/MK023WV_100_1_1000.jpg" alt="PALM" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('palm', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('palm', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">PALM PREMIUM</h3>
+                        <div class="polo-reference">Réf: HP-TS002 | Premium unisexe</div>
+                        <p class="polo-description">T-shirt premium en coton RingSpun 190g, le parfait équilibre entre qualité, confort et durabilité. Notre modèle phare.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Coton RingSpun (190 g/m²)<br>
+                            • Col rond côtelé 1x1 avec élasthanne<br>
+                            • Maille tubulaire, toucher doux premium<br>
+                            • Tailles : XS à 5XL
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (30)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('palm', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-103" data-color="Sable" data-color-code="103" onclick="changeColor('palm', '103', 'Sable')"></div>
+                                <div class="color-swatch color-104" data-color="Marron" data-color-code="104" onclick="changeColor('palm', '104', 'Marron')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('palm', '200', 'Noir')"></div>
+                                <div class="color-swatch color-201" data-color="Gris Foncé" data-color-code="201" onclick="changeColor('palm', '201', 'Gris Foncé')"></div>
+                                <div class="color-swatch color-202" data-color="Gris Chiné" data-color-code="202" onclick="changeColor('palm', '202', 'Gris Chiné')"></div>
+                                <div class="color-swatch color-300" data-color="Jaune" data-color-code="300" onclick="changeColor('palm', '300', 'Jaune')"></div>
+                                <div class="color-swatch color-301" data-color="Orange" data-color-code="301" onclick="changeColor('palm', '301', 'Orange')"></div>
+                                <div class="color-swatch color-305" data-color="Or" data-color-code="305" onclick="changeColor('palm', '305', 'Or')"></div>
+                                <div class="color-swatch color-313" data-color="Pêche" data-color-code="313" onclick="changeColor('palm', '313', 'Pêche')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('palm', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-403" data-color="Bordeaux" data-color-code="403" onclick="changeColor('palm', '403', 'Bordeaux')"></div>
+                                <div class="color-swatch color-406" data-color="Fuchsia" data-color-code="406" onclick="changeColor('palm', '406', 'Fuchsia')"></div>
+                                <div class="color-swatch color-410" data-color="Rose Pâle" data-color-code="410" onclick="changeColor('palm', '410', 'Rose Pâle')"></div>
+                                <div class="color-swatch color-414" data-color="Corail Frais" data-color-code="414" onclick="changeColor('palm', '414', 'Corail Frais')"></div>
+                                <div class="color-swatch color-501" data-color="Bleu Ciel" data-color-code="501" onclick="changeColor('palm', '501', 'Bleu Ciel')"></div>
+                                <div class="color-swatch color-502" data-color="Bleu Royal" data-color-code="502" onclick="changeColor('palm', '502', 'Bleu Royal')"></div>
+                                <div class="color-swatch color-505" data-color="Atoll" data-color-code="505" onclick="changeColor('palm', '505', 'Atoll')"></div>
+                                <div class="color-swatch color-509" data-color="Bleu Fog" data-color-code="509" onclick="changeColor('palm', '509', 'Bleu Fog')"></div>
+                                <div class="color-swatch color-510" data-color="Bleu Denim" data-color-code="510" onclick="changeColor('palm', '510', 'Bleu Denim')"></div>
+                                <div class="color-swatch color-511" data-color="Violet" data-color-code="511" onclick="changeColor('palm', '511', 'Violet')"></div>
+                                <div class="color-swatch color-512" data-color="Marine Profond" data-color-code="512" onclick="changeColor('palm', '512', 'Marine Profond')"></div>
+                                <div class="color-swatch color-515" data-color="Turquoise Riche" data-color-code="515" onclick="changeColor('palm', '515', 'Turquoise Riche')"></div>
+                                <div class="color-swatch color-530" data-color="Lilas" data-color-code="530" onclick="changeColor('palm', '530', 'Lilas')"></div>
+                                <div class="color-swatch color-600" data-color="Vert Kelly" data-color-code="600" onclick="changeColor('palm', '600', 'Vert Kelly')"></div>
+                                <div class="color-swatch color-601" data-color="Vert Kaki" data-color-code="601" onclick="changeColor('palm', '601', 'Vert Kaki')"></div>
+                                <div class="color-swatch color-602" data-color="Vert Bouteille" data-color-code="602" onclick="changeColor('palm', '602', 'Vert Bouteille')"></div>
+                                <div class="color-swatch color-604" data-color="Lime" data-color-code="604" onclick="changeColor('palm', '604', 'Lime')"></div>
+                                <div class="color-swatch color-613" data-color="Sauge" data-color-code="613" onclick="changeColor('palm', '613', 'Sauge')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Premium 190g</span>
+                            <span class="feature-tag">30 couleurs</span>
+                            <span class="feature-tag">XS à 5XL</span>
+                            <span class="feature-tag">Toucher premium</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 3,15€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Demande de devis T-shirt PALM PREMIUM&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- T-shirt PALM PREMIUM (Réf: HP-TS002)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : %0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PALM WOMAN - T-shirt Premium Femme -->
+                <div class="polo-card fade-in" data-product="palm-woman">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/tshirts/TS190WW_100_2_1000.jpg" alt="PALM WOMAN" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('palm-woman', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('palm-woman', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">PALM PREMIUM WOMAN</h3>
+                        <div class="polo-reference">Réf: HP-TSW002 | Premium femme</div>
+                        <p class="polo-description">T-shirt féminin premium avec coupe cintrée et finitions délicates. Même qualité que le PALM unisexe avec une coupe adaptée.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Coton RingSpun (190 g/m²)<br>
+                            • Coupe féminine cintrée, coutures latérales<br>
+                            • Col rond côtelé avec élasthanne<br>
+                            • Tailles : XS à 3XL
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (30)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('palm-woman', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-103" data-color="Sable" data-color-code="103" onclick="changeColor('palm-woman', '103', 'Sable')"></div>
+                                <div class="color-swatch color-104" data-color="Marron" data-color-code="104" onclick="changeColor('palm-woman', '104', 'Marron')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('palm-woman', '200', 'Noir')"></div>
+                                <div class="color-swatch color-201" data-color="Gris Foncé" data-color-code="201" onclick="changeColor('palm-woman', '201', 'Gris Foncé')"></div>
+                                <div class="color-swatch color-202" data-color="Gris Chiné" data-color-code="202" onclick="changeColor('palm-woman', '202', 'Gris Chiné')"></div>
+                                <div class="color-swatch color-300" data-color="Jaune" data-color-code="300" onclick="changeColor('palm-woman', '300', 'Jaune')"></div>
+                                <div class="color-swatch color-301" data-color="Orange" data-color-code="301" onclick="changeColor('palm-woman', '301', 'Orange')"></div>
+                                <div class="color-swatch color-305" data-color="Or" data-color-code="305" onclick="changeColor('palm-woman', '305', 'Or')"></div>
+                                <div class="color-swatch color-313" data-color="Pêche" data-color-code="313" onclick="changeColor('palm-woman', '313', 'Pêche')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('palm-woman', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-403" data-color="Bordeaux" data-color-code="403" onclick="changeColor('palm-woman', '403', 'Bordeaux')"></div>
+                                <div class="color-swatch color-406" data-color="Fuchsia" data-color-code="406" onclick="changeColor('palm-woman', '406', 'Fuchsia')"></div>
+                                <div class="color-swatch color-410" data-color="Rose Pâle" data-color-code="410" onclick="changeColor('palm-woman', '410', 'Rose Pâle')"></div>
+                                <div class="color-swatch color-414" data-color="Corail Frais" data-color-code="414" onclick="changeColor('palm-woman', '414', 'Corail Frais')"></div>
+                                <div class="color-swatch color-501" data-color="Bleu Ciel" data-color-code="501" onclick="changeColor('palm-woman', '501', 'Bleu Ciel')"></div>
+                                <div class="color-swatch color-502" data-color="Bleu Royal" data-color-code="502" onclick="changeColor('palm-woman', '502', 'Bleu Royal')"></div>
+                                <div class="color-swatch color-505" data-color="Atoll" data-color-code="505" onclick="changeColor('palm-woman', '505', 'Atoll')"></div>
+                                <div class="color-swatch color-509" data-color="Bleu Fog" data-color-code="509" onclick="changeColor('palm-woman', '509', 'Bleu Fog')"></div>
+                                <div class="color-swatch color-510" data-color="Bleu Denim" data-color-code="510" onclick="changeColor('palm-woman', '510', 'Bleu Denim')"></div>
+                                <div class="color-swatch color-511" data-color="Violet" data-color-code="511" onclick="changeColor('palm-woman', '511', 'Violet')"></div>
+                                <div class="color-swatch color-512" data-color="Marine Profond" data-color-code="512" onclick="changeColor('palm-woman', '512', 'Marine Profond')"></div>
+                                <div class="color-swatch color-515" data-color="Turquoise Riche" data-color-code="515" onclick="changeColor('palm-woman', '515', 'Turquoise Riche')"></div>
+                                <div class="color-swatch color-530" data-color="Lilas" data-color-code="530" onclick="changeColor('palm-woman', '530', 'Lilas')"></div>
+                                <div class="color-swatch color-600" data-color="Vert Kelly" data-color-code="600" onclick="changeColor('palm-woman', '600', 'Vert Kelly')"></div>
+                                <div class="color-swatch color-601" data-color="Vert Kaki" data-color-code="601" onclick="changeColor('palm-woman', '601', 'Vert Kaki')"></div>
+                                <div class="color-swatch color-602" data-color="Vert Bouteille" data-color-code="602" onclick="changeColor('palm-woman', '602', 'Vert Bouteille')"></div>
+                                <div class="color-swatch color-604" data-color="Lime" data-color-code="604" onclick="changeColor('palm-woman', '604', 'Lime')"></div>
+                                <div class="color-swatch color-613" data-color="Sauge" data-color-code="613" onclick="changeColor('palm-woman', '613', 'Sauge')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Coupe féminine</span>
+                            <span class="feature-tag">Premium 190g</span>
+                            <span class="feature-tag">30 couleurs</span>
+                            <span class="feature-tag">Finitions délicates</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 3,15€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis T-shirt PALM PREMIUM WOMAN&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- T-shirt PALM PREMIUM WOMAN (Réf: HP-TSW002)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie / sérigraphie / transfert%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PALM KIDS - T-shirt Premium Enfant -->
+                <div class="polo-card fade-in" data-product="palm-kids">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/tshirts/TS190KC_200_1_1000.webp" alt="PALM KIDS" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('palm-kids', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('palm-kids', 1)">›</div>
+                            <div class="color-indicator">Noir</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">PALM PREMIUM KIDS</h3>
+                        <div class="polo-reference">Réf: HP-TSK002 | Premium enfant</div>
+                        <p class="polo-description">T-shirt enfant premium, même qualité que les adultes avec une coupe adaptée aux plus jeunes. Doux et résistant.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Coton RingSpun (190 g/m²)<br>
+                            • Coupe spécialement adaptée aux enfants<br>
+                            • Col rond côtelé avec élasthanne<br>
+                            • Tailles : 1/2 à 12/14 ans
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (30)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('palm-kids', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-103" data-color="Sable" data-color-code="103" onclick="changeColor('palm-kids', '103', 'Sable')"></div>
+                                <div class="color-swatch color-104" data-color="Marron" data-color-code="104" onclick="changeColor('palm-kids', '104', 'Marron')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('palm-kids', '200', 'Noir')"></div>
+                                <div class="color-swatch color-201" data-color="Gris Foncé" data-color-code="201" onclick="changeColor('palm-kids', '201', 'Gris Foncé')"></div>
+                                <div class="color-swatch color-202" data-color="Gris Chiné" data-color-code="202" onclick="changeColor('palm-kids', '202', 'Gris Chiné')"></div>
+                                <div class="color-swatch color-300" data-color="Jaune" data-color-code="300" onclick="changeColor('palm-kids', '300', 'Jaune')"></div>
+                                <div class="color-swatch color-301" data-color="Orange" data-color-code="301" onclick="changeColor('palm-kids', '301', 'Orange')"></div>
+                                <div class="color-swatch color-305" data-color="Or" data-color-code="305" onclick="changeColor('palm-kids', '305', 'Or')"></div>
+                                <div class="color-swatch color-313" data-color="Pêche" data-color-code="313" onclick="changeColor('palm-kids', '313', 'Pêche')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('palm-kids', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-403" data-color="Bordeaux" data-color-code="403" onclick="changeColor('palm-kids', '403', 'Bordeaux')"></div>
+                                <div class="color-swatch color-406" data-color="Fuchsia" data-color-code="406" onclick="changeColor('palm-kids', '406', 'Fuchsia')"></div>
+                                <div class="color-swatch color-410" data-color="Rose Pâle" data-color-code="410" onclick="changeColor('palm-kids', '410', 'Rose Pâle')"></div>
+                                <div class="color-swatch color-414" data-color="Corail Frais" data-color-code="414" onclick="changeColor('palm-kids', '414', 'Corail Frais')"></div>
+                                <div class="color-swatch color-501" data-color="Bleu Ciel" data-color-code="501" onclick="changeColor('palm-kids', '501', 'Bleu Ciel')"></div>
+                                <div class="color-swatch color-502" data-color="Bleu Royal" data-color-code="502" onclick="changeColor('palm-kids', '502', 'Bleu Royal')"></div>
+                                <div class="color-swatch color-505" data-color="Atoll" data-color-code="505" onclick="changeColor('palm-kids', '505', 'Atoll')"></div>
+                                <div class="color-swatch color-509" data-color="Bleu Fog" data-color-code="509" onclick="changeColor('palm-kids', '509', 'Bleu Fog')"></div>
+                                <div class="color-swatch color-510" data-color="Bleu Denim" data-color-code="510" onclick="changeColor('palm-kids', '510', 'Bleu Denim')"></div>
+                                <div class="color-swatch color-511" data-color="Violet" data-color-code="511" onclick="changeColor('palm-kids', '511', 'Violet')"></div>
+                                <div class="color-swatch color-512" data-color="Marine Profond" data-color-code="512" onclick="changeColor('palm-kids', '512', 'Marine Profond')"></div>
+                                <div class="color-swatch color-515" data-color="Turquoise Riche" data-color-code="515" onclick="changeColor('palm-kids', '515', 'Turquoise Riche')"></div>
+                                <div class="color-swatch color-530" data-color="Lilas" data-color-code="530" onclick="changeColor('palm-kids', '530', 'Lilas')"></div>
+                                <div class="color-swatch color-600" data-color="Vert Kelly" data-color-code="600" onclick="changeColor('palm-kids', '600', 'Vert Kelly')"></div>
+                                <div class="color-swatch color-601" data-color="Vert Kaki" data-color-code="601" onclick="changeColor('palm-kids', '601', 'Vert Kaki')"></div>
+                                <div class="color-swatch color-602" data-color="Vert Bouteille" data-color-code="602" onclick="changeColor('palm-kids', '602', 'Vert Bouteille')"></div>
+                                <div class="color-swatch color-604" data-color="Lime" data-color-code="604" onclick="changeColor('palm-kids', '604', 'Lime')"></div>
+                                <div class="color-swatch color-613" data-color="Sauge" data-color-code="613" onclick="changeColor('palm-kids', '613', 'Sauge')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Spécial enfants</span>
+                            <span class="feature-tag">Premium 190g</span>
+                            <span class="feature-tag">30 couleurs</span>
+                            <span class="feature-tag">Résistant & doux</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 3,15€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis T-shirt PALM PREMIUM KIDS&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- T-shirt PALM PREMIUM KIDS (Réf: HP-TSK002)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie / sérigraphie / transfert%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MELBOURNE - T-shirt Standard Unisexe -->
+                <div class="polo-card fade-in" data-product="melbourne">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/tshirts/MK022WV_100_1_1000.jpg" alt="MELBOURNE" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('melbourne', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('melbourne', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">MELBOURNE CLASSIC</h3>
+                        <div class="polo-reference">Réf: HP-TS003 | Standard unisexe</div>
+                        <p class="polo-description">T-shirt classique en coton RingSpun 155g, excellent rapport qualité-prix pour tous vos événements. Fiable et polyvalent.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Coton RingSpun (155 g/m²)<br>
+                            • Col rond côtelé 1x1 avec élasthanne<br>
+                            • Maille tubulaire, regular fit<br>
+                            • Tailles : XS à 5XL
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (31)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('melbourne', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-103" data-color="Sable" data-color-code="103" onclick="changeColor('melbourne', '103', 'Sable')"></div>
+                                <div class="color-swatch color-104" data-color="Marron" data-color-code="104" onclick="changeColor('melbourne', '104', 'Marron')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('melbourne', '200', 'Noir')"></div>
+                                <div class="color-swatch color-201" data-color="Gris Foncé" data-color-code="201" onclick="changeColor('melbourne', '201', 'Gris Foncé')"></div>
+                                <div class="color-swatch color-202" data-color="Gris Chiné" data-color-code="202" onclick="changeColor('melbourne', '202', 'Gris Chiné')"></div>
+                                <div class="color-swatch color-300" data-color="Jaune" data-color-code="300" onclick="changeColor('melbourne', '300', 'Jaune')"></div>
+                                <div class="color-swatch color-301" data-color="Orange" data-color-code="301" onclick="changeColor('melbourne', '301', 'Orange')"></div>
+                                <div class="color-swatch color-305" data-color="Or" data-color-code="305" onclick="changeColor('melbourne', '305', 'Or')"></div>
+                                <div class="color-swatch color-313" data-color="Pêche" data-color-code="313" onclick="changeColor('melbourne', '313', 'Pêche')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('melbourne', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-406" data-color="Fuchsia" data-color-code="406" onclick="changeColor('melbourne', '406', 'Fuchsia')"></div>
+                                <div class="color-swatch color-410" data-color="Rose Pâle" data-color-code="410" onclick="changeColor('melbourne', '410', 'Rose Pâle')"></div>
+                                <div class="color-swatch color-414" data-color="Corail Frais" data-color-code="414" onclick="changeColor('melbourne', '414', 'Corail Frais')"></div>
+                                <div class="color-swatch color-500" data-color="Marine" data-color-code="500" onclick="changeColor('melbourne', '500', 'Marine')"></div>
+                                <div class="color-swatch color-501" data-color="Bleu Ciel" data-color-code="501" onclick="changeColor('melbourne', '501', 'Bleu Ciel')"></div>
+                                <div class="color-swatch color-502" data-color="Bleu Royal" data-color-code="502" onclick="changeColor('melbourne', '502', 'Bleu Royal')"></div>
+                                <div class="color-swatch color-505" data-color="Atoll" data-color-code="505" onclick="changeColor('melbourne', '505', 'Atoll')"></div>
+                                <div class="color-swatch color-509" data-color="Bleu Fog" data-color-code="509" onclick="changeColor('melbourne', '509', 'Bleu Fog')"></div>
+                                <div class="color-swatch color-510" data-color="Bleu Denim" data-color-code="510" onclick="changeColor('melbourne', '510', 'Bleu Denim')"></div>
+                                <div class="color-swatch color-511" data-color="Violet" data-color-code="511" onclick="changeColor('melbourne', '511', 'Violet')"></div>
+                                <div class="color-swatch color-512" data-color="Marine Profond" data-color-code="512" onclick="changeColor('melbourne', '512', 'Marine Profond')"></div>
+                                <div class="color-swatch color-515" data-color="Turquoise Riche" data-color-code="515" onclick="changeColor('melbourne', '515', 'Turquoise Riche')"></div>
+                                <div class="color-swatch color-530" data-color="Lilas" data-color-code="530" onclick="changeColor('melbourne', '530', 'Lilas')"></div>
+                                <div class="color-swatch color-600" data-color="Vert Kelly" data-color-code="600" onclick="changeColor('melbourne', '600', 'Vert Kelly')"></div>
+                                <div class="color-swatch color-601" data-color="Vert Kaki" data-color-code="601" onclick="changeColor('melbourne', '601', 'Vert Kaki')"></div>
+                                <div class="color-swatch color-602" data-color="Vert Bouteille" data-color-code="602" onclick="changeColor('melbourne', '602', 'Vert Bouteille')"></div>
+                                <div class="color-swatch color-604" data-color="Lime" data-color-code="604" onclick="changeColor('melbourne', '604', 'Lime')"></div>
+                                <div class="color-swatch color-605" data-color="Vert Real" data-color-code="605" onclick="changeColor('melbourne', '605', 'Vert Real')"></div>
+                                <div class="color-swatch color-613" data-color="Sauge" data-color-code="613" onclick="changeColor('melbourne', '613', 'Sauge')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Standard 155g</span>
+                            <span class="feature-tag">31 couleurs</span>
+                            <span class="feature-tag">XS à 5XL</span>
+                            <span class="feature-tag">Bon rapport Q/P</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 2,35€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Demande de devis T-shirt MELBOURNE CLASSIC&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- T-shirt MELBOURNE CLASSIC (Réf: HP-TS003)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : %0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PARADISE - T-shirt Manches Longues -->
+                <div class="polo-card fade-in" data-product="paradise">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/tshirts/MK156WV_100_1_1000.jpg" alt="PARADISE" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('paradise', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('paradise', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">PARADISE LONG</h3>
+                        <div class="polo-reference">Réf: HP-TSL001 | Manches longues</div>
+                        <p class="polo-description">T-shirt manches longues en coton RingSpun, parfait pour les saisons fraîches et les événements en extérieur prolongés.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Coton RingSpun (155 g/m²)<br>
+                            • Manches longues avec ourlet<br>
+                            • Col rond côtelé 1x1 avec élasthanne<br>
+                            • Tailles : XS à 5XL
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (8)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('paradise', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('paradise', '200', 'Noir')"></div>
+                                <div class="color-swatch color-201" data-color="Gris Foncé" data-color-code="201" onclick="changeColor('paradise', '201', 'Gris Foncé')"></div>
+                                <div class="color-swatch color-202" data-color="Gris Chiné" data-color-code="202" onclick="changeColor('paradise', '202', 'Gris Chiné')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('paradise', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-500" data-color="Marine" data-color-code="500" onclick="changeColor('paradise', '500', 'Marine')"></div>
+                                <div class="color-swatch color-502" data-color="Bleu Royal" data-color-code="502" onclick="changeColor('paradise', '502', 'Bleu Royal')"></div>
+                                <div class="color-swatch color-600" data-color="Vert Kelly" data-color-code="600" onclick="changeColor('paradise', '600', 'Vert Kelly')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Manches longues</span>
+                            <span class="feature-tag">XS à 5XL</span>
+                            <span class="feature-tag">Mi-saison</span>
+                            <span class="feature-tag">Polyvalent</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 3,85€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Demande de devis T-shirt PARADISE LONG&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- T-shirt PARADISE LONG manches longues (Réf: HP-TSL001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : %0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DERBY - T-shirt Technique Polyester -->
+                <div class="polo-card fade-in" data-product="derby">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/tshirts/TS151UW_100_1_1000.jpg" alt="DERBY" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('derby', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('derby', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">DERBY TECH</h3>
+                        <div class="polo-reference">Réf: HP-TST001 | Technique polyester</div>
+                        <p class="polo-description">T-shirt technique 100% polyester toucher coton, idéal pour la sublimation et les couleurs éclatantes. Parfait pour le sport.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Polyester toucher coton (150 g/m²)<br>
+                            • Idéal sublimation, couleurs vives<br>
+                            • Col rond côtelé 1x1 avec élasthanne<br>
+                            • Tailles : S à 5XL
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (10)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('derby', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('derby', '200', 'Noir')"></div>
+                                <div class="color-swatch color-303" data-color="Orange Fluo" data-color-code="303" onclick="changeColor('derby', '303', 'Orange Fluo')"></div>
+                                <div class="color-swatch color-304" data-color="Jaune Fluo" data-color-code="304" onclick="changeColor('derby', '304', 'Jaune Fluo')"></div>
+                                <div class="color-swatch color-408" data-color="Rose Fluo" data-color-code="408" onclick="changeColor('derby', '408', 'Rose Fluo')"></div>
+                                <div class="color-swatch color-412" data-color="Rouge Fluo" data-color-code="412" onclick="changeColor('derby', '412', 'Rouge Fluo')"></div>
+                                <div class="color-swatch color-502" data-color="Bleu Royal" data-color-code="502" onclick="changeColor('derby', '502', 'Bleu Royal')"></div>
+                                <div class="color-swatch color-505" data-color="Atoll" data-color-code="505" onclick="changeColor('derby', '505', 'Atoll')"></div>
+                                <div class="color-swatch color-512" data-color="Marine Profond" data-color-code="512" onclick="changeColor('derby', '512', 'Marine Profond')"></div>
+                                <div class="color-swatch color-610" data-color="Vert Fluo" data-color-code="610" onclick="changeColor('derby', '610', 'Vert Fluo')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">100% Polyester</span>
+                            <span class="feature-tag">Sublimation</span>
+                            <span class="feature-tag">Couleurs fluo</span>
+                            <span class="feature-tag">Sport & technique</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 3,10€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Demande de devis T-shirt DERBY TECH&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- T-shirt DERBY TECH polyester (Réf: HP-TST001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : sublimation / sérigraphie / transfert%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section informative -->
+            <div class="section-header fade-in" style="margin-top: 5rem;">
+                <h2 class="section-title">Personnalisation & Services</h2>
+                <div style="max-width: 800px; margin: 2rem auto; padding: 2rem; background: var(--surface); border-radius: 20px; backdrop-filter: blur(20px);">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Techniques de marquage disponibles :</h3>
+                    <ul style="text-align: left; color: var(--text-secondary); line-height: 2;">
+                        <li><strong>Sérigraphie :</strong> Technique classique, idéale pour grandes quantités</li>
+                        <li><strong>Sublimation :</strong> Spécial polyester, couleurs éclatantes</li>
+                        <li><strong>Broderie :</strong> Finition premium sur poitrine/manches</li>
+                        <li><strong>Impression numérique :</strong> Visuels complexes, photographies</li>
+                    </ul>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem; text-align: center;">
+                        <div style="background: rgba(0, 45, 255, 0.1); padding: 1rem; border-radius: 10px;">
+                            <strong style="color: var(--primary);">NATURA Bio</strong><br>
+                            <span style="font-size: 0.9rem;">Éco-responsable<br>Certifié OCS</span>
+                        </div>
+                        <div style="background: rgba(0, 45, 255, 0.1); padding: 1rem; border-radius: 10px;">
+                            <strong style="color: var(--primary);">PREMIUM</strong><br>
+                            <span style="font-size: 0.9rem;">190g RingSpun<br>30 couleurs</span>
+                        </div>
+                        <div style="background: rgba(0, 45, 255, 0.1); padding: 1rem; border-radius: 10px;">
+                            <strong style="color: var(--primary);">TECHNIQUE</strong><br>
+                            <span style="font-size: 0.9rem;">Polyester sport<br>Sublimation</span>
+                        </div>
+                    </div>
+                    <p style="margin-top: 2rem; font-style: italic; color: var(--text-secondary); text-align: center;">
+                        <strong>Quantités minimales :</strong> À partir de 15 pièces • <strong>Délai :</strong> 2-4 semaines • <strong>Devis :</strong> Gratuit sous 24h
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+    <div class="container">
+        <p>&copy; 2025 <span class="notranslate">HorsePrint Pro</span> — Collection T-shirts Premium • hello@horseprint.fr</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+<script src="tshirts.js"></script>
+    </body>
+</html>

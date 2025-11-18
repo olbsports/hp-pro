@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devis Jumping POLO St Tropez Gassin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f7fa;
+            color: #2c3e50;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 1rem 0 0.5rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 1rem;
+            color: #0066FF;
+        }
+
+        .pro-badge {
+            display: inline-block;
+            background: #0066FF;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-left: 1rem;
+            vertical-align: middle;
+        }
+
+        .promo-banner {
+            background: #0066FF;
+            color: white;
+            padding: 1.2rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.05rem;
+            letter-spacing: 0.02em;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #0066FF;
+            margin-bottom: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .product-card {
+            background: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0,102,255,0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 500px;
+            background: linear-gradient(135deg, #e8f0fe 0%, #f5f7fa 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 3px solid #e5e7eb;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .product-content {
+            padding: 2.2rem;
+        }
+
+        .brand-tag {
+            display: inline-block;
+            background: #e8f0fe;
+            color: #0066FF;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .product-title {
+            font-size: 1.85rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.01em;
+            color: #1f2937;
+        }
+
+        .product-code {
+            color: #9ca3af;
+            font-size: 0.9rem;
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+
+        .product-description {
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 0.95rem;
+            font-weight: 400;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: #f9fafb;
+            border-radius: 12px;
+        }
+
+        .spec-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+
+        .spec-label {
+            font-weight: 600;
+            font-size: 0.75rem;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .spec-value {
+            color: #1f2937;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        /* MARQUAGE & TARIF */
+        .info-box {
+            margin-bottom: 1.5rem;
+            padding: 1.2rem;
+            background: #f9fafb;
+            border-left: 4px solid #0066FF;
+            border-radius: 8px;
+        }
+
+        .info-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .info-value {
+            color: #1f2937;
+            font-size: 0.95rem;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        /* PRICE TABLE */
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .price-table thead {
+            background: #f3f4f6;
+        }
+
+        .price-table th {
+            padding: 0.8rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #6b7280;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .price-table td {
+            padding: 0.8rem;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 0.9rem;
+        }
+
+        .price-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .qty-cell {
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .price-cell {
+            font-weight: 600;
+            color: #0066FF;
+        }
+
+        .embroidery-info {
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
+            padding: 2.5rem;
+            margin-top: 4rem;
+            border-radius: 16px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+
+        .embroidery-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.2rem;
+            font-weight: 700;
+            color: #0066FF;
+        }
+
+        .embroidery-info ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .embroidery-info li {
+            padding: 0.5rem 0;
+            color: #6b7280;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .contact-info {
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
+            padding: 3.5rem;
+            border-radius: 20px;
+            margin-top: 4rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+
+        .contact-info h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            color: #0066FF;
+        }
+
+        .contact-info p {
+            font-size: 1rem;
+            color: #6b7280;
+            margin: 0.5rem 0;
+            font-weight: 500;
+        }
+
+        footer {
+            background: #ffffff;
+            border-top: 2px solid #e5e7eb;
+            padding: 3rem 0;
+            margin-top: 6rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-content p {
+            color: #9ca3af;
+            font-size: 0.95rem;
+            font-weight: 400;
+            margin: 0.5rem 0;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #0066FF;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .specs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .price-table th,
+            .price-table td {
+                padding: 0.6rem;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>HorsePrint<span class="pro-badge">PRO</span></h1>
+        </div>
+    </header>
+
+    <div class="promo-banner">
+        Devis Boutique Officielle | Client : Jumping POLO St Tropez Gassin
+    </div>
+
+    <div class="container">
+        <!-- SECTION COUVERTURES & BRACELETS -->
+        <h2 class="section-title">Éléments Équestres & Accès</h2>
+        
+        <div class="products-grid">
+            <!-- Couverture Grand Prix -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://pro.horseprint.fr/images/devis/couverture.jpg" alt="Couverture Grand Prix">
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">COUVERTURE</span>
+                    <h2 class="product-title">Couverture Grand Prix</h2>
+                    <p class="product-code">Ref: COVER-GP • 160 pcs</p>
+                    <p class="product-description">
+                        Couverture grand prix bleu marine avec plastron – 145 cm
+                    </p>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Quantité</span>
+                            <span class="spec-value">160 pcs</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Format</span>
+                            <span class="spec-value">145 cm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">Coton/Polyester</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Couleur</span>
+                            <span class="spec-value">Bleu Marine</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Marquage</span>
+                        <span class="info-value">Broderie 2 couleurs • Plastron et arrière gauche</span>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Prix HT Unitaire</span>
+                        <span class="info-value">45,65 € • Hors livraison</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Couverture Grand Prix 2 Côtés -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://pro.horseprint.fr/images/devis/couverture.jpg" alt="Couverture Grand Prix 2C">
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">COUVERTURE</span>
+                    <h2 class="product-title">Couverture Grand Prix 2C</h2>
+                    <p class="product-code">Ref: COVER-GP2 • 160 pcs</p>
+                    <p class="product-description">
+                        Couverture grand prix bleu marine avec plastron – 145 cm
+                    </p>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Quantité</span>
+                            <span class="spec-value">160 pcs</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Format</span>
+                            <span class="spec-value">145 cm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">Coton/Polyester</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Couleur</span>
+                            <span class="spec-value">Bleu Marine</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Marquage</span>
+                        <span class="info-value">Broderie 2 couleurs • Plastron et arrière 2 côtés</span>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Prix HT Unitaire</span>
+                        <span class="info-value">48,65 € • Hors livraison</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Couverture Remise HorsePrint -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://pro.horseprint.fr/images/devis/couverture_HP.jpg" alt="Couverture HP">
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">HORSEPRINTⓇ</span>
+                    <h2 class="product-title">Couverture HP</h2>
+                    <p class="product-code">Ref: COVER-HP • 160 pcs</p>
+                    <p class="product-description">
+                        Couverture remise des prix avec plastron – Technologie HorsePrint
+                    </p>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Quantité</span>
+                            <span class="spec-value">160 pcs</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Technologie</span>
+                            <span class="spec-value">HorsePrint</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">Polyester micro-perforé</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Couleur</span>
+                            <span class="spec-value">Bleu Marine</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Marquage</span>
+                        <span class="info-value">Technologie HorsePrint • Personnalisation 100% • Galon non disponible</span>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Prix HT Unitaire</span>
+                        <span class="info-value">56,90 € • Hors livraison</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bracelets d'accès -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://pro.horseprint.fr/images/devis/bracelet.jpg" alt="Bracelets d'Accès">
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">ACCÈS</span>
+                    <h2 class="product-title">Bracelets d'Accès</h2>
+                    <p class="product-code">Ref: BRACELET-24K</p>
+                    <p class="product-description">
+                        Bracelets d'accès satin avec bague de serrage inviolable – 24000 pcs
+                    </p>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">Polyester</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Sécurité</span>
+                            <span class="spec-value">Bague inviolable</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Couleur</span>
+                            <span class="spec-value">Bleu Marine</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Quantité</span>
+                            <span class="spec-value">24000 pcs</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Marquage</span>
+                        <span class="info-value">1 face • Quadri</span>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Prix HT Unitaire</span>
+                        <span class="info-value">0,13 € • Hors livraison</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION BOUTIQUE OFFICIELLE -->
+        <h2 class="section-title">Boutique Officielle</h2>
+        
+        <div class="products-grid">
+            <!-- Tote Bag Natural -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://pro.horseprint.fr/images/devis/totebag.jpg" alt="Tote Bag Natural">
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">TOTE BAG</span>
+                    <h2 class="product-title">Tote Bag Natural</h2>
+                    <p class="product-code">Ref: TOTE-NAT</p>
+                    <p class="product-description">
+                        Tote bag avec anses longues 38 x 42 cm – Natural
+                    </p>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Dimensions</span>
+                            <span class="spec-value">38 x 42 cm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">100% Coton • 140 g/m²</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Couleur</span>
+                            <span class="spec-value">Natural</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Anses</span>
+                            <span class="spec-value">Longues</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Marquage</span>
+                        <span class="info-value">1 face • 1 couleur • Sérigraphie • Max 28 x 32 cm</span>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Tarif par Quantité (HT)</span>
+                        <table class="price-table">
+                            <thead>
+                                <tr>
+                                    <th>Quantité</th>
+                                    <th>Prix Unitaire</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="qty-cell">500 pcs</td>
+                                    <td class="price-cell">1,70 €</td>
+                                </tr>
+                                <tr>
+                                    <td class="qty-cell">1000 pcs</td>
+                                    <td class="price-cell">1,53 €</td>
+                                </tr>
+                                <tr>
+                                    <td class="qty-cell">1500 pcs</td>
+                                    <td class="price-cell">1,49 €</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <span style="display: block; margin-top: 0.8rem; font-size: 0.85rem; color: #9ca3af;">Hors livraison</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tote Bag Bleu Marine -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://pro.horseprint.fr/images/devis/totebag2.jpg" alt="Tote Bag Bleu Marine">
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">TOTE BAG</span>
+                    <h2 class="product-title">Tote Bag Bleu Marine</h2>
+                    <p class="product-code">Ref: TOTE-BM</p>
+                    <p class="product-description">
+                        Tote bag avec anses longues 38 x 42 cm – Bleu marine
+                    </p>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Dimensions</span>
+                            <span class="spec-value">38 x 42 cm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">100% Coton • 140 g/m²</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Couleur</span>
+                            <span class="spec-value">Bleu Marine</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Anses</span>
+                            <span class="spec-value">Longues</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Marquage</span>
+                        <span class="info-value">1 face • 1 couleur • Sérigraphie • Max 28 x 32 cm</span>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Tarif par Quantité (HT)</span>
+                        <table class="price-table">
+                            <thead>
+                                <tr>
+                                    <th>Quantité</th>
+                                    <th>Prix Unitaire</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="qty-cell">500 pcs</td>
+                                    <td class="price-cell">2,17 €</td>
+                                </tr>
+                                <tr>
+                                    <td class="qty-cell">1000 pcs</td>
+                                    <td class="price-cell">1,98 €</td>
+                                </tr>
+                                <tr>
+                                    <td class="qty-cell">1500 pcs</td>
+                                    <td class="price-cell">1,89 €</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <span style="display: block; margin-top: 0.8rem; font-size: 0.85rem; color: #9ca3af;">Hors livraison</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Polo Manches Courtes -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://pro.horseprint.fr/images/devis/polo.jpg" alt="Polo Manches Courtes">
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">POLO</span>
+                    <h2 class="product-title">Polo Manches Courtes Hommes</h2>
+                    <p class="product-code">Ref: POLO-MC-H</p>
+                    <p class="product-description">
+                        Polo manches courtes 210 g/m² – Bleu marine
+                    </p>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Grammage</span>
+                            <span class="spec-value">210 g/m²</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">100% Coton</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Couleur</span>
+                            <span class="spec-value">Bleu Marine</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Quantité</span>
+                            <span class="spec-value">500 pcs</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Marquage</span>
+                        <span class="info-value">DTF Quadri • Cœur A7 et Dos A4</span>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Prix HT Unitaire</span>
+                        <span class="info-value">9,99 € • Hors livraison</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Polo Manches Longues -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://pro.horseprint.fr/images/devis/polosML.jpg" alt="Polo Manches Longues">
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">POLO</span>
+                    <h2 class="product-title">Polo Manches Longues</h2>
+                    <p class="product-code">Ref: POLO-ML</p>
+                    <p class="product-description">
+                        Polo manches longues 210 g/m² – Bleu marine
+                    </p>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Grammage</span>
+                            <span class="spec-value">210 g/m²</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">100% Coton</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Couleur</span>
+                            <span class="spec-value">Bleu Marine</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Quantité</span>
+                            <span class="spec-value">500 pcs</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Marquage</span>
+                        <span class="info-value">DTF Quadri • Cœur A7 et Dos A4</span>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Prix HT Unitaire</span>
+                        <span class="info-value">12,24 € • Hors livraison</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Casquette -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://pro.horseprint.fr/images/devis/casquette.jpg" alt="Casquette 5 Panneaux">
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">CASQUETTE</span>
+                    <h2 class="product-title">Casquette 5 Panneaux Coton</h2>
+                    <p class="product-code">Ref: CAP-5P</p>
+                    <p class="product-description">
+                        Casquette 5 panneaux coton – Bleu marine
+                    </p>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Type</span>
+                            <span class="spec-value">5 Panneaux</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">100% Coton</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Couleur</span>
+                            <span class="spec-value">Bleu Marine</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Quantité</span>
+                            <span class="spec-value">500 pcs</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Marquage</span>
+                        <span class="info-value">Transfer 1 couleur • 80 mm x 40 mm</span>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Prix HT Unitaire</span>
+                        <span class="info-value">2,05 € • Hors livraison</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sweatshirt -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://pro.horseprint.fr/images/devis/sweat.jpg" alt="Sweatshirt Col Rond">
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">SWEAT</span>
+                    <h2 class="product-title">Sweatshirt Col Rond</h2>
+                    <p class="product-code">Ref: SWEAT-CR</p>
+                    <p class="product-description">
+                        Sweatshirt col rond 270 g/m² – Bleu marine
+                    </p>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Grammage</span>
+                            <span class="spec-value">270 g/m²</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">Coton/Polyester</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Couleur</span>
+                            <span class="spec-value">Bleu Marine</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Quantité</span>
+                            <span class="spec-value">500 pcs</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Marquage</span>
+                        <span class="info-value">DTF Quadri • Cœur A7 et Dos A4</span>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Prix HT Unitaire</span>
+                        <span class="info-value">13,95 € • Hors livraison</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bodywarmer -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://pro.horseprint.fr/images/devis/bodywarmer.jpg" alt="Bodywarmer Légère">
+                </div>
+                <div class="product-content">
+                    <span class="brand-tag">GILET</span>
+                    <h2 class="product-title">Bodywarmer Légère</h2>
+                    <p class="product-code">Ref: BW-LEG</p>
+                    <p class="product-description">
+                        Bodywarmers légère – Bleu marine
+                    </p>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Type</span>
+                            <span class="spec-value">Sans Manches</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Matière</span>
+                            <span class="spec-value">Polyester</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Couleur</span>
+                            <span class="spec-value">Bleu Marine</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Quantité</span>
+                            <span class="spec-value">700 pcs</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Marquage</span>
+                        <span class="info-value">DTF Quadri • Cœur A7 et Dos A4</span>
+                    </div>
+
+                    <div class="info-box">
+                        <span class="info-label">Prix HT Unitaire</span>
+                        <span class="info-value">15,90 € • Hors livraison</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <h3>HorsePrint PRO</h3>
+        <p><strong>Devis pour :</strong> Jumping POLO St Tropez Gassin</p>
+        <p>Contactez-nous pour tarifs de livraison et délais de production</p>
+        <p style="margin-top: 1.5rem; font-size: 0.85rem; color: #9ca3af;"><em>Photos non contractuelles</em></p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">HorsePrint PRO</div>
+            <p>Boutique Officielle Jumping POLO St Tropez Gassin</p>
+            <p>Solutions complètes pour événements équestres</p>
+        </div>
+    </footer>
+
+</body>
+</html>

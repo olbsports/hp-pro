@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HorsePrint — L'Excellence Technique au Service de Vos Couleurs</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32'%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23002DFF'/%3E%3Cstop offset='100%25' style='stop-color:%236366f1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='15' fill='url(%23gradient)' stroke='white' stroke-width='1'/%3E%3Cpath d='M8 10 L8 22 M8 16 L13 16 M13 10 L13 22' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cpath d='M17 10 L17 22 M17 10 L22 10 Q24 10 24 13 Q24 16 22 16 L17 16' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+<div class="logo notranslate">
+    HorsePrint
+    <span class="logo-pro">PRO</span>
+</div>
+<button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+            <ul class="nav-links" id="mobileMenu">
+                <li class="dropdown">
+                    <a href="#products" class="dropdown-toggle">Nos produits</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#products">Équipements cheval</a></li>
+                        <li><a href="#textile">Textile staff, officiels et cavaliers</a></li>
+                        <li><a href="#signage">Signalétique</a></li>
+                        <li><a href="#access">Gestion d'accès</a></li>
+                        <li><a href="#merchandising">Boutique officielle</a></li>
+                    </ul>
+                </li>
+                <li><a href="#innovation">Technologie</a></li>
+                <li><a href="#levels">Nos offres</a></li>
+                <li><a href="#contact">Devis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="translate-widget">
+    <button class="translate-toggle" onclick="toggleTranslate()">
+        🌐 Traduire
+    </button>
+    <div class="translate-content" id="translateContent">
+        <!-- Widget Google officiel -->
+        <div id="google_translate_element"></div>
+        
+        <!-- OU drapeaux personnalisés (optionnel) -->
+        <div class="language-flags" style="display: none;">
+            <button class="flag-btn active" onclick="translateTo('fr')" title="Français">🇫🇷</button>
+            <button class="flag-btn" onclick="translateTo('en')" title="English">🇬🇧</button>
+            <button class="flag-btn" onclick="translateTo('es')" title="Español">🇪🇸</button>
+            <button class="flag-btn" onclick="translateTo('de')" title="Deutsch">🇩🇪</button>
+            <button class="flag-btn" onclick="translateTo('it')" title="Italiano">🇮🇹</button>
+            <button class="flag-btn" onclick="translateTo('nl')" title="Nederlands">🇳🇱</button>
+        </div>
+    </div>
+</div>
+
+    <!-- Hero Section avec Introduction intégrée -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1><span class="notranslate">HorsePrint</span> <span class="hero-pro notranslate">PRO</span></h1>
+            <p class="subtitle">Créer une identité visuelle cohérente et impactante pour chaque événement équestre</p>
+            
+            <!-- Introduction intégrée -->
+            <div class="hero-intro fade-in">
+                <div class="intro-text">
+                    <h2 style="color:#002DFF;font-weight:bold;">Créateur de solutions équestres sur-mesure !</h2>
+                    <p>HorsePrint Pro conçoit, produit et livre des solutions textiles sur-mesure pour organisateurs d'événements équestres, écuries professionnelles et cavaliers de haut niveau. De l'équipement technique à la communication visuelle, nous accompagnons tous vos projets avec expertise et innovation.</p>
+                </div>
+                
+                <div class="activities-section">
+                    <h3 class="activities-title">Nos 5 domaines d'excellence</h3>
+                    <div class="intro-categories">
+                        <div class="category-card">
+                            <div class="category-icon horse-icon">H</div>
+                            <h3>Équipements du cheval</h3>
+                        </div>
+                        <div class="category-card">
+                            <div class="category-icon rider-icon">R</div>
+                            <h3>Équipements du cavalier</h3>
+                        </div>
+                        <div class="category-card">
+                            <div class="category-icon staff-icon">S</div>
+                            <h3>Textile staff, officiels et cavaliers</h3>
+                        </div>
+                        <div class="category-card">
+                            <div class="category-icon shop-icon">B</div>
+                            <h3>Boutique officielle</h3>
+                        </div>
+                        <div class="category-card">
+                            <div class="category-icon comm-icon">C</div>
+                            <h3>Communication</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#products" class="cta-primary">Découvrir nos solutions</a>
+        </div>
+    </section>
+
+    <!-- Products Sections -->
+    <section id="products" class="section">
+        <div class="container">
+            <!-- Équipements Cheval -->
+            <div class="section-header fade-in">
+                <h2 class="section-title">Équipements Cheval haute performance</h2>
+                <p class="section-subtitle">Solutions techniques pour l'univers des événements équestres</p>
+            </div>
+            
+            <div class="slider-container fade-in">
+                <div class="slider" id="slider-equine">
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/tapis%20de%20selle.png" alt="Tapis de selle EliteRide">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tapis de selle</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Matériaux haute technologie, ergonomie optimisée, personnalisation intégrale
+                            </div>
+                            <p><strong>Applications :</strong> Cavaliers professionnels & écuries en compétition</p>
+                            <div class="product-options">
+                                <span class="option-tag">Design sur mesure</span>
+                                <span class="option-tag">Logos multiples</span>
+                                <span class="option-tag">Coupe cheval/poney</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/couverture_remise_de_prix.png" alt="Couverture de remise de prix">
+                        </div>
+                        <div class="product-content">
+                            <h3>Couverture de remise de prix</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Textile léger premium, tombé parfait, finitions haut de gamme
+                            </div>
+                            <p><strong>Applications :</strong> Cérémonies protocolaires & photo-reporting</p>
+                            <div class="product-options">
+                                <span class="option-tag">Identité concours</span>
+                                <span class="option-tag">Sponsors officiels</span>
+                                <span class="option-tag">Personnalisation intégrale</span>
+                                <span class="option-tag">Finitions premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/couverture%20demi%20saison.png" alt="Couverture WarmFlex Pro">
+                        </div>
+                        <div class="product-content">
+                            <h3>Couverture demi-saison</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Technologie 3 couches : imperméable, respirante, isolante thermique
+                            </div>
+                            <p><strong>Applications :</strong> Paddock, boxes climatisés, transport longue distance</p>
+                            <div class="product-options">
+                                <span class="option-tag">Design technique</span>
+                                <span class="option-tag">Ergonomie sur-mesure</span>
+                                <span class="option-tag">3 couches tech</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/couverture%20hiver.png" alt="Couverture GrandPrix Eco">
+                        </div>
+                        <div class="product-content">
+                            <h3>Couverture Hiver</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> 100% imperméable, protection contre le froid
+                            </div>
+                            <p><strong>Applications :</strong> Au box, au pré</p>
+                            <div class="product-options">
+                                <span class="option-tag">Protège du froid</span>
+                                <span class="option-tag">Imperméable</span>
+                                <span class="option-tag">Polaire</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/portedebox.png" alt="Portes de box personnalisées">
+                        </div>
+                        <div class="product-content">
+                            <h3>Portes de box personnalisées</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Textile technique lavable, double-face, fixations renforcées
+                            </div>
+                            <p><strong>Applications :</strong> Identification professionnelle écurie/cheval</p>
+                            <div class="product-options">
+                                <span class="option-tag">Visuels photographiques</span>
+                                <span class="option-tag">Textes personnalisés</span>
+                                <span class="option-tag">Codes couleurs</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/habillage_box.png" alt="Habillage de boxes">
+                        </div>
+                        <div class="product-content">
+                            <h3>Habillage de boxes</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Solutions décoratives modulaires sur-mesure
+                            </div>
+                            <p><strong>Applications :</strong> Valorisation zones paddock et écuries VIP</p>
+                            <div class="product-options">
+                                <span class="option-tag">Impression panoramique</span>
+                                <span class="option-tag">Finitions premium</span>
+                                <span class="option-tag">Solutions modulaires</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Textile Professional Section -->
+    <section id="textile" class="section" style="background: var(--gradient-2);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Textile Staff, officiels et Cavaliers</h2>
+                <p class="section-subtitle">3 niveaux de personnalisation selon votre budget et vos exigences</p>
+            </div>
+            
+            <div class="slider-container fade-in">
+                <div class="slider" id="slider-textile">
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/polo-homme.png" alt="Polos & T-shirts techniques">
+                        </div>
+                        <div class="product-content">
+                            <h3>Polos & T-shirts techniques</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Matières techniques respirantes, coupes morphologique, finitions premium
+                            </div>
+                            <p><strong>Applications :</strong> Cavaliers, Équipes Cavaliers, Écuries, direction, staff événementiel</p>
+                            <div class="product-options">
+                                <span class="option-tag">Promotionnel</span>
+                                <span class="option-tag">Coupé-cousu</span>
+                                <span class="option-tag">HorsePrint</span>
+                                <span class="option-tag">Couleurs personnalisées</span>
+                            </div>
+<!-- Bouton vers la collection complète -->
+<div class="text-center fade-in" style="margin-top: 2rem;">
+    <a href="polos.html" class="cta-button" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+        Voir nos polos promotionnels
+        <span style="margin-left: 0.5rem;">→</span>
+    </a>
+</div>
+<!-- Bouton vers la collection complète -->
+<div class="text-center fade-in" style="margin-top: 1rem;">
+    <a href="tshirts.html" class="cta-button" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+        Voir nos t-shirts promotionnels
+        <span style="margin-left: 0.5rem;">→</span>
+    </a>
+</div>
+                        </div>
+                    </div>
+                  
+                   <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/polo_equitation.png" alt="Polos équitation">
+                        </div>
+                        <div class="product-content">
+                            <h3>Polos d'équitations</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Matières techniques respirantes, coupes morphologie, finitions premium
+                            </div>
+                            <p><strong>Applications :</strong> Équipes nombreuses, direction, bénévoles, staff événementiel</p>
+                            <div class="product-options">
+                                <span class="option-tag">Promotionnel</span>
+                                <span class="option-tag">Coupé-cousu</span>
+                                <span class="option-tag">HorsePrint</span>
+                                <span class="option-tag">Couleurs personnalisées</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/parka.png" alt="Parkas & vestes techniques">
+                        </div>
+                        <div class="product-content">
+                            <h3>Parkas & vestes techniques</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Imperméables, poches fonctionnelles, matières haute performance
+                            </div>
+                            <p><strong>Applications :</strong> Staff, logistique, sécurité, équipes dirigeantes, organisation</p>
+                            <div class="product-options">
+                                <span class="option-tag">Fonctionnalités sur-mesure</span>
+                                <span class="option-tag">Broderie</span>
+                                <span class="option-tag">Zones techniques</span>
+                                <span class="option-tag">Imperméable</span>
+                            </div>
+<div class="text-center fade-in" style="margin-top: 2rem;">
+    <a href="bodywarmer-vestes.html" class="cta-button" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+        Voir nos bodywarmer & vestes promos
+        <span style="margin-left: 0.5rem;">→</span>
+    </a>
+</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/sweat.png" alt="Sweats & gilets">
+                        </div>
+                        <div class="product-content">
+                            <h3>Sweats & gilets</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Matières confort, coupes décontractées, finitions soignées
+                            </div>
+                            <p><strong>Applications :</strong> Merchandising, équipes, boutique haut de gamme, éditions collector</p>
+                            <div class="product-options">
+                                <span class="option-tag">Formes innovantes</span>
+                                <span class="option-tag">Détails signature</span>
+                                <span class="option-tag">Visuels photographiques</span>
+                            </div>
+<div class="text-center fade-in" style="margin-top: 2rem;">
+    <a href="sweats.html" class="cta-button" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+        Voir nos sweats & gilets promotionnels
+        <span style="margin-left: 0.5rem;">→</span>
+    </a>
+</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/bodywarmer.png" alt="Bodywarmers techniques">
+                        </div>
+                        <div class="product-content">
+                            <h3>Bodywarmers techniques</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Matières légères, isolation thermique, coupe ergonomique
+                            </div>
+                            <p><strong>Applications :</strong> Staff extérieur, équipes mobiles, conditions météo variables</p>
+                            <div class="product-options">
+                                <span class="option-tag">Isolation thermique</span>
+                                <span class="option-tag">Poches fonctionnelles</span>
+                                <span class="option-tag">Logos réfléchissants</span>
+                                <span class="option-tag">Coupe ergonomique</span>
+                            </div>
+<div class="text-center fade-in" style="margin-top: 2rem;">
+    <a href="bodywarmer-vestes.html" class="cta-button" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+        Voir nos bodywarmer & vestes promos
+        <span style="margin-left: 0.5rem;">→</span>
+    </a>
+</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/Photo%20vestes%20de%20concours%20copie.jpg" alt="Vestes de concours">
+                        </div>
+                        <div class="product-content">
+                            <h3>Vestes de concours</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Conformité règlement FEI, matières techniques, coupes ajustées
+                            </div>
+                            <p><strong>Applications :</strong> Cavaliers club, cavaliers internationaux, équipes nationales</p>
+                            <div class="product-options">
+                                <span class="option-tag">Passepoils personnalisés</span>
+                                <span class="option-tag">Logos réglementaires</span>
+                                <span class="option-tag">Morphologie spécifique</span>
+                                <span class="option-tag">Conformité FEI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/pantalon.png" alt="Pantalons d'équitation">
+                        </div>
+                        <div class="product-content">
+                            <h3>Pantalons d'équitation</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Matières stretch, renforts genoux, coupes équitation
+                            </div>
+                            <p><strong>Applications :</strong> Cavaliers club, enseignement, cavaliers pro, compétition</p>
+                            <div class="product-options">
+                                <span class="option-tag">Adaptation morphologique</span>
+                                <span class="option-tag">Zones techniques</span>
+                                <span class="option-tag">Logos réglementaires</span>
+                                <span class="option-tag">Renforts genoux</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/casquettes.png" alt="Casquettes, bonnets, écharpes">
+                        </div>
+                        <div class="product-content">
+                            <h3>Casquettes, bonnets, écharpes</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Matières techniques, finitions résistantes, confort longue durée
+                            </div>
+                            <p><strong>Applications :</strong> Large distribution, goodies, boutique premium, cadeaux d'exception</p>
+                            <div class="product-options">
+                                <span class="option-tag">Formes sur-mesure</span>
+                                <span class="option-tag">Assemblages innovants</span>
+                                <span class="option-tag">Designs intégraux</span>
+                            </div>
+<div class="text-center fade-in" style="margin-top: 2rem;">
+    <a href="bonnets-casquettes.html" class="cta-button" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+        Voir nos bonnets & casquettes promos
+        <span style="margin-left: 0.5rem;">→</span>
+    </a>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signalétique Section -->
+    <section id="signage" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Signalétique & Communication Visuelle</h2>
+                <p class="section-subtitle">L'écrin visuel qui magnifie vos événements équestres</p>
+            </div>
+            
+            <div class="slider-container fade-in">
+                <div class="slider" id="slider-signage">
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/b%C3%A2ches.png" alt="Bâches sponsors">
+                        </div>
+                        <div class="product-content">
+                            <h3>Bâches sponsors</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> PVC haute résistance ou mesh microperforé
+                            </div>
+                            <p><strong>Applications :</strong> Habillage clôtures, tribunes, zones partenaires</p>
+                            <div class="product-options">
+                                <span class="option-tag">Œillets renforcés</span>
+                                <span class="option-tag">Systèmes d'accrochage</span>
+                                <span class="option-tag">Formats sur-mesure</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/backdrop.png" alt="Backdrops cérémoniels">
+                        </div>
+                        <div class="product-content">
+                            <h3>Backdrops cérémoniels</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Supports photos officiels, finitions premium
+                            </div>
+                            <p><strong>Applications :</strong> Podiums, interviews, espaces presse</p>
+                            <div class="product-options">
+                                <span class="option-tag">Structures démontables</span>
+                                <span class="option-tag">Transport optimisé</span>
+                                <span class="option-tag">Finitions premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/panneau.png" alt="Panneaux rigides">
+                        </div>
+                        <div class="product-content">
+                            <h3>Panneaux rigides</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Supports Akylux, PVC, Dibond - impression UV résistante
+                            </div>
+                            <p><strong>Applications :</strong> Sponsoring, directionnels, informations officielles</p>
+                            <div class="product-options">
+                                <span class="option-tag">Double-face</span>
+                                <span class="option-tag">Formats standardisés</span>
+                                <span class="option-tag">Sur-mesure</span>
+                                <span class="option-tag">Impression UV</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/directionnel.png" alt="Signalétique directionnelle">
+                        </div>
+                        <div class="product-content">
+                            <h3>Signalétique directionnelle</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Système modulaire, haute visibilité
+                            </div>
+                            <p><strong>Applications :</strong> Fléchage parkings, zones cavaliers, accueil VIP</p>
+                            <div class="product-options">
+                                <span class="option-tag">Pictogrammes normalisés</span>
+                                <span class="option-tag">Textes multilingues</span>
+                                <span class="option-tag">Système modulaire</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/drapeau.png" alt="Habillage décoratif">
+                        </div>
+                        <div class="product-content">
+                            <h3>Habillage décoratif</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Rubans, drapeaux, banderoles personnalisés
+                            </div>
+                            <p><strong>Applications :</strong> Ambiance événementielle, zones protocolaires</p>
+                            <div class="product-options">
+                                <span class="option-tag">Coordinations couleurs</span>
+                                <span class="option-tag">Finitions luxury</span>
+                                <span class="option-tag">Personnalisation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access Management Section -->
+    <section id="access" class="section" style="background: var(--gradient-2);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Gestion d'Accès & Accréditations</h2>
+                <p class="section-subtitle">Solutions technologiques pour un contrôle fluide et sécurisé</p>
+            </div>
+            
+            <div class="slider-container fade-in">
+                <div class="slider" id="slider-access">
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/bracelet.png" alt="Bracelets d'accès">
+                        </div>
+                        <div class="product-content">
+                            <h3>Bracelets d'accès</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Résistance eau/UV, confort longue durée
+                            </div>
+                            <p><strong>Applications :</strong> Différenciation zones : staff, cavaliers, VIP, presse, public</p>
+                            <div class="product-options">
+                                <span class="option-tag">QR codes</span>
+                                <span class="option-tag">Puces RFID</span>
+                                <span class="option-tag">Codes couleurs sécurisés</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/lanyard.png" alt="Lanyards professionnels">
+                        </div>
+                        <div class="product-content">
+                            <h3>Lanyards professionnels</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Impression textile recto-verso, attaches sécurisées
+                            </div>
+                            <p><strong>Applications :</strong> Support badges, accréditations, clés d'accès</p>
+                            <div class="product-options">
+                                <span class="option-tag">Détachables de sécurité</span>
+                                <span class="option-tag">Personnalisation intégrale</span>
+                                <span class="option-tag">Impression recto-verso</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Merchandising Section -->
+    <section id="merchandising" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Boutique officielle & merchandising</h2>
+                <p class="section-subtitle">Stratégie commerciale adaptée à vos objectifs événementiels</p>
+            </div>
+            
+            <div class="slider-container fade-in">
+                <div class="slider" id="slider-merch">
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/tshirt.png" alt="T-shirts souvenirs">
+                        </div>
+                        <div class="product-content">
+                            <h3>T-shirts</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Coton confort, coupes standards, marquage résistant
+                            </div>
+                            <p><strong>Applications :</strong> Merchandising grand public, souvenir événement</p>
+                            <div class="product-options">
+                                <span class="option-tag">Sérigraphie</span>
+                                <span class="option-tag">Transfert</span>
+                                <span class="option-tag">Broderie simple</span>
+                            </div>
+<!-- Bouton vers la collection complète -->
+<div class="text-center fade-in" style="margin-top: 2rem;">
+    <a href="tshirts.html" class="cta-button" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+        Voir nos t-shirts promotionnels
+        <span style="margin-left: 0.5rem;">→</span>
+    </a>
+</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/polos.png" alt="Polos événementiels">
+                        </div>
+                        <div class="product-content">
+                            <h3>Polos événementiels</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Matières techniques, finitions soignées
+                            </div>
+                            <p><strong>Applications :</strong> Fidélisation spectateurs, cadeaux officiels</p>
+                            <div class="product-options">
+                                <span class="option-tag">Broderie logo</span>
+                                <span class="option-tag">Marquage année</span>
+                                <span class="option-tag">Couleurs personnalisées</span>
+                            </div>
+<!-- Bouton vers la collection complète -->
+<div class="text-center fade-in" style="margin-top: 2rem;">
+    <a href="polos.html" class="cta-button" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+        Voir nos polos promotionnels
+        <span style="margin-left: 0.5rem;">→</span>
+    </a>
+</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/sweat_zipp%C3%A9.png" alt="Sweats confort">
+                        </div>
+                        <div class="product-content">
+                            <h3>Sweats confort</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Molleton qualité, coupes décontractées
+                            </div>
+                            <p><strong>Applications :</strong> Textile quotidien, ambassadeur de la marque</p>
+                            <div class="product-options">
+                                <span class="option-tag">Patch appliqués</span>
+                                <span class="option-tag">Sérigraphie</span>
+                                <span class="option-tag">Personnalisation</span>
+                            </div>
+<div class="text-center fade-in" style="margin-top: 2rem;">
+    <a href="sweats.html" class="cta-button" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+        Voir nos sweats promotionnels
+        <span style="margin-left: 0.5rem;">→</span>
+    </a>
+</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/bodywarmer2.png" alt="Bodywarmers événementiels">
+                        </div>
+                        <div class="product-content">
+                            <h3>Bodywarmers événementiels</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Matières confort, doublure chaude, coupes modernes
+                            </div>
+                            <p><strong>Applications :</strong> Merchandising premium, souvenirs haut de gamme, cadeaux VIP</p>
+                            <div class="product-options">
+                                <span class="option-tag">Broderie premium</span>
+                                <span class="option-tag">Éditions limitées</span>
+                                <span class="option-tag">Personnalisation</span>
+                                <span class="option-tag">Finitions soignées</span>
+                            </div>
+<div class="text-center fade-in" style="margin-top: 2rem;">
+    <a href="bodywarmer-vestes.html" class="cta-button" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+        Voir nos bodywarmer & vestes promos
+        <span style="margin-left: 0.5rem;">→</span>
+    </a>
+</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/bonnet.png" alt="Casquettes & bonnets">
+                        </div>
+                        <div class="product-content">
+                            <h3>Casquettes & bonnets</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Matières résistantes, tailles ajustables
+                            </div>
+                            <p><strong>Applications :</strong> Accessoires populaires, forte rotation</p>
+                            <div class="product-options">
+                                <span class="option-tag">Broderie 3D</span>
+                                <span class="option-tag">Transfert</span>
+                                <span class="option-tag">Couleurs événement</span>
+                            </div>
+<div class="text-center fade-in" style="margin-top: 2rem;">
+    <a href="bonnets-casquettes.html" class="cta-button" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+        Voir nos bonnets & casquettes promos
+        <span style="margin-left: 0.5rem;">→</span>
+    </a>
+</div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/sacs.png" alt="Sacs & accessoires">
+                        </div>
+                        <div class="product-content">
+                            <h3>Sacs & accessoires</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Matières durables, formats pratiques
+                            </div>
+                            <p><strong>Applications :</strong> Utilité pratique, publicité mobile</p>
+                            <div class="product-options">
+                                <span class="option-tag">Sérigraphie</span>
+                                <span class="option-tag">Marquage à chaud</span>
+                                <span class="option-tag">Personnalisation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/porte%20cl%C3%A9.png" alt="Porte-clés">
+                        </div>
+                        <div class="product-content">
+                            <h3>Porte-clés</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Matières résistantes, formats compacts
+                            </div>
+                            <p><strong>Applications :</strong> Petits cadeaux, goodies économiques</p>
+                            <div class="product-options">
+                                <span class="option-tag">Broderie miniature</span>
+                                <span class="option-tag">Impression</span>
+                                <span class="option-tag">Formes personnalisées</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/mini-tapis.png" alt="Mini-tapis souvenirs">
+                        </div>
+                        <div class="product-content">
+                            <h3>Mini-tapis souvenirs</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Réplique tapis concours, finitions soignées
+                            </div>
+                            <p><strong>Applications :</strong> Objets déco, souvenirs premium, cadeaux presse</p>
+                            <div class="product-options">
+                                <span class="option-tag">Reproduction fidèle</span>
+                                <span class="option-tag">Formats réduits</span>
+                                <span class="option-tag">Personnalisation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-slide">
+                        <div class="product-image">
+                            <img src="https://pro.horseprint.fr/images/premium.png" alt="Collections premium">
+                        </div>
+                        <div class="product-content">
+                            <h3>Collections premium</h3>
+                            <div class="product-specs">
+                                <strong>Spécifications :</strong> Matières nobles, finitions haut de gamme
+                            </div>
+                            <p><strong>Applications :</strong> VIP, sponsors, cadeaux corporate</p>
+                            <div class="product-options">
+                                <span class="option-tag">Technologie HorsePrint</span>
+                                <span class="option-tag">Éditions limitées</span>
+                                <span class="option-tag">Personnalisation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compact Innovation Section -->
+    <section id="innovation" class="innovation-compact">
+        <div class="container">
+            <div class="innovation-content-compact fade-in">
+                <h3>Technologie HorsePrint</h3>
+                <p>Intégration directe dans la fibre pour un rendu photographique et une durabilité exceptionnelle.</p>
+                
+                <div class="innovation-features">
+                    <div class="innovation-feature">
+                        <div class="icon">◆</div>
+                        <span>Liberté créative totale</span>
+                    </div>
+                    <div class="innovation-feature">
+                        <div class="icon">◇</div>
+                        <span>Production flexible</span>
+                    </div>
+                    <div class="innovation-feature">
+                        <div class="icon">◈</div>
+                        <span>MOQ adaptables</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 Levels Section -->
+    <section id="levels" class="levels-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Nos 3 solutions</h2>
+                <p class="section-subtitle">Choisissez le niveau qui correspond à vos besoins et votre budget</p>
+            </div>
+            
+            <div class="levels-grid">
+                <div class="level-card promotional fade-in">
+                    <div class="level-icon"></div>
+                    <h3>Promotionnel</h3>
+                    <ul class="level-features">
+                        <li>Sérigraphie simple</li>
+                        <li>Broderie basique</li>
+                        <li>Couleurs standards</li>
+                        <li>MOQ : 15 pièces minimum</li>
+                        <li>Délai : 10-15 jours</li>
+                        <li>Idéal pour merchandising grand public</li>
+                    </ul>
+                    <a href="#contact" class="level-cta">Devis Promotionnel</a>
+                </div>
+                
+                <div class="level-card premium fade-in">
+                    <div class="level-icon"></div>
+                    <h3>Coupé-Cousu Premium</h3>
+                    <ul class="level-features">
+                        <li>Tissus techniques haut de gamme</li>
+                        <li>Coupe sur-mesure</li>
+                        <li>Broderie complexe multi-couleurs</li>
+                        <li>Finitions premium</li>
+                        <li>MOQ : 100 pièces minimum</li>
+                        <li>Délai : 30-40 jours</li>
+                        <li>Parfait pour équipes professionnelles</li>
+                    </ul>
+                    <a href="#contact" class="level-cta">Devis Premium</a>
+                </div>
+                
+                <div class="level-card horseprint fade-in">
+                    <div class="level-icon"></div>
+                    <h3>HorsePrint Révolution</h3>
+                    <ul class="level-features">
+                        <li>Technologie HorsePrint exclusive</li>
+                        <li>Design intégré dans la fibre</li>
+                        <li>Rendu photographique HD</li>
+                        <li>Durabilité exceptionnelle</li>
+                        <li>Liberté créative totale</li>
+                        <li>MOQ : 1 pièces minimum</li>
+                        <li>Délai : 20-25 jours</li>
+                        <li>L'excellence pour événements prestigieux</li>
+                    </ul>
+                    <a href="#contact" class="level-cta">Devis HorsePrint</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Demande de devis personnalisé</h2>
+                <p class="section-subtitle">Obtenez votre devis sur-mesure en 4 étapes simples</p>
+            </div>
+            
+            <!-- Formulaire multi-étapes -->
+            <div class="contact-form-wrapper fade-in">
+                <!-- Barre de progression -->
+                <div class="form-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-steps">
+                        <div class="step active" data-step="1">
+                            <span class="step-number">1</span>
+                            <span class="step-label">Contact</span>
+                        </div>
+                        <div class="step" data-step="2">
+                            <span class="step-number">2</span>
+                            <span class="step-label">Projet</span>
+                        </div>
+                        <div class="step" data-step="3">
+                            <span class="step-number">3</span>
+                            <span class="step-label">Détails</span>
+                        </div>
+                        <div class="step" data-step="4">
+                            <span class="step-number">4</span>
+                            <span class="step-label">Envoi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form netlify netlify-honeypot="bot-field" method="POST" id="contactForm" class="multi-step-form" action="#">
+                    <input type="hidden" name="form-name" value="horseprint-devis">
+                    <div style="display: none;">
+                        <input name="bot-field">
+                    </div>
+                    <!-- Étape 1: Informations de contact -->
+                    <div class="form-step active" data-step="1">
+                        <div class="step-header">
+                            <h3>Informations de contact</h3>
+                            <p>Commençons par vos coordonnées</p>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Société / Organisation *</label>
+                                <input type="text" id="company" name="company" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact_preference">Comment souhaitez-vous être recontacté ? *</label>
+                            <select id="contact_preference" name="contact_preference" required>
+                                <option value="">Sélectionnez</option>
+                                <option value="email">Par email</option>
+                                <option value="phone">Par téléphone</option>
+                                <option value="both">Email et téléphone</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Étape 2: Type de projet -->
+                    <div class="form-step" data-step="2">
+                        <div class="step-header">
+                            <h3>Votre projet</h3>
+                            <p>Décrivez-nous ce dont vous avez besoin</p>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="project_type">Type de projet *</label>
+                                <select id="project_type" name="project_type" required>
+                                    <option value="">Sélectionnez votre projet</option>
+                                    <option value="equine_equipment">Équipement du cheval</option>
+                                    <option value="rider_equipment">Équipements du cavalier</option>
+                                    <option value="staff_textile">Textile staff</option>
+                                    <option value="official_shop">Boutique officielle</option>
+                                    <option value="communication">Communication & signalétique</option>
+                                    <option value="complete_event">Événement complet</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="event_type">Type d'événement</label>
+                                <select id="event_type" name="event_type">
+                                    <option value="">Sélectionnez si applicable</option>
+                                    <option value="csi">CSI (Concours de Saut International)</option>
+                                    <option value="cdi">CDI (Concours de Dressage International)</option>
+                                    <option value="cci">CCI (Concours Complet International)</option>
+                                    <option value="championship">Championnat</option>
+                                    <option value="club_event">Événement club</option>
+                                    <option value="equestrian_center">Centre équestre</option>
+                                    <option value="other">Autre</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Description du projet *</label>
+                            <textarea id="description" name="description" rows="4" required placeholder="Décrivez votre besoin en détail..."></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="deadline">Délai souhaité</label>
+                                <select id="deadline" name="deadline">
+                                    <option value="">Sélectionnez</option>
+                                    <option value="urgent">Urgent (< 2 semaines)</option>
+                                    <option value="standard">Standard (2-4 semaines)</option>
+                                    <option value="comfortable">Confortable (1-2 mois)</option>
+                                    <option value="flexible">Flexible (> 2 mois)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="event_date">Date de l'événement (si applicable)</label>
+                                <input type="date" id="event_date" name="event_date">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Étape 3: Détails et spécifications -->
+                    <div class="form-step" data-step="3">
+                        <div class="step-header">
+                            <h3>Spécifications techniques</h3>
+                            <p>Précisez vos besoins pour un devis adapté</p>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="quantities">Quantités (choix multiples)</label>
+                                <select id="quantities" name="quantities" multiple size="4">
+                                    <option value="1-10">1-10 pièces</option>
+                                    <option value="11-25">11-25 pièces</option>
+                                    <option value="26-50">26-50 pièces</option>
+                                    <option value="51-100">51-100 pièces</option>
+                                    <option value="101-250">101-250 pièces</option>
+                                    <option value="250+">Plus de 250 pièces</option>
+                                </select>
+                                <small>Maintenez Ctrl/Cmd pour sélectionner plusieurs options</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="quality_levels">Niveaux de qualité (choix multiples) *</label>
+                                <select id="quality_levels" name="quality_levels" multiple required size="4">
+                                    <option value="promotional">Promotionnel - Sérigraphie/broderie simple</option>
+                                    <option value="premium">Premium - Coupé-cousu haut de gamme</option>
+                                    <option value="horseprint">HorsePrint - Technologie exclusive</option>
+                                    <option value="mixed">Mélange selon les produits</option>
+                                </select>
+                                <small>Sélectionnez au moins un niveau</small>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget_range">Fourchette budgétaire totale</label>
+                            <select id="budget_range" name="budget_range">
+                                <option value="">Sélectionnez</option>
+                                <option value="500-1000">500€ - 1 000€</option>
+                                <option value="1000-2500">1 000€ - 2 500€</option>
+                                <option value="2500-5000">2 500€ - 5 000€</option>
+                                <option value="5000-10000">5 000€ - 10 000€</option>
+                                <option value="10000+">Plus de 10 000€</option>
+                                <option value="to_define">À définir ensemble</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Produits souhaités (choix multiples)</label>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="products[]" value="saddle_pads">
+                                    <span class="checkmark"></span>
+                                    <span>Tapis de selle</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="products[]" value="horse_blankets">
+                                    <span class="checkmark"></span>
+                                    <span>Couvertures cheval</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="products[]" value="competition_jackets">
+                                    <span class="checkmark"></span>
+                                    <span>Vestes de concours</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="products[]" value="staff_clothing">
+                                    <span class="checkmark"></span>
+                                    <span>Vêtements staff</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="products[]" value="merchandising">
+                                    <span class="checkmark"></span>
+                                    <span>Merchandising</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="products[]" value="signage">
+                                    <span class="checkmark"></span>
+                                    <span>Signalétique</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="special_requirements">Exigences particulières</label>
+                            <textarea id="special_requirements" name="special_requirements" rows="3" placeholder="Contraintes techniques, certifications, normes spécifiques..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Étape 4: Confirmation -->
+                    <div class="form-step" data-step="4">
+                        <div class="step-header">
+                            <h3>Confirmation et envoi</h3>
+                            <p>Vérifiez vos informations et finalisez votre demande</p>
+                        </div>
+
+                        <div class="summary-box">
+                            <h4>Récapitulatif de votre demande</h4>
+                            <div id="formSummary"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additional_info">Informations complémentaires</label>
+                            <textarea id="additional_info" name="additional_info" rows="3" placeholder="Toute information supplémentaire utile pour votre projet..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact_timeframe">Délai de réponse souhaité</label>
+                            <select id="contact_timeframe" name="contact_timeframe">
+                                <option value="24h">Dans les 24h</option>
+                                <option value="48h">Dans les 48h</option>
+                                <option value="week">Dans la semaine</option>
+                                <option value="flexible">Pas d'urgence</option>
+                            </select>
+                        </div>
+
+                        <div class="checkbox-grid">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span class="checkmark"></span>
+                                <span>Je souhaite recevoir les actualités HorsePrint Pro</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="privacy_consent" value="yes" required>
+                                <span class="checkmark"></span>
+                                <span>J'accepte que mes données soient utilisées pour traiter ma demande *</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="form-navigation">
+                        <button type="button" id="prevBtn" class="btn-secondary" style="display: none;">Précédent</button>
+                        <button type="button" id="nextBtn" class="btn-primary">Suivant</button>
+                        <button type="submit" id="submitBtn" class="btn-submit" style="display: none;">Envoyer ma demande</button>
+                    </div>
+
+                    <!-- Message de succès -->
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <h3>Merci pour votre demande !</h3>
+                        <p>Votre demande de devis a été envoyée avec succès. Notre équipe vous recontactera dans les meilleurs délais.</p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Informations de contact traditionnelles -->
+            <div class="contact-info-section fade-in" style="margin-top: 4rem;">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>Contact commercial</h3>
+                        <div class="contact-info">
+                            <strong>hello@horseprint.fr</strong><br>
+                            Solutions techniques événements équestres
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3>Plateforme digitale</h3>
+                        <div class="contact-info">
+                            <strong>www.horseprint.fr</strong><br>
+                            Configurateur en ligne
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3>Expertise</h3>
+                        <div class="contact-info">
+                            <strong>Production Europe & International</strong><br>
+                            MOQ flexibles tous projets<br>
+                            Fabrication sur-mesure<br>
+                            Innovation technologique continue
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 HorsePrint — Solutions équestres sur-mesure !</p>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+   </body>
+</html>

@@ -1,0 +1,358 @@
+/* ========================================== */
+/* STYLES ADDITIONNELS POUR LES SWEATS */
+/* ========================================== */
+
+/* Grille des sweats - identique aux polos */
+.sweats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.sweat-card {
+    background: var(--surface);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: var(--shadow-soft);
+}
+
+.sweat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.sweat-image {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.sweat-image .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.sweat-image img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.sweat-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Navigation des images - identique aux polos */
+.image-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 45, 255, 0.8);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 2;
+    opacity: 0;
+}
+
+.sweat-card:hover .image-nav {
+    opacity: 1;
+}
+
+.image-nav:hover {
+    background: var(--primary);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.image-nav.prev {
+    left: 10px;
+}
+
+.image-nav.next {
+    right: 10px;
+}
+
+/* Indicateur de couleur */
+.color-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Badge NOUVEAU */
+.new-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+/* Contenu du sweat */
+.sweat-content {
+    padding: 2rem;
+}
+
+.sweat-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.sweat-reference {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.sweat-description {
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.sweat-specs {
+    background: rgba(99, 102, 241, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--accent);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Couleurs des sweats */
+.sweat-colors {
+    margin-bottom: 1.5rem;
+}
+
+.sweat-colors h4 {
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.color-note {
+    color: var(--text-secondary);
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Applications */
+.sweat-applications {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Sections Kids et Woman */
+.kids-section,
+.woman-section {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: rgba(99, 102, 241, 0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.kids-title,
+.woman-title {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.kids-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.kid-item,
+.woman-item {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.kid-item h4,
+.woman-item h4 {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.kid-item p,
+.woman-item p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.kids-note {
+    text-align: center;
+    color: var(--text-secondary);
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+/* Section personnalisation */
+.customization {
+    background: var(--gradient-3);
+    padding: 4rem 0;
+    margin-top: 4rem;
+}
+
+.customization-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.custom-item {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.custom-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.custom-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.custom-item h3 {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.custom-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+    background: var(--gradient-1);
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.btn-cta {
+    display: inline-block;
+    background: white;
+    color: var(--primary);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+}
+
+.btn-cta:hover {
+    background: transparent;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sweats-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .sweat-image {
+        height: 250px;
+    }
+    
+    .sweat-content {
+        padding: 1.5rem;
+    }
+    
+    .sweat-title {
+        font-size: 1.5rem;
+    }
+    
+    .kids-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .customization-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+}

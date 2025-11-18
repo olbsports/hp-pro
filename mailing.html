@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HorsePrint PRO - Newsletter Octobre 2025</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background: #f5f5f5;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        }
+        
+        /* Header avec logo */
+        .header {
+            background: white;
+            padding: 25px 30px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #002DFF;
+        }
+        
+        .logo-pro {
+            background: #002DFF;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.6rem;
+            margin-left: 4px;
+        }
+        
+        .date {
+            color: #999;
+            font-size: 0.85rem;
+        }
+        
+        /* Hero avec grande image */
+        .hero {
+            position: relative;
+            height: 260px;
+            background: linear-gradient(135deg, #002DFF 0%, #6366f1 100%);
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 2;
+            width: 95%;
+        }
+        
+        .hero-title {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 0;
+            letter-spacing: -1.5px;
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            display: none;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>') repeat;
+            opacity: 0.3;
+        }
+        
+        /* Section avec photos produits */
+        .products-section {
+            padding: 0;
+        }
+        
+        .product-block {
+            display: flex;
+            min-height: 250px;
+        }
+        
+        .product-block:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        .product-image {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            min-height: 250px;
+            position: relative;
+        }
+        
+        .product-content {
+            flex: 1;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: white;
+        }
+        
+        .product-badge {
+            display: inline-block;
+            background: #002DFF;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            width: fit-content;
+        }
+        
+        .product-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+        
+        .product-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .product-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .feature-tag {
+            background: #f0f9ff;
+            color: #0369a1;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        /* Stats en grid */
+        .stats-section {
+            background: #f8fafc;
+            padding: 50px 30px;
+        }
+        
+        .stats-title {
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 40px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #002DFF;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-weight: 500;
+        }
+        
+        /* Témoignage avec photo */
+        .testimonial-section {
+            padding: 50px 30px;
+            background: white;
+        }
+        
+        .testimonial-content {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+        
+        .testimonial-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #002DFF 0%, #6366f1 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .testimonial-text {
+            flex: 1;
+        }
+        
+        .testimonial-quote {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 15px;
+            font-style: italic;
+            line-height: 1.6;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: #002DFF;
+        }
+        
+        .testimonial-role {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* CTA avec bouton moderne */
+        .cta-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            color: white;
+            padding: 60px 30px;
+            text-align: center;
+        }
+        
+        .cta-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+        
+        .cta-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-bottom: 35px;
+        }
+        
+        .cta-button {
+            background: #002DFF;
+            color: white;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 45, 255, 0.3);
+        }
+        
+        .cta-button:hover {
+            background: #001bb8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 45, 255, 0.4);
+        }
+        
+        .contact-info {
+            margin-top: 25px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        /* Footer simple */
+        .footer {
+            background: #f8fafc;
+            padding: 40px 30px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #eee;
+        }
+        
+        .footer-logo {
+            font-weight: 700;
+            color: #002DFF;
+            margin-bottom: 15px;
+        }
+        
+        .footer-links {
+            margin: 20px 0;
+        }
+        
+        .footer-links a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        
+        .footer-links a:hover {
+            color: #002DFF;
+        }
+        
+        .footer-legal {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.8rem;
+            color: #999;
+        }
+        
+        .footer-legal a {
+            color: #002DFF;
+            text-decoration: none;
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            .email-container {
+                margin: 0;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .hero {
+                height: 200px;
+            }
+            
+            .hero-title {
+                font-size: 2.2rem;
+                letter-spacing: -1px;
+            }
+            
+            .product-block {
+                flex-direction: column !important;
+                min-height: auto;
+            }
+            
+            .product-block:nth-child(even) {
+                flex-direction: column !important;
+            }
+            
+            .product-image {
+                min-height: 200px;
+            }
+            
+            .product-content {
+                padding: 30px 20px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .testimonial-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .stats-section,
+            .testimonial-section,
+            .cta-section {
+                padding: 40px 20px;
+            }
+            
+            .cta-title {
+                font-size: 1.6rem;
+            }
+            
+            div[style*="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                HorsePrint<span class="logo-pro">PRO</span>
+            </div>
+            <div class="date">Oct 2025</div>
+        </div>
+        
+        <!-- Hero -->
+        <div class="hero">
+            <div class="hero-content">
+                <div class="hero-title">Comment devenir l'événement équestre dont tout le monde parle</div>
+            </div>
+        </div>
+        
+        <!-- Phrase de liaison -->
+        <div style="background: white; padding: 25px 30px; text-align: center; border-bottom: 2px solid #f1f5f9;">
+            <p style="font-size: 1.3rem; color: #475569; font-weight: 500; margin: 0;">
+                <strong style="color: #002DFF;">4 résultats concrets</strong> que nos clients obtiennent systématiquement :
+            </p>
+        </div>
+        
+        <!-- Section arguments marketing EN PREMIER -->
+        <div style="background: #fff; padding: 0; border-bottom: 3px solid #002DFF;">
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div style="background: white; padding: 35px 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #10b981; border-bottom: 1px solid #eee;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="background: linear-gradient(135deg, #10b981, #34d399); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                            <span style="font-size: 2rem; color: white;">💰</span>
+                        </div>
+                        <div>
+                            <div style="font-size: 2.5rem; font-weight: 900; color: #10b981; line-height: 1;">+40%</div>
+                            <div style="font-size: 1.1rem; font-weight: 700; color: #0f172a;">Budget Sponsors</div>
+                        </div>
+                    </div>
+                    <p style="color: #475569; font-size: 1.05rem; line-height: 1.7;">
+                        <strong style="color: #10b981;">Résultat garanti :</strong> Vos sponsors voient leur marque sur TOUS les supports (chevaux, staff, signalétique) avec une qualité photographique. Ils adorent cette visibilité totale et augmentent leur budget l'année suivante !
+                    </p>
+                </div>
+                
+                <div style="background: white; padding: 35px 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #3b82f6; border-bottom: 1px solid #eee;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="background: linear-gradient(135deg, #3b82f6, #60a5fa); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                            <span style="font-size: 2rem; color: white;">⏰</span>
+                        </div>
+                        <div>
+                            <div style="font-size: 2.5rem; font-weight: 900; color: #ef4444; line-height: 1;">-70%</div>
+                            <div style="font-size: 1.1rem; font-weight: 700; color: #0f172a;">Stress Organisateur</div>
+                        </div>
+                    </div>
+                    <p style="color: #475569; font-size: 1.05rem; line-height: 1.7;">
+                        <strong style="color: #3b82f6;">Résultat immédiat :</strong> UN SEUL contact pour TOUT ! Fini de jongler entre 5 fournisseurs différents. Vous organisez sereinement au lieu de subir la logistique. Nos clients gagnent un temps fou !
+                    </p>
+                </div>
+                
+                <div style="background: white; padding: 35px 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #f59e0b; border-bottom: 1px solid #eee;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="background: linear-gradient(135deg, #f59e0b, #fbbf24); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                            <span style="font-size: 2rem; color: white;">📈</span>
+                        </div>
+                        <div>
+                            <div style="font-size: 2.5rem; font-weight: 900; color: #6366f1; line-height: 1;">+50%</div>
+                            <div style="font-size: 1.1rem; font-weight: 700; color: #0f172a;">Buzz Médiatique</div>
+                        </div>
+                    </div>
+                    <p style="color: #475569; font-size: 1.05rem; line-height: 1.7;">
+                        <strong style="color: #f59e0b;">Résultat viral :</strong> Événement "Instagram-able" qui fait sensation ! Journalistes et influenceurs adorent photographer des événements visuellement parfaits. Plus de buzz = nouveaux sponsors qui vous contactent !
+                    </p>
+                </div>
+                
+                <div style="background: white; padding: 35px 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #8b5cf6;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="background: linear-gradient(135deg, #8b5cf6, #a78bfa); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                            <span style="font-size: 2rem; color: white;">🏆</span>
+                        </div>
+                        <div>
+                            <div style="font-size: 2.5rem; font-weight: 900; color: #002DFF; line-height: 1;">100%</div>
+                            <div style="font-size: 1.1rem; font-weight: 700; color: #0f172a;">Qualité Premium</div>
+                        </div>
+                    </div>
+                    <p style="color: #475569; font-size: 1.05rem; line-height: 1.7;">
+                        <strong style="color: #8b5cf6;">Résultat durable :</strong> Notre technologie HorsePrint (impression dans la fibre) = qualité photographique inaltérable. Vos couleurs restent éclatantes des années. Exit les logos qui se décollent après 3 mois !
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Produits avec photos -->
+        <div class="products-section">
+            <!-- Équipements Cheval -->
+            <div class="product-block">
+                <div class="product-image" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://pro.horseprint.fr/images/tapis%20de%20selle.png'); background-size: cover; background-position: center; background-color: #f8fafc;"></div>
+                <div class="product-content">
+                    <div class="product-badge">Innovation</div>
+                    <h2 class="product-title">Équipements Cheval</h2>
+                    <p class="product-description">
+                        Tapis de selle, couvertures et portes de box avec notre technologie HorsePrint exclusive. Impression photographique intégrée directement dans la fibre pour une durabilité exceptionnelle.
+                    </p>
+                    <div class="product-features">
+                        <span class="feature-tag">Impression fibre</span>
+                        <span class="feature-tag">Rendu photo</span>
+                        <span class="feature-tag">Ultra-résistant</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Barre de séparation -->
+            <div style="height: 2px; background: #002DFF; margin: 0;"></div>
+            
+            <!-- Textile Professionnel -->
+            <div class="product-block">
+                <div class="product-image" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://pro.horseprint.fr/images/polo-homme.png'); background-size: cover; background-position: center; background-color: #f8fafc;"></div>
+                <div class="product-content">
+                    <div class="product-badge">3 Niveaux</div>
+                    <h2 class="product-title">Textile Professionnel</h2>
+                    <p class="product-description">
+                        Collection complète pour staff et cavaliers : polos, pantalons, casquettes. Trois niveaux de personnalisation du promotionnel au sur-mesure premium. MOQ dès 15 pièces.
+                    </p>
+                    <div class="product-features">
+                        <span class="feature-tag">MOQ 15pcs</span>
+                        <span class="feature-tag">Coupe morpho</span>
+                        <span class="feature-tag">Certifié RCS</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Barre de séparation -->
+            <div style="height: 2px; background: #002DFF; margin: 0;"></div>
+            
+            <!-- Communication Visuelle -->
+            <div class="product-block">
+                <div class="product-image" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://pro.horseprint.fr/images/b%C3%A2ches.png'); background-size: cover; background-position: center; background-color: #f8fafc;"></div>
+                <div class="product-content">
+                    <div class="product-badge">Impact Visuel</div>
+                    <h2 class="product-title">Communication Visuelle</h2>
+                    <p class="product-description">
+                        Signalétique directionnelle, bâches sponsors, habillage décoratif. Créez une identité visuelle cohérente qui marque les esprits et valorise vos partenaires.
+                    </p>
+                    <div class="product-features">
+                        <span class="feature-tag">UV résistant</span>
+                        <span class="feature-tag">Grand format</span>
+                        <span class="feature-tag">Modulaire</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Barre de séparation -->
+            <div style="height: 2px; background: #002DFF; margin: 0;"></div>
+            
+            <!-- Gestion d'Accès -->
+            <div class="product-block">
+                <div class="product-image" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://pro.horseprint.fr/images/bracelet.png'); background-size: cover; background-position: center; background-color: #f8fafc;"></div>
+                <div class="product-content">
+                    <div class="product-badge">Sécurisé</div>
+                    <h2 class="product-title">Gestion d'Accès</h2>
+                    <p class="product-description">
+                        Bracelets RFID/QR, lanyards professionnels, accréditations avec codes couleurs. Contrôlez les flux et sécurisez vos zones VIP en toute simplicité.
+                    </p>
+                    <div class="product-features">
+                        <span class="feature-tag">RFID/QR</span>
+                        <span class="feature-tag">Étanche</span>
+                        <span class="feature-tag">Codes sécurisés</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barre de séparation avant l'histoire -->
+        <div style="height: 3px; background: #002DFF; margin: 0;"></div>
+
+        <!-- Histoire Léa Lopez -->
+        <div style="background: white; padding: 50px 30px; border-bottom: 1px solid #eee;">
+            <div style="display: flex; gap: 30px; align-items: center;">
+                <div style="flex: 1;">
+                    <div style="background: linear-gradient(135deg, #002DFF 0%, #6366f1 100%); width: 120px; height: 120px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; font-weight: 800; margin: 0 auto 20px;">L</div>
+                </div>
+                <div style="flex: 2;">
+                    <h2 style="font-size: 1.6rem; font-weight: 700; color: #002DFF; margin-bottom: 15px;">L'Histoire HorsePrint PRO</h2>
+                    <p style="color: #475569; font-size: 1rem; line-height: 1.6; margin-bottom: 15px;">
+                        <strong>HorsePrint PRO, c'est Léa Lopez</strong>, fille de René Lopez, légende de l'équitation française. 
+                    </p>
+                    <p style="color: #475569; font-size: 1rem; line-height: 1.6; margin-bottom: 15px;">
+                        Élevée dans le monde équestre, Léa a grandi en voyant les coulisses des grands événements. Elle a remarqué un problème récurrent : <strong>les organisateurs galèrent avec des fournisseurs dispersés</strong> et des résultats visuels incohérents.
+                    </p>
+                    <p style="color: #475569; font-size: 1rem; line-height: 1.6;">
+                        Sa mission ? <strong>Créer LA solution tout-en-un</strong> qui transforme l'organisation d'événements équestres. Avec l'expertise familiale et une vision moderne, HorsePrint PRO est né pour révolutionner le secteur.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nouvelle urgence crédible -->
+        <div style="background: linear-gradient(135deg, #002DFF 0%, #6366f1 100%); color: white; padding: 25px 30px; text-align: center;">
+            <div style="font-weight: 800; font-size: 1.2rem; margin-bottom: 8px;">💡 Conseil d'expert Léa Lopez</div>
+            <div style="font-size: 1rem; opacity: 0.95;">"Commencez à planifier 6 mois avant votre événement pour optimiser votre budget et garantir la qualité. Les meilleures solutions nécessitent du temps !"</div>
+        </div>
+        
+        <!-- Stats crédibles -->
+        <div style="background: white; padding: 0;">
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div style="background: white; padding: 35px 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #002DFF; border-bottom: 1px solid #eee;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="background: linear-gradient(135deg, #002DFF, #6366f1); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                            <span style="font-size: 2rem; color: white;">⚡</span>
+                        </div>
+                        <div>
+                            <div style="font-size: 2.5rem; font-weight: 900; color: #002DFF; line-height: 1;">24h</div>
+                            <div style="font-size: 1.1rem; font-weight: 700; color: #0f172a;">Délai de Réponse</div>
+                        </div>
+                    </div>
+                    <p style="color: #475569; font-size: 1.05rem; line-height: 1.7;">
+                        <strong style="color: #002DFF;">Réactivité garantie :</strong> Nous répondons à toutes vos demandes sous 24h maximum. Fini d'attendre des semaines pour avoir un devis ou une réponse technique !
+                    </p>
+                </div>
+                
+                <div style="background: white; padding: 35px 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #10b981; border-bottom: 1px solid #eee;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="background: linear-gradient(135deg, #10b981, #34d399); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                            <span style="font-size: 2rem; color: white;">🎯</span>
+                        </div>
+                        <div>
+                            <div style="font-size: 2.5rem; font-weight: 900; color: #10b981; line-height: 1;">1</div>
+                            <div style="font-size: 1.1rem; font-weight: 700; color: #0f172a;">Pièce Minimum</div>
+                        </div>
+                    </div>
+                    <p style="color: #475569; font-size: 1.05rem; line-height: 1.7;">
+                        <strong style="color: #10b981;">Ultra flexible :</strong> Pas de contrainte de quantité ! Vous pouvez commander une seule pièce pour tester ou équiper ponctuellement. Idéal pour les prototypes et tests.
+                    </p>
+                </div>
+                
+                <div style="background: white; padding: 35px 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #f59e0b;">
+                    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <div style="background: linear-gradient(135deg, #f59e0b, #fbbf24); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                            <span style="font-size: 2rem; color: white;">🌍</span>
+                        </div>
+                        <div>
+                            <div style="font-size: 2rem; font-weight: 900; color: #f59e0b; line-height: 1;">EUROPE</div>
+                            <div style="font-size: 1.1rem; font-weight: 700; color: #0f172a;">ou International</div>
+                        </div>
+                    </div>
+                    <p style="color: #475569; font-size: 1.05rem; line-height: 1.7;">
+                        <strong style="color: #f59e0b;">Production adaptée :</strong> Nous produisons en Europe pour la qualité premium ou à l'international selon vos besoins et votre budget. Vous choisissez le bon rapport qualité/prix !
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CTA -->
+        <div class="cta-section">
+            <div class="cta-title">Échangeons sur Votre Projet</div>
+            <div class="cta-subtitle">
+                Devis personnalisé sous 24h • Consultation expert gratuite
+            </div>
+            
+            <a href="mailto:hello@horseprint.fr?subject=Demande%20d'échange%20-%20Newsletter%20Oct%202025&body=Bonjour,%0A%0ASuite%20à%20votre%20newsletter,%20je%20souhaite%20échanger%20sur%20mon%20projet%20:%0A%0A🎯%20Type%20d'événement%20:%20%0A📅%20Date%20prévue%20:%20%0A👥%20Nombre%20de%20participants%20:%20%0A💰%20Budget%20approximatif%20:%20%0A%0A🔍%20Ce%20qui%20m'intéresse%20:%0A□%20Équipement%20cheval%0A□%20Textile%20professionnel%0A□%20Communication%20visuelle%0A□%20Gestion%20d'accès%0A□%20Solution%20complète%0A%0A📞%20Téléphone%20:%20%0A📧%20Email%20:%20%0A%0ACordialement" class="cta-button">
+                Demander un Échange
+            </a>
+            
+            <div class="contact-info">
+                hello@horseprint.fr • Réponse garantie sous 24h
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-logo">HorsePrint PRO</div>
+            
+            <div class="footer-links">
+                <a href="https://www.horseprint.fr">Site Web</a>
+                <a href="mailto:hello@horseprint.fr">Contact</a>
+                <a href="#">Nos Réalisations</a>
+            </div>
+            
+            <p>Solutions équestres sur-mesure • Production Europe</p>
+            
+            <div class="footer-legal">
+                Vous recevez cette newsletter car vous vous intéressez aux solutions équestres professionnelles.<br>
+                <a href="#">Se désabonner</a> • <a href="#">Préférences</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

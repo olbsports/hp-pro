@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection Polos Premium — HorsePrint Pro</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32'%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23002DFF'/%3E%3Cstop offset='100%25' style='stop-color:%236366f1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='15' fill='url(%23gradient)' stroke='white' stroke-width='1'/%3E%3Cpath d='M8 10 L8 22 M8 16 L13 16 M13 10 L13 22' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cpath d='M17 10 L17 22 M17 10 L22 10 Q24 10 24 13 Q24 16 22 16 L17 16' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <!-- Header -->
+  <header>
+    <nav class="container">
+        <div class="mobile-nav-header">
+            <!-- Logo cliquable -->
+            <a href="index.html" class="logo notranslate" style="text-decoration: none;">
+                HorsePrint
+                <span class="logo-pro">PRO</span>
+            </a>
+            <!-- Belle flèche retour à droite (visible uniquement sur mobile) -->
+            <a href="index.html" class="back-arrow" title="Retour à l'accueil">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                </svg>
+            </a>
+        </div>
+        <!-- Navigation desktop uniquement -->
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="translate-widget">
+    <button class="translate-toggle" onclick="toggleTranslate()">
+        🌐 Traduire
+    </button>
+    <div class="translate-content" id="translateContent">
+        <!-- Widget Google officiel -->
+        <div id="google_translate_element"></div>
+        
+        <!-- OU drapeaux personnalisés (optionnel) -->
+        <div class="language-flags" style="display: none;">
+            <button class="flag-btn active" onclick="translateTo('fr')" title="Français">🇫🇷</button>
+            <button class="flag-btn" onclick="translateTo('en')" title="English">🇬🇧</button>
+            <button class="flag-btn" onclick="translateTo('es')" title="Español">🇪🇸</button>
+            <button class="flag-btn" onclick="translateTo('de')" title="Deutsch">🇩🇪</button>
+            <button class="flag-btn" onclick="translateTo('it')" title="Italiano">🇮🇹</button>
+            <button class="flag-btn" onclick="translateTo('nl')" title="Nederlands">🇳🇱</button>
+        </div>
+    </div>
+</div>
+
+    <!-- Hero Section -->
+    <section class="hero2">
+
+    </section>
+
+    <!-- Polos Section -->
+    <section id="polos" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Notre sélection de polos promotionnels</h2>
+                <p class="section-subtitle">Une gamme premium alliant confort, performance et personnalisation</p>
+            </div>
+
+            <div class="polos-grid">
+                <!-- MACKAY - Polo Premium Unisexe (manches courtes) -->
+                <div class="polo-card fade-in" data-product="mackay">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/polos/PS2001U_100_1_1000.jpg" alt="MACKAY" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('mackay', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('mackay', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">SUMMIT</h3>
+                        <div class="polo-reference">Réf: HP-PS001 | Manches courtes unisexe</div>
+                        <p class="polo-description">Polo classique en coton RingSpun pré-rétréci, parfait pour les équipes professionnelles et les événements de prestige.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Coton RingSpun pré-rétréci (210 g/m²)<br>
+                            • Tissu Piqué haute qualité<br>
+                            • Col et manches côtelés 1x1 avec élasthanne<br>
+                            • Tailles : S à 5XL
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (17)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('mackay', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('mackay', '200', 'Noir')"></div>
+                                <div class="color-swatch color-107" data-color="Moka" data-color-code="107" onclick="changeColor('mackay', '107', 'Moka')"></div>
+                                <div class="color-swatch color-201" data-color="Gris Foncé" data-color-code="201" onclick="changeColor('mackay', '201', 'Gris Foncé')"></div>
+                                <div class="color-swatch color-203" data-color="Gris Nuage" data-color-code="203" onclick="changeColor('mackay', '203', 'Gris Nuage')"></div>
+                                <div class="color-swatch color-312" data-color="Jaune Beurre" data-color-code="312" onclick="changeColor('mackay', '312', 'Jaune Beurre')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('mackay', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-410" data-color="Rose Pâle" data-color-code="410" onclick="changeColor('mackay', '410', 'Rose Pâle')"></div>
+                                <div class="color-swatch color-411" data-color="Grape" data-color-code="411" onclick="changeColor('mackay', '411', 'Grape')"></div>
+                                <div class="color-swatch color-500" data-color="Marine" data-color-code="500" onclick="changeColor('mackay', '500', 'Marine')"></div>
+                                <div class="color-swatch color-501" data-color="Bleu Ciel" data-color-code="501" onclick="changeColor('mackay', '501', 'Bleu Ciel')"></div>
+                                <div class="color-swatch color-502" data-color="Bleu Royal" data-color-code="502" onclick="changeColor('mackay', '502', 'Bleu Royal')"></div>
+                                <div class="color-swatch color-509" data-color="Bleu Fog" data-color-code="509" onclick="changeColor('mackay', '509', 'Bleu Fog')"></div>
+                                <div class="color-swatch color-510" data-color="Bleu Denim" data-color-code="510" onclick="changeColor('mackay', '510', 'Bleu Denim')"></div>
+                                <div class="color-swatch color-602" data-color="Vert Bouteille" data-color-code="602" onclick="changeColor('mackay', '602', 'Vert Bouteille')"></div>
+                                <div class="color-swatch color-613" data-color="Sauge" data-color-code="613" onclick="changeColor('mackay', '613', 'Sauge')"></div>
+                                <div class="color-swatch color-616" data-color="Vert Thé" data-color-code="616" onclick="changeColor('mackay', '616', 'Vert Thé')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Coton Premium</span>
+                            <span class="feature-tag">Pré-rétréci</span>
+                            <span class="feature-tag">Durabilité</span>
+                            <span class="feature-tag">Confort optimal</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 5,90€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Demande de devis polo SUMMIT&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- Polo SUMMIT (Réf: HP-PS001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : %0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MACKAY WOMAN - Polo Premium Femme -->
+                <div class="polo-card fade-in" data-product="mackay-woman">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/polos/PS200WW_100_1_1000.jpg" alt="MACKAY WOMAN" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('mackay-woman', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('mackay-woman', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">SUMMIT WOMAN</h3>
+                        <div class="polo-reference">Réf: HP-PSW001 | Coupe féminine</div>
+                        <p class="polo-description">Polo spécialement conçu pour la morphologie féminine, avec coupe cintrée et manches ajustées pour un style élégant.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Coton RingSpun pré-rétréci (210 g/m²)<br>
+                            • Coupe cintrée, manches plus courtes<br>
+                            • Finitions délicates, patte 3 boutons<br>
+                            • Tailles : XS à 3XL
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (17)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('mackay-woman', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('mackay-woman', '200', 'Noir')"></div>
+                                <div class="color-swatch color-107" data-color="Moka" data-color-code="107" onclick="changeColor('mackay-woman', '107', 'Moka')"></div>
+                                <div class="color-swatch color-201" data-color="Gris Foncé" data-color-code="201" onclick="changeColor('mackay-woman', '201', 'Gris Foncé')"></div>
+                                <div class="color-swatch color-203" data-color="Gris Nuage" data-color-code="203" onclick="changeColor('mackay-woman', '203', 'Gris Nuage')"></div>
+                                <div class="color-swatch color-312" data-color="Jaune Beurre" data-color-code="312" onclick="changeColor('mackay-woman', '312', 'Jaune Beurre')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('mackay-woman', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-410" data-color="Rose Pâle" data-color-code="410" onclick="changeColor('mackay-woman', '410', 'Rose Pâle')"></div>
+                                <div class="color-swatch color-411" data-color="Grape" data-color-code="411" onclick="changeColor('mackay-woman', '411', 'Grape')"></div>
+                                <div class="color-swatch color-500" data-color="Marine" data-color-code="500" onclick="changeColor('mackay-woman', '500', 'Marine')"></div>
+                                <div class="color-swatch color-501" data-color="Bleu Ciel" data-color-code="501" onclick="changeColor('mackay-woman', '501', 'Bleu Ciel')"></div>
+                                <div class="color-swatch color-502" data-color="Bleu Royal" data-color-code="502" onclick="changeColor('mackay-woman', '502', 'Bleu Royal')"></div>
+                                <div class="color-swatch color-509" data-color="Bleu Fog" data-color-code="509" onclick="changeColor('mackay-woman', '509', 'Bleu Fog')"></div>
+                                <div class="color-swatch color-510" data-color="Bleu Denim" data-color-code="510" onclick="changeColor('mackay-woman', '510', 'Bleu Denim')"></div>
+                                <div class="color-swatch color-602" data-color="Vert Bouteille" data-color-code="602" onclick="changeColor('mackay-woman', '602', 'Vert Bouteille')"></div>
+                                <div class="color-swatch color-613" data-color="Sauge" data-color-code="613" onclick="changeColor('mackay-woman', '613', 'Sauge')"></div>
+                                <div class="color-swatch color-616" data-color="Vert Thé" data-color-code="616" onclick="changeColor('mackay-woman', '616', 'Vert Thé')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Coupe féminine</span>
+                            <span class="feature-tag">Style élégant</span>
+                            <span class="feature-tag">Confort premium</span>
+                            <span class="feature-tag">Finitions soignées</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 5,90€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis polo SUMMIT WOMAN&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- Polo SUMMIT WOMAN (Réf: HP-PSW001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie / sérigraphie / transfert%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MACKAY KIDS - Polo Premium Junior -->
+                <div class="polo-card fade-in" data-product="mackay-kids">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/polos/PS200KW_100_1_1000.jpg" alt="MACKAY KIDS" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('mackay-kids', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('mackay-kids', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">SUMMIT KIDS</h3>
+                        <div class="polo-reference">Réf: HP-PSK001 | Enfant</div>
+                        <p class="polo-description">Polo junior en coton doux, parfait pour les jeunes cavaliers et les écoles d'équitation. Même qualité que les adultes.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Coton RingSpun pré-rétréci (210 g/m²)<br>
+                            • Patte 2 boutons adaptée aux enfants<br>
+                            • Coutures renforcées pour la résistance<br>
+                            • Tailles : 1/2 à 12/14 ans
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (17)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('mackay-kids', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('mackay-kids', '200', 'Noir')"></div>
+                                <div class="color-swatch color-107" data-color="Moka" data-color-code="107" onclick="changeColor('mackay-kids', '107', 'Moka')"></div>
+                                <div class="color-swatch color-201" data-color="Gris Foncé" data-color-code="201" onclick="changeColor('mackay-kids', '201', 'Gris Foncé')"></div>
+                                <div class="color-swatch color-203" data-color="Gris Nuage" data-color-code="203" onclick="changeColor('mackay-kids', '203', 'Gris Nuage')"></div>
+                                <div class="color-swatch color-312" data-color="Jaune Beurre" data-color-code="312" onclick="changeColor('mackay-kids', '312', 'Jaune Beurre')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('mackay-kids', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-410" data-color="Rose Pâle" data-color-code="410" onclick="changeColor('mackay-kids', '410', 'Rose Pâle')"></div>
+                                <div class="color-swatch color-411" data-color="Grape" data-color-code="411" onclick="changeColor('mackay-kids', '411', 'Grape')"></div>
+                                <div class="color-swatch color-500" data-color="Marine" data-color-code="500" onclick="changeColor('mackay-kids', '500', 'Marine')"></div>
+                                <div class="color-swatch color-501" data-color="Bleu Ciel" data-color-code="501" onclick="changeColor('mackay-kids', '501', 'Bleu Ciel')"></div>
+                                <div class="color-swatch color-502" data-color="Bleu Royal" data-color-code="502" onclick="changeColor('mackay-kids', '502', 'Bleu Royal')"></div>
+                                <div class="color-swatch color-509" data-color="Bleu Fog" data-color-code="509" onclick="changeColor('mackay-kids', '509', 'Bleu Fog')"></div>
+                                <div class="color-swatch color-510" data-color="Bleu Denim" data-color-code="510" onclick="changeColor('mackay-kids', '510', 'Bleu Denim')"></div>
+                                <div class="color-swatch color-602" data-color="Vert Bouteille" data-color-code="602" onclick="changeColor('mackay-kids', '602', 'Vert Bouteille')"></div>
+                                <div class="color-swatch color-613" data-color="Sauge" data-color-code="613" onclick="changeColor('mackay-kids', '613', 'Sauge')"></div>
+                                <div class="color-swatch color-616" data-color="Vert Thé" data-color-code="616" onclick="changeColor('mackay-kids', '616', 'Vert Thé')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Spécial enfants</span>
+                            <span class="feature-tag">Résistant aux jeux</span>
+                            <span class="feature-tag">Confort toute la journée</span>
+                            <span class="feature-tag">Facile d'entretien</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 5,50€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis polo SUMMIT KIDS&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- Polo SUMMIT KIDS (Réf: HP-PSK001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie / sérigraphie / transfert%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HOBART - Polo Manches Longues Unisexe -->
+                <div class="polo-card fade-in" data-product="hobart">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/polos/PL200UW_100_1_1000.jpg" alt="HOBART" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('hobart', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('hobart', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">ALPINE</h3>
+                        <div class="polo-reference">Réf: HP-PL003 | Manches longues unisexe</div>
+                        <p class="polo-description">Polo manches longues en coton RingSpun, idéal pour les saisons fraîches et les événements en extérieur.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Coton RingSpun pré-rétréci (210 g/m²)<br>
+                            • Manches longues avec poignets élastiques<br>
+                            • Patte 3 boutons, finitions premium<br>
+                            • Tailles : S à 5XL
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (17)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('hobart', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('hobart', '200', 'Noir')"></div>
+                                <div class="color-swatch color-107" data-color="Moka" data-color-code="107" onclick="changeColor('hobart', '107', 'Moka')"></div>
+                                <div class="color-swatch color-201" data-color="Gris Foncé" data-color-code="201" onclick="changeColor('hobart', '201', 'Gris Foncé')"></div>
+                                <div class="color-swatch color-203" data-color="Gris Nuage" data-color-code="203" onclick="changeColor('hobart', '203', 'Gris Nuage')"></div>
+                                <div class="color-swatch color-312" data-color="Jaune Beurre" data-color-code="312" onclick="changeColor('hobart', '312', 'Jaune Beurre')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('hobart', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-410" data-color="Rose Pâle" data-color-code="410" onclick="changeColor('hobart', '410', 'Rose Pâle')"></div>
+                                <div class="color-swatch color-411" data-color="Grape" data-color-code="411" onclick="changeColor('hobart', '411', 'Grape')"></div>
+                                <div class="color-swatch color-500" data-color="Marine" data-color-code="500" onclick="changeColor('hobart', '500', 'Marine')"></div>
+                                <div class="color-swatch color-501" data-color="Bleu Ciel" data-color-code="501" onclick="changeColor('hobart', '501', 'Bleu Ciel')"></div>
+                                <div class="color-swatch color-502" data-color="Bleu Royal" data-color-code="502" onclick="changeColor('hobart', '502', 'Bleu Royal')"></div>
+                                <div class="color-swatch color-509" data-color="Bleu Fog" data-color-code="509" onclick="changeColor('hobart', '509', 'Bleu Fog')"></div>
+                                <div class="color-swatch color-510" data-color="Bleu Denim" data-color-code="510" onclick="changeColor('hobart', '510', 'Bleu Denim')"></div>
+                                <div class="color-swatch color-602" data-color="Vert Bouteille" data-color-code="602" onclick="changeColor('hobart', '602', 'Vert Bouteille')"></div>
+                                <div class="color-swatch color-613" data-color="Sauge" data-color-code="613" onclick="changeColor('hobart', '613', 'Sauge')"></div>
+                                <div class="color-swatch color-616" data-color="Vert Thé" data-color-code="616" onclick="changeColor('hobart', '616', 'Vert Thé')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Manches longues</span>
+                            <span class="feature-tag">Poignets élastiques</span>
+                            <span class="feature-tag">Mi-saison</span>
+                            <span class="feature-tag">Confort durable</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 8,90€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis polo ALPINE&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- Polo ALPINE manches longues (Réf: HP-PL003)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie / sérigraphie / transfert%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HOBART WOMAN - Polo Manches Longues Femme -->
+                <div class="polo-card fade-in" data-product="hobart-woman">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/polos/PL200WW_100_1_1000.jpg" alt="HOBART WOMAN" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('hobart-woman', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('hobart-woman', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">ALPINE WOMAN</h3>
+                        <div class="polo-reference">Réf: HP-PLW003 | Manches longues femme</div>
+                        <p class="polo-description">Polo manches longues spécialement conçu pour la morphologie féminine, avec coupe cintrée et élégante.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Coton RingSpun pré-rétréci (210 g/m²)<br>
+                            • Coupe cintrée féminine<br>
+                            • Manches longues avec poignets élastiques<br>
+                            • Tailles : XS à 3XL
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (17)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('hobart-woman', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('hobart-woman', '200', 'Noir')"></div>
+                                <div class="color-swatch color-107" data-color="Moka" data-color-code="107" onclick="changeColor('hobart-woman', '107', 'Moka')"></div>
+                                <div class="color-swatch color-201" data-color="Gris Foncé" data-color-code="201" onclick="changeColor('hobart-woman', '201', 'Gris Foncé')"></div>
+                                <div class="color-swatch color-203" data-color="Gris Nuage" data-color-code="203" onclick="changeColor('hobart-woman', '203', 'Gris Nuage')"></div>
+                                <div class="color-swatch color-312" data-color="Jaune Beurre" data-color-code="312" onclick="changeColor('hobart-woman', '312', 'Jaune Beurre')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('hobart-woman', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-410" data-color="Rose Pâle" data-color-code="410" onclick="changeColor('hobart-woman', '410', 'Rose Pâle')"></div>
+                                <div class="color-swatch color-411" data-color="Grape" data-color-code="411" onclick="changeColor('hobart-woman', '411', 'Grape')"></div>
+                                <div class="color-swatch color-500" data-color="Marine" data-color-code="500" onclick="changeColor('hobart-woman', '500', 'Marine')"></div>
+                                <div class="color-swatch color-501" data-color="Bleu Ciel" data-color-code="501" onclick="changeColor('hobart-woman', '501', 'Bleu Ciel')"></div>
+                                <div class="color-swatch color-502" data-color="Bleu Royal" data-color-code="502" onclick="changeColor('hobart-woman', '502', 'Bleu Royal')"></div>
+                                <div class="color-swatch color-509" data-color="Bleu Fog" data-color-code="509" onclick="changeColor('hobart-woman', '509', 'Bleu Fog')"></div>
+                                <div class="color-swatch color-510" data-color="Bleu Denim" data-color-code="510" onclick="changeColor('hobart-woman', '510', 'Bleu Denim')"></div>
+                                <div class="color-swatch color-602" data-color="Vert Bouteille" data-color-code="602" onclick="changeColor('hobart-woman', '602', 'Vert Bouteille')"></div>
+                                <div class="color-swatch color-613" data-color="Sauge" data-color-code="613" onclick="changeColor('hobart-woman', '613', 'Sauge')"></div>
+                                <div class="color-swatch color-616" data-color="Vert Thé" data-color-code="616" onclick="changeColor('hobart-woman', '616', 'Vert Thé')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Coupe féminine</span>
+                            <span class="feature-tag">Manches longues</span>
+                            <span class="feature-tag">Style élégant</span>
+                            <span class="feature-tag">Confort premium</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 8,90€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis polo ALPINE WOMAN&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- Polo ALPINE WOMAN manches longues (Réf: HP-PLW003)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie / sérigraphie / transfert%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+              <!-- AVALON - Polo Poly-Coton Unisexe (ex-GIBSON) -->
+                <div class="polo-card fade-in" data-product="avalon">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/polos/MK215WV_100_1_1000.jpg" alt="AVALON" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('avalon', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('avalon', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">AVALON</h3>
+                        <div class="polo-reference">Réf: HP-PL001 | Poly-coton unisexe</div>
+                        <p class="polo-description">Polo polyvalent en mélange poly-coton, parfait équilibre entre confort du coton et résistance du polyester. Idéal pour usage professionnel intensif.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 35% Coton RingSpun / 65% Polyester (210 g/m²)<br>
+                            • Tissu Piqué résistant, anti-boulochage<br>
+                            • Patte 3 boutons, col côtelé renforcé<br>
+                            • Tailles : S à 5XL
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (20)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('avalon', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('avalon', '200', 'Noir')"></div>
+                                <div class="color-swatch color-201" data-color="Gris Foncé" data-color-code="201" onclick="changeColor('avalon', '201', 'Gris Foncé')"></div>
+                                <div class="color-swatch color-203" data-color="Gris Nuage" data-color-code="203" onclick="changeColor('avalon', '203', 'Gris Nuage')"></div>
+                                <div class="color-swatch color-300" data-color="Jaune" data-color-code="300" onclick="changeColor('avalon', '300', 'Jaune')"></div>
+                                <div class="color-swatch color-301" data-color="Orange" data-color-code="301" onclick="changeColor('avalon', '301', 'Orange')"></div>
+                                <div class="color-swatch color-305" data-color="Or" data-color-code="305" onclick="changeColor('avalon', '305', 'Or')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('avalon', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-403" data-color="Bordeaux" data-color-code="403" onclick="changeColor('avalon', '403', 'Bordeaux')"></div>
+                                <div class="color-swatch color-500" data-color="Marine" data-color-code="500" onclick="changeColor('avalon', '500', 'Marine')"></div>
+                                <div class="color-swatch color-501" data-color="Bleu Ciel" data-color-code="501" onclick="changeColor('avalon', '501', 'Bleu Ciel')"></div>
+                                <div class="color-swatch color-502" data-color="Bleu Royal" data-color-code="502" onclick="changeColor('avalon', '502', 'Bleu Royal')"></div>
+                                <div class="color-swatch color-505" data-color="Atoll" data-color-code="505" onclick="changeColor('avalon', '505', 'Atoll')"></div>
+                                <div class="color-swatch color-600" data-color="Vert Kelly" data-color-code="600" onclick="changeColor('avalon', '600', 'Vert Kelly')"></div>
+                                <div class="color-swatch color-601" data-color="Vert Kaki" data-color-code="601" onclick="changeColor('avalon', '601', 'Vert Kaki')"></div>
+                                <div class="color-swatch color-602" data-color="Vert Bouteille" data-color-code="602" onclick="changeColor('avalon', '602', 'Vert Bouteille')"></div>
+                                <div class="color-swatch color-604" data-color="Lime" data-color-code="604" onclick="changeColor('avalon', '604', 'Lime')"></div>
+                                <div class="color-swatch color-605" data-color="Vert Real" data-color-code="605" onclick="changeColor('avalon', '605', 'Vert Real')"></div>
+                                <div class="color-swatch color-613" data-color="Sauge" data-color-code="613" onclick="changeColor('avalon', '613', 'Sauge')"></div>
+                                <div class="color-swatch color-202" data-color="Gris Chiné" data-color-code="202" onclick="changeColor('avalon', '202', 'Gris Chiné')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Poly-coton résistant</span>
+                            <span class="feature-tag">Anti-boulochage</span>
+                            <span class="feature-tag">Usage intensif</span>
+                            <span class="feature-tag">Entretien facile</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 5,90€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis polo AVALON&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- Polo AVALON poly-coton (Réf: HP-PL001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie / sérigraphie / transfert%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TRINITY - Polo Poly-Coton Femme (ex-NOBBY) -->
+                <div class="polo-card fade-in" data-product="trinity">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/polos/MK214WV_100_1_1000.jpg" alt="TRINITY" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('trinity', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('trinity', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">TRINITY</h3>
+                        <div class="polo-reference">Réf: HP-PW001 | Poly-coton femme</div>
+                        <p class="polo-description">Polo féminin en poly-coton avec coupe slim ajustée, manches plus courtes et plus serrées pour un style professionnel élégant.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 35% Coton RingSpun / 65% Polyester (210 g/m²)<br>
+                            • Coupe slim fit spécialement féminine<br>
+                            • Manches ajustées, finitions soignées<br>
+                            • Tailles : XS à 3XL
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (19)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('trinity', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('trinity', '200', 'Noir')"></div>
+                                <div class="color-swatch color-104" data-color="Marron" data-color-code="104" onclick="changeColor('trinity', '104', 'Marron')"></div>
+                                <div class="color-swatch color-201" data-color="Gris Foncé" data-color-code="201" onclick="changeColor('trinity', '201', 'Gris Foncé')"></div>
+                                <div class="color-swatch color-103" data-color="Sable" data-color-code="103" onclick="changeColor('trinity', '103', 'Sable')"></div>
+                                <div class="color-swatch color-301" data-color="Orange" data-color-code="301" onclick="changeColor('trinity', '301', 'Orange')"></div>
+                                <div class="color-swatch color-305" data-color="Or" data-color-code="305" onclick="changeColor('trinity', '305', 'Or')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('trinity', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-403" data-color="Bordeaux" data-color-code="403" onclick="changeColor('trinity', '403', 'Bordeaux')"></div>
+                                <div class="color-swatch color-500" data-color="Marine" data-color-code="500" onclick="changeColor('trinity', '500', 'Marine')"></div>
+                                <div class="color-swatch color-501" data-color="Bleu Ciel" data-color-code="501" onclick="changeColor('trinity', '501', 'Bleu Ciel')"></div>
+                                <div class="color-swatch color-502" data-color="Bleu Royal" data-color-code="502" onclick="changeColor('trinity', '502', 'Bleu Royal')"></div>
+                                <div class="color-swatch color-505" data-color="Atoll" data-color-code="505" onclick="changeColor('trinity', '505', 'Atoll')"></div>
+                                <div class="color-swatch color-600" data-color="Vert Kelly" data-color-code="600" onclick="changeColor('trinity', '600', 'Vert Kelly')"></div>
+                                <div class="color-swatch color-601" data-color="Vert Kaki" data-color-code="601" onclick="changeColor('trinity', '601', 'Vert Kaki')"></div>
+                                <div class="color-swatch color-602" data-color="Vert Bouteille" data-color-code="602" onclick="changeColor('trinity', '602', 'Vert Bouteille')"></div>
+                                <div class="color-swatch color-604" data-color="Lime" data-color-code="604" onclick="changeColor('trinity', '604', 'Lime')"></div>
+                                <div class="color-swatch color-605" data-color="Vert Real" data-color-code="605" onclick="changeColor('trinity', '605', 'Vert Real')"></div>
+                                <div class="color-swatch color-202" data-color="Gris Chiné" data-color-code="202" onclick="changeColor('trinity', '202', 'Gris Chiné')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Coupe slim femme</span>
+                            <span class="feature-tag">Style professionnel</span>
+                            <span class="feature-tag">Manches ajustées</span>
+                            <span class="feature-tag">Résistant</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 5,90€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis polo TRINITY&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- Polo TRINITY femme poly-coton (Réf: HP-PW001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie / sérigraphie / transfert%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STERLING - Polo Poly-Coton Manches Longues (ex-CLIFTON) -->
+                <div class="polo-card fade-in" data-product="sterling">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/polos/MK242WV_100_1_1000.jpg" alt="STERLING" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('sterling', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('sterling', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">STERLING</h3>
+                        <div class="polo-reference">Réf: HP-PL002 | Poly-coton manches longues</div>
+                        <p class="polo-description">Polo manches longues en mélange poly-coton, alliant robustesse et confort. Parfait pour les saisons fraîches et le travail en extérieur.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 35% Coton RingSpun / 65% Polyester (210 g/m²)<br>
+                            • Manches longues avec poignets élastiques<br>
+                            • Bande de propreté à l'intérieur du col<br>
+                            • Tailles : S à 5XL
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (10)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('sterling', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('sterling', '200', 'Noir')"></div>
+                                <div class="color-swatch color-103" data-color="Sable" data-color-code="103" onclick="changeColor('sterling', '103', 'Sable')"></div>
+                                <div class="color-swatch color-301" data-color="Orange" data-color-code="301" onclick="changeColor('sterling', '301', 'Orange')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('sterling', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-500" data-color="Marine" data-color-code="500" onclick="changeColor('sterling', '500', 'Marine')"></div>
+                                <div class="color-swatch color-501" data-color="Bleu Ciel" data-color-code="501" onclick="changeColor('sterling', '501', 'Bleu Ciel')"></div>
+                                <div class="color-swatch color-502" data-color="Bleu Royal" data-color-code="502" onclick="changeColor('sterling', '502', 'Bleu Royal')"></div>
+                                <div class="color-swatch color-602" data-color="Vert Bouteille" data-color-code="602" onclick="changeColor('sterling', '602', 'Vert Bouteille')"></div>
+                                <div class="color-swatch color-202" data-color="Gris Chiné" data-color-code="202" onclick="changeColor('sterling', '202', 'Gris Chiné')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Manches longues</span>
+                            <span class="feature-tag">Poly-coton résistant</span>
+                            <span class="feature-tag">Poignets élastiques</span>
+                            <span class="feature-tag">Extérieur</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 7,90€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis polo STERLING&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- Polo STERLING manches longues poly-coton (Réf: HP-PL002)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie / sérigraphie / transfert%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+              
+                <!-- BOGAN - Polo Technique CoolPass -->
+                <div class="polo-card fade-in" data-product="bogan">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/polos/PS160U_100_1_1000.jpg" alt="BOGAN" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('bogan', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('bogan', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">VELOCITY</h3>
+                        <div class="polo-reference">Réf: HP-PT001 | Technique CoolPass</div>
+                        <p class="polo-description">Polo technique révolutionnaire avec tissu CoolPass pour une évacuation optimale de l'humidité et un contrôle parfait de la température corporelle.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Polyester Micro Bird Eye (160 g/m²)<br>
+                            • Technologie CoolPass brevetée<br>
+                            • Patte 3 boutons, bande de propreté renforcée<br>
+                            • Tailles : S à 5XL
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (10)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('bogan', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('bogan', '200', 'Noir')"></div>
+                                <div class="color-swatch color-222" data-color="Gris Ultimate" data-color-code="222" onclick="changeColor('bogan', '222', 'Gris Ultimate')"></div>
+                                <div class="color-swatch color-300" data-color="Jaune" data-color-code="300" onclick="changeColor('bogan', '300', 'Jaune')"></div>
+                                <div class="color-swatch color-303" data-color="Orange Fluo" data-color-code="303" onclick="changeColor('bogan', '303', 'Orange Fluo')"></div>
+                                <div class="color-swatch color-304" data-color="Jaune Fluo" data-color-code="304" onclick="changeColor('bogan', '304', 'Jaune Fluo')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('bogan', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-417" data-color="Corail Fluo" data-color-code="417" onclick="changeColor('bogan', '417', 'Corail Fluo')"></div>
+                                <div class="color-swatch color-512" data-color="Marine Profond" data-color-code="512" onclick="changeColor('bogan', '512', 'Marine Profond')"></div>
+                                <div class="color-swatch color-610" data-color="Vert Fluo" data-color-code="610" onclick="changeColor('bogan', '610', 'Vert Fluo')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Respirant</span>
+                            <span class="feature-tag">Anti-humidité</span>
+                            <span class="feature-tag">Séchage rapide</span>
+                            <span class="feature-tag">Technologie CoolPass</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 4,90€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis polo VELOCITY&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- Polo VELOCITY technique CoolPass (Réf: HP-PT001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie / sérigraphie / transfert%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOGAN WOMAN - Polo Technique Femme -->
+                <div class="polo-card fade-in" data-product="bogan-woman">
+                    <div class="polo-image">
+                        <div class="image-container">
+                            <img src="https://pro.horseprint.fr/images/polos/PS160W_100_1_1000.jpg" alt="BOGAN WOMAN" class="current-image">
+                            <div class="image-nav prev" onclick="navigateColor('bogan-woman', -1)">‹</div>
+                            <div class="image-nav next" onclick="navigateColor('bogan-woman', 1)">›</div>
+                            <div class="color-indicator">Blanc</div>
+                        </div>
+                    </div>
+                    <div class="polo-content">
+                        <h3 class="polo-title">VELOCITY WOMAN</h3>
+                        <div class="polo-reference">Réf: HP-PTW001 | Technique femme</div>
+                        <p class="polo-description">Polo technique féminin avec technologie CoolPass, coupe cintrée pour un confort optimal pendant l'effort.</p>
+                        
+                        <div class="polo-specs">
+                            <strong>Spécifications :</strong><br>
+                            • Matière : 100% Polyester Micro Bird Eye (160 g/m²)<br>
+                            • Technologie CoolPass, coupe cintrée<br>
+                            • Finitions féminines délicates<br>
+                            • Tailles : XS à 3XL
+                        </div>
+
+                        <div class="polo-colors">
+                            <h4>Couleurs disponibles (10)</h4>
+                            <div class="color-swatches">
+                                <div class="color-swatch color-100 selected" data-color="Blanc" data-color-code="100" onclick="changeColor('bogan-woman', '100', 'Blanc')"></div>
+                                <div class="color-swatch color-200" data-color="Noir" data-color-code="200" onclick="changeColor('bogan-woman', '200', 'Noir')"></div>
+                                <div class="color-swatch color-222" data-color="Gris Ultimate" data-color-code="222" onclick="changeColor('bogan-woman', '222', 'Gris Ultimate')"></div>
+                                <div class="color-swatch color-300" data-color="Jaune" data-color-code="300" onclick="changeColor('bogan-woman', '300', 'Jaune')"></div>
+                                <div class="color-swatch color-303" data-color="Orange Fluo" data-color-code="303" onclick="changeColor('bogan-woman', '303', 'Orange Fluo')"></div>
+                                <div class="color-swatch color-304" data-color="Jaune Fluo" data-color-code="304" onclick="changeColor('bogan-woman', '304', 'Jaune Fluo')"></div>
+                                <div class="color-swatch color-400" data-color="Rouge" data-color-code="400" onclick="changeColor('bogan-woman', '400', 'Rouge')"></div>
+                                <div class="color-swatch color-417" data-color="Corail Fluo" data-color-code="417" onclick="changeColor('bogan-woman', '417', 'Corail Fluo')"></div>
+                                <div class="color-swatch color-512" data-color="Marine Profond" data-color-code="512" onclick="changeColor('bogan-woman', '512', 'Marine Profond')"></div>
+                                <div class="color-swatch color-610" data-color="Vert Fluo" data-color-code="610" onclick="changeColor('bogan-woman', '610', 'Vert Fluo')"></div>
+                            </div>
+                        </div>
+
+                        <div class="polo-features">
+                            <span class="feature-tag">Coupe féminine</span>
+                            <span class="feature-tag">Technique</span>
+                            <span class="feature-tag">Respirant</span>
+                            <span class="feature-tag">CoolPass</span>
+                        </div>
+
+                        <div class="polo-price">
+                            <span class="price-range">À partir de 4,90€</span>
+                            <a href="mailto:hello@horseprint.fr?subject=Devis polo VELOCITY WOMAN&body=Bonjour,%0D%0A%0D%0AJe souhaite recevoir un devis pour :%0D%0A- Polo VELOCITY WOMAN technique CoolPass (Réf: HP-PTW001)%0D%0A- Quantité souhaitée : %0D%0A- Couleurs : %0D%0A- Technique de marquage : broderie / sérigraphie / transfert%0D%0A- Délai souhaité : %0D%0A%0D%0AMerci de me recontacter rapidement.%0D%0A%0D%0ACordialement" class="cta-button">Demander un devis</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section informative -->
+            <div class="section-header fade-in" style="margin-top: 5rem;">
+                <h2 class="section-title">Personnalisation & Services</h2>
+                <div style="max-width: 800px; margin: 2rem auto; padding: 2rem; background: var(--surface); border-radius: 20px; backdrop-filter: blur(20px);">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Techniques de marquage disponibles :</h3>
+                    <ul style="text-align: left; color: var(--text-secondary); line-height: 2;">
+                        <li><strong>Broderie :</strong> Logos et textes haute qualité, durabilité maximale</li>
+                        <li><strong>Sérigraphie :</strong> Visuels colorés, idéal pour grandes quantités</li>
+                        <li><strong>Transfert :</strong> Designs complexes, rendu photographique</li>
+                        <li><strong>Sublimation :</strong> Couleurs éclatantes, résistance au lavage</li>
+                    </ul>
+                    <p style="margin-top: 1.5rem; font-style: italic; color: var(--text-secondary);">
+                        <strong>Quantités minimales :</strong> À partir de 10 pièces • <strong>Délai :</strong> 2-3 semaines • <strong>Devis :</strong> Gratuit sous 24h
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+    <div class="container">
+        <p>&copy; 2025 <span class="notranslate">HorsePrint Pro</span> — Collection Polos Premium • hello@horseprint.fr</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+    </body>
+</html>
