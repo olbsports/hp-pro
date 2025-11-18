@@ -121,12 +121,17 @@
 }
 
 .cta-nav {
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    background: linear-gradient(135deg, #3498db, #2980b9) !important;
     color: white !important;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-weight: 600;
+    padding: 10px 20px !important;
+    border-radius: 25px !important;
+    font-weight: 600 !important;
     transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.4) !important;
+}
+
+.cta-nav::after {
+    display: none !important;
 }
 
 .cta-nav:hover {
@@ -143,5 +148,72 @@
         display: inline-block;
         margin: 10px 0;
     }
+}
+
+/* Widget de traduction */
+.translate-widget {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 999;
+}
+
+.translate-toggle {
+    background: white;
+    border: 2px solid #3498db;
+    color: #3498db;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.translate-toggle:hover {
+    background: #3498db;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.translate-content {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    min-width: 200px;
+    display: none;
+}
+
+.translate-content.active {
+    display: block;
+}
+
+.language-flags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.flag-btn {
+    background: none;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.flag-btn:hover, .flag-btn.active {
+    border-color: #3498db;
+    background: #f0f8ff;
+    transform: scale(1.1);
 }
 </style>
